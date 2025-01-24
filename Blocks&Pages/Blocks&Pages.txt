@@ -1,0 +1,1 @@
+Store all blocks and pages in this folder that will be needed in the full projects
