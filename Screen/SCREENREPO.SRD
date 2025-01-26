@@ -1,0 +1,183 @@
+<?xml version="1.0"?>
+<ScreenRepository>
+  <FileFormat>006A</FileFormat>
+  <ScreenLibrary Name="Library">
+    <LanguageDefinition DefLang="1" OrgLang="1">
+      <Language>
+        <Name>English</Name>
+        <Index>1</Index>
+        <Hidden>0</Hidden>
+      </Language>
+    </LanguageDefinition>
+  </ScreenLibrary>
+  <ScreenDefRepository>
+    <ScreenDef IDD="true" PT="false">
+      <FF>003A</FF>
+      <ULC X="0" EX="" Y="0" EY="" XP="0" YP="0"/>
+      <W E="" V="800" VP="100"/>
+      <H E="" V="480" VP="100"/>
+      <D>Joystick_Position</D>
+      <GUID>C951F7639_F003_4D16_B13B_9F5CA92AA2D8</GUID>
+      <C V="00FFFFFF" E=""/>
+      <Interface>
+        <Input>
+          <Net Name="X_Axis_Psn" Uid="1" DataType="S16"/>
+          <Net Name="Y_Axis_Psn" Uid="2" DataType="S16"/>
+        </Input>
+        <Output/>
+      </Interface>
+      <PW>800</PW>
+      <PH>480</PH>
+      <PN>Display.Port</PN>
+      <Lay LO="0" AR="true" LAR="false" KA="false"/>
+      <F>
+        <L N="Line_1">
+          <La Sc="Def" Zo="0" Order="0" Flex="false" Sec="0" Len="100">
+            <Pad L="0" R="0" T="0" B="0" A="0" UA="false"/>
+          </La>
+          <LMO>
+            <X0/>
+            <Y0/>
+            <X1/>
+            <Y1/>
+          </LMO>
+          <En V="True" E=""/>
+          <GUID>C7C74126C_1E05_40CC_8A45_09C221BB4F88</GUID>
+          <T>
+            <IsSink V="False" E=""/>
+            <Output E=""/>
+            <LocalX E=""/>
+            <LocalY E=""/>
+            <GType E=""/>
+            <GX E=""/>
+            <GY E=""/>
+            <ZoomFactor E=""/>
+            <DeltaX E=""/>
+            <DeltaY E=""/>
+            <Velocity E=""/>
+            <RotAng E=""/>
+            <LocalDeltaX E=""/>
+            <LocalDeltaY E=""/>
+          </T>
+          <C V="00000000" E=""/>
+          <W V="2" E=""/>
+          <SP X="320" EX="" Y="265" EY="2" XP="40" YP="55.2083"/>
+          <EP X="455" EX="" Y="265" EY="2" XP="56.875" YP="55.2083"/>
+          <O>4</O>
+          <Pr V="0" E=""/>
+          <Vis E=""/>
+        </L>
+        <L N="Line_2">
+          <La Sc="Def" Zo="0" Order="0" Flex="false" Sec="0" Len="100">
+            <Pad L="0" R="0" T="0" B="0" A="0" UA="false"/>
+          </La>
+          <LMO>
+            <X0/>
+            <Y0/>
+            <X1/>
+            <Y1/>
+          </LMO>
+          <En V="True" E=""/>
+          <GUID>C21196E30_67D9_4C0F_8825_0AF1F8B7C650</GUID>
+          <T>
+            <IsSink V="False" E=""/>
+            <Output E=""/>
+            <LocalX E=""/>
+            <LocalY E=""/>
+            <GType E=""/>
+            <GX E=""/>
+            <GY E=""/>
+            <ZoomFactor E=""/>
+            <DeltaX E=""/>
+            <DeltaY E=""/>
+            <Velocity E=""/>
+            <RotAng E=""/>
+            <LocalDeltaX E=""/>
+            <LocalDeltaY E=""/>
+          </T>
+          <C V="00000000" E=""/>
+          <W V="2" E=""/>
+          <SP X="320" EX="" Y="170" EY="2" XP="40" YP="35.4167"/>
+          <EP X="455" EX="" Y="170" EY="2" XP="56.875" YP="35.4167"/>
+          <O>3</O>
+          <Pr V="0" E=""/>
+          <Vis E=""/>
+        </L>
+        <L N="Line_3">
+          <La Sc="Def" Zo="0" Order="0" Flex="false" Sec="0" Len="100">
+            <Pad L="0" R="0" T="0" B="0" A="0" UA="false"/>
+          </La>
+          <LMO>
+            <X0/>
+            <Y0/>
+            <X1/>
+            <Y1/>
+          </LMO>
+          <En V="True" E=""/>
+          <GUID>C9A844AF8_7364_4FF7_A198_5D92FC9B1273</GUID>
+          <T>
+            <IsSink V="False" E=""/>
+            <Output E=""/>
+            <LocalX E=""/>
+            <LocalY E=""/>
+            <GType E=""/>
+            <GX E=""/>
+            <GY E=""/>
+            <ZoomFactor E=""/>
+            <DeltaX E=""/>
+            <DeltaY E=""/>
+            <Velocity E=""/>
+            <RotAng E=""/>
+            <LocalDeltaX E=""/>
+            <LocalDeltaY E=""/>
+          </T>
+          <C V="00000000" E=""/>
+          <W V="2" E=""/>
+          <SP X="455" EX="" Y="265" EY="2" XP="56.875" YP="55.2083"/>
+          <EP X="455" EX="" Y="170" EY="2" XP="56.875" YP="35.4167"/>
+          <O>2</O>
+          <Pr V="0" E=""/>
+          <Vis E=""/>
+        </L>
+        <L N="Line_4">
+          <La Sc="Def" Zo="0" Order="0" Flex="false" Sec="0" Len="100">
+            <Pad L="0" R="0" T="0" B="0" A="0" UA="false"/>
+          </La>
+          <LMO>
+            <X0/>
+            <Y0/>
+            <X1/>
+            <Y1/>
+          </LMO>
+          <En V="True" E=""/>
+          <GUID>C4C537E94_2630_4CC8_B973_40E0C2D87324</GUID>
+          <T>
+            <IsSink V="False" E=""/>
+            <Output E=""/>
+            <LocalX E=""/>
+            <LocalY E=""/>
+            <GType E=""/>
+            <GX E=""/>
+            <GY E=""/>
+            <ZoomFactor E=""/>
+            <DeltaX E=""/>
+            <DeltaY E=""/>
+            <Velocity E=""/>
+            <RotAng E=""/>
+            <LocalDeltaX E=""/>
+            <LocalDeltaY E=""/>
+          </T>
+          <C V="00000000" E=""/>
+          <W V="2" E=""/>
+          <SP X="320" EX="" Y="265" EY="2" XP="40" YP="55.2083"/>
+          <EP X="320" EX="" Y="170" EY="2" XP="40" YP="35.4167"/>
+          <O>1</O>
+          <Pr V="0" E=""/>
+          <Vis E=""/>
+        </L>
+      </F>
+      <PouCalls/>
+    </ScreenDef>
+  </ScreenDefRepository>
+  <ApplogDefRepository/>
+</ScreenRepository>
