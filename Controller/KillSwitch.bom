@@ -1,0 +1,32 @@
+{
+"format":"001B",
+"actionId":"a5722ea1-0c1d-4781-a306-e9ee6e888cca",
+"startTimeUTC":"2025-02-02 00:43:50",
+"licenceId":"31977",
+"licenceType":"Educational",
+"projectId":"{DF37697A-B3E0-4673-8D4A-7789F007CF98}",
+"toolVersion":"2024.2.4",
+"releaseStatus":"Released",
+"compileType":"CompileAll",
+"moduleCount":1,
+"sysParams":{"cols":["name","description","value"],"rows":[
+["W1","ReadOnlyParameters","DISABLE"]]},
+"hwdData": {
+"hwdPartnumber":"70091045V190",
+"hwdComment":"MC050_110_lg",
+"sysPartnumber":"70091042v190"
+}, 
+"comps":{"cols":["name","count"],"rows":[
+["IC_BIOS-IN1",174],["IC_BIOS-OUT",116],["IC_INIT-OUT",70],["C__CONST6-T1",46],["C__CONST3-T1",46],["C__CONST-FALSE1",16],["IC_BIOS-IN-U1",10],["LG_AND2",8],["C__CONST3-A1",8],["LG_OR2",6],["GF_SWITCH2",5],["C__CONST-TIME1",3],["T__ON-DELAY",2],["LT_POS-TRANS",2],["LG_XOR",2],["LC_COMPARE-G",2],["C__CONST6-A1",2],["C__CONST-TRUE1",2],["C__CONST-0",2],["AF_ADD",2],["T__OSCILLATOR",1],["LG_NOT",1],["LG_AND3",1]]},
+"pages":[
+128
+],
+"memoryUsage": {
+"pctROM":0,
+"pctRAM":0,
+"pctNV":0
+},
+"compileTime":"2025-02-01 18:44:05 64",
+"endTimeUTC":"2025-02-02 00:44:05",
+"duration":"15"
+}

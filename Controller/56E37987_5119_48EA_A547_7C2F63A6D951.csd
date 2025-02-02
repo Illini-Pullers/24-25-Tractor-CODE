@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?><SysXmlForCodeGenerator><SysName>70091042V190</SysName><Controls>
+	<NeededToolVersion>7.1.10</NeededToolVersion>
+	<ScreenEditorEnable>false</ScreenEditorEnable>
+	<TextEditorEnable>false</TextEditorEnable>
+	<ImageEditorEnable>false</ImageEditorEnable>
+	<UseInstalledFonts>true</UseInstalledFonts>
+	<ApplogScreenEditorEnable>false</ApplogScreenEditorEnable>
+	<DynamicDiagnostics>true</DynamicDiagnostics>
+	<SIL2>false</SIL2>
+	<CompiledBinaryFile>false</CompiledBinaryFile>
+	<ObjectCode>true</ObjectCode>
+	<MicroSeconds>true</MicroSeconds>
+	<CheckHWNR>false</CheckHWNR>
+</Controls><Ports>
+	<DataDrive>
+		<BlockSize>65536</BlockSize>
+		<Size>2097152</Size>
+		<Name>FlashDrive</Name>
+		<HWImplementation>
+			<Applog>
+				<AllocationMode>0</AllocationMode>
+				<MaxNumberOfFiles>0</MaxNumberOfFiles>
+				<Type>
+					<Linear/>
+					<Circular/>
+				</Type>
+				<Defaults>
+					<Name>AppLogFile</Name>
+					<Size>131072</Size>
+					<Type>
+						<Circular/>
+					</Type>
+				</Defaults>
+			</Applog>
+			<BinaryFile>
+				<AllocationMode>0</AllocationMode>
+				<MaxNumberOfFiles>1</MaxNumberOfFiles>
+			</BinaryFile>
+		</HWImplementation>
+	</DataDrive>
+</Ports><Ports>
+	<DataDrive>
+		<BlockSize>16384</BlockSize>
+		<Size>16384</Size>
+		<Name>ROPPort</Name>
+		<HWImplementation>
+			<Parameters>
+				<AllocationMode>0</AllocationMode>
+				<MaxNumberOfFiles>0</MaxNumberOfFiles>
+			</Parameters>
+		</HWImplementation>
+	</DataDrive>
+</Ports>
+<SupportedProjectItems>
+	<ToolKey>
+		<Parameter>LOGKEY</Parameter>
+	</ToolKey>
+	<ReadOnlyParameters>
+	</ReadOnlyParameters>
+</SupportedProjectItems>
+<SEHWComponents>
+</SEHWComponents>
+<MemoryAllocation>
+	<Mapformat>AG47Q220130614</Mapformat>
+	<AddressUnit>1</AddressUnit>
+	<Available>
+		<ROM>507904</ROM>
+		<RAM>129536</RAM>
+		<NV>3500</NV>
+	</Available>
+	<SystemUsed>
+		<ROM>65922</ROM>
+		<RAM>23984</RAM>
+		<NV>0</NV>
+	</SystemUsed>
+	<MemoryNames>
+		<ROM>
+			<SegmentName>.validApp</SegmentName>
+			<SegmentName>.CRCField</SegmentName>
+			<SegmentName>.text</SegmentName>
+			<SegmentName>.textKrnl</SegmentName>
+			<SegmentName>.rodata</SegmentName>
+			<SegmentName>.isr_vector</SegmentName>
+			<SegmentName>.data</SegmentName>
+		</ROM>
+		<RAM>
+			<SegmentName>.isr_vector_RAM</SegmentName>
+			<SegmentName>.SharedMemory</SegmentName>
+			<SegmentName>.data</SegmentName>
+			<SegmentName>.bss</SegmentName>
+			<SegmentName>.CommRAMbss</SegmentName>
+			<SegmentName>.AppLayerbss</SegmentName>
+		</RAM>
+		<NV>
+			<VectorName>EE</VectorName>
+		</NV>
+	</MemoryNames>
+</MemoryAllocation>
+<FunctionLibrary Type="CCP_STM32FX0X474" Open="true"/>
+<SYSSocket Type="dualbootSTM32FX0X474_MC050_110" Name="W2" Description="Dual Boot" Open="true"/><CanChannelInfo Count="2" />
+<ExrFontFiles>
+</ExrFontFiles>
+<CompilerId>ARM-GCC 4.7 2013Q2-20130614 -BEGIN</CompilerId>
+<Components>
+U__HWNR2
+IC_TIME-US
+U__UNTIL
+U__REPEAT
+O__OBJ-CR-CALL1
+O__OBJ-END1
+IC_OBJECT-IN1
+IC_OBJECT-IN-B1
+IC_OBJECT-OUT1
+IC_OBJECT-OUT-B1
+O__CLASS-DEFINE1
+O__CLASS-END1
+IC_INIT-OUT
+MA_ISIN
+MA_ICOS
+MA_ITAN
+MA_ISQRT
+MA_IASIN
+MA_IACOS
+MA_IATAN
+TIMER
+T1M
+T10M
+T100M
+T1S
+T60S
+T1H
+TLOOP
+IC_BIOS-BI-U1
+IC_BIOS-IN-U1
+IC_BIOS-SHOW-U1
+IC_MODULE-IN-U1
+IC_MOD-BUS-IN1
+IC_MOD-BUS-OUT
+IC_PARAM-NS-U
+IC_PARAM-IN-U1
+IC_ACC-APP
+IC_SET-PULSE
+IC_ACC-APP-RAWD
+IC_ACC-APP-DIAG
+IC_ACC-APP-ERR
+IC_ACC-APP-OTH
+IC_ACC-HISTORY
+IC_ACC-READ
+IC_ACC-WRITE
+O__XCLASS-CREATE
+O__XFUNC-CALL
+IC_CAN-TX
+IC_CAN-RX
+IC_CAN-RX-M
+IC_CAN-RX-A
+IC_NV-A1
+IC_NV-B1
+IC_NV-B2
+IC_NV-C1
+IC_NV-IN-U1
+U__PARAM-CLOSE
+O__POU-CALL
+O__POU-NAMED
+O__XCLASS-NAMED
+IC_MODULE-IN1
+IC_BIOS-IN1
+CC_NV
+CC_CHECKPOINT
+CC_SET
+CC_SET-PULSE
+CC_LOG_CHECKPNT
+</Components></SysXmlForCodeGenerator>
