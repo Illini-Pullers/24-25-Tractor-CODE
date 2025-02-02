@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Project>
-  <File FileName="SCREENREPO.SRD" FileSize="5532" Crc="1326839469"/>
+  <File FileName="SCREENREPO.SRD" FileSize="8699" Crc="1041778622"/>
   <File FileName="70487200V330.SYS" FileSize="80427043" Crc="2884087083"/>
   <File FileName="PROJECTPARAMETERS.JSON" FileSize="53" Crc="274569573"/>
-  <File FileName="SCREEN DEMO.P1X" FileSize="1089" Crc="3392255833"/>
+  <File FileName="SCREEN DEMO.P1X" FileSize="1122" Crc="3673010292"/>
   <File FileName="70487200V330.PDF" FileSize="657927" Crc="3090789078"/>
-  <File FileName="DM700B.SCS" FileSize="199266" Crc="3365214152"/>
+  <File FileName="APPMEDIA.TAR" FileSize="1300992" Crc="3260377031"/>
+  <File FileName="DM700B.SCS" FileSize="188457" Crc="573027014"/>
   <File FileName="TOUCHVERSION.SVG" FileSize="2169" Crc="1861539505"/>
 </Project>

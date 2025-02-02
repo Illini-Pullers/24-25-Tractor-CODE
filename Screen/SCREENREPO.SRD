@@ -21,17 +21,19 @@
       <C V="00FFFFFF" E=""/>
       <Interface>
         <Input>
-          <Net Name="X_Axis_Psn" Uid="1" DataType="S16"/>
-          <Net Name="Y_Axis_Psn" Uid="2" DataType="S16"/>
+          <Net Name="Y_Axis_Psn_Low" Uid="3" DataType="S16"/>
+          <Net Name="Y_Axis_Psn_High" Uid="4" DataType="S16"/>
         </Input>
-        <Output/>
+        <Output>
+          <Net Name="BoxIsTouched" Uid="5" DataType="U16"/>
+        </Output>
       </Interface>
       <PW>800</PW>
       <PH>480</PH>
       <PN>Display.Port</PN>
       <Lay LO="0" AR="true" LAR="false" KA="false"/>
       <F>
-        <L N="Line_1">
+        <L N="Line_1" SX="0.168750002980232" SY="0.00416666688397527">
           <La Sc="Def" Zo="0" Order="0" Flex="false" Sec="0" Len="100">
             <Pad L="0" R="0" T="0" B="0" A="0" UA="false"/>
           </La>
@@ -61,13 +63,13 @@
           </T>
           <C V="00000000" E=""/>
           <W V="2" E=""/>
-          <SP X="320" EX="" Y="265" EY="2" XP="40" YP="55.2083"/>
-          <EP X="455" EX="" Y="265" EY="2" XP="56.875" YP="55.2083"/>
-          <O>4</O>
+          <SP X="300" EX="" Y="300" EY="3" XP="37.5" YP="62.5"/>
+          <EP X="500" EX="" Y="300" EY="3" XP="62.5" YP="62.5"/>
+          <O>5</O>
           <Pr V="0" E=""/>
           <Vis E=""/>
         </L>
-        <L N="Line_2">
+        <L N="Line_2" SX="0.168750002980232" SY="0.00416666688397527">
           <La Sc="Def" Zo="0" Order="0" Flex="false" Sec="0" Len="100">
             <Pad L="0" R="0" T="0" B="0" A="0" UA="false"/>
           </La>
@@ -97,13 +99,13 @@
           </T>
           <C V="00000000" E=""/>
           <W V="2" E=""/>
-          <SP X="320" EX="" Y="170" EY="2" XP="40" YP="35.4167"/>
-          <EP X="455" EX="" Y="170" EY="2" XP="56.875" YP="35.4167"/>
-          <O>3</O>
+          <SP X="300" EX="" Y="180" EY="4" XP="37.5" YP="37.5"/>
+          <EP X="500" EX="" Y="180" EY="4" XP="62.5" YP="37.5"/>
+          <O>4</O>
           <Pr V="0" E=""/>
           <Vis E=""/>
         </L>
-        <L N="Line_3">
+        <L N="Line_3" SX="0.00249999994412065" SY="0.19791667163372">
           <La Sc="Def" Zo="0" Order="0" Flex="false" Sec="0" Len="100">
             <Pad L="0" R="0" T="0" B="0" A="0" UA="false"/>
           </La>
@@ -133,13 +135,13 @@
           </T>
           <C V="00000000" E=""/>
           <W V="2" E=""/>
-          <SP X="455" EX="" Y="265" EY="2" XP="56.875" YP="55.2083"/>
-          <EP X="455" EX="" Y="170" EY="2" XP="56.875" YP="35.4167"/>
-          <O>2</O>
+          <SP X="500" EX="" Y="180" EY="4" XP="62.5" YP="37.5"/>
+          <EP X="500" EX="" Y="300" EY="3" XP="62.5" YP="62.5"/>
+          <O>3</O>
           <Pr V="0" E=""/>
           <Vis E=""/>
         </L>
-        <L N="Line_4">
+        <L N="Line_4" SX="0.00249999994412065" SY="0.562499701976776">
           <La Sc="Def" Zo="0" Order="0" Flex="false" Sec="0" Len="100">
             <Pad L="0" R="0" T="0" B="0" A="0" UA="false"/>
           </La>
@@ -169,12 +171,110 @@
           </T>
           <C V="00000000" E=""/>
           <W V="2" E=""/>
-          <SP X="320" EX="" Y="265" EY="2" XP="40" YP="55.2083"/>
-          <EP X="320" EX="" Y="170" EY="2" XP="40" YP="35.4167"/>
-          <O>1</O>
+          <SP X="300" EX="" Y="180" EY="4" XP="37.5" YP="37.5"/>
+          <EP X="300" EX="" Y="300" EY="3" XP="37.5" YP="62.5"/>
+          <O>2</O>
           <Pr V="0" E=""/>
           <Vis E=""/>
         </L>
+        <TAC N="HawkTuah" SX="0.25" SY="0.25" SS="false" SP="false" KA="false">
+          <La Sc="Def" Zo="0" Order="0" Flex="false" Sec="0">
+            <Pad L="0" R="0" T="0" B="0" A="0" UA="false"/>
+          </La>
+          <LMO>
+            <X/>
+            <Y/>
+            <W/>
+            <H/>
+          </LMO>
+          <En V="True" E=""/>
+          <GUID>C8BF4E976_9736_44A9_BBF4_52332431A88B</GUID>
+          <W V="200" E="" VP="25"/>
+          <H V="120" E="" VP="25"/>
+          <IsSink V="False" E=""/>
+          <IP X="300" EX="" Y="180" EY="4" XP="37.5" YP="37.5"/>
+          <O>1</O>
+          <Output E="5"/>
+          <LocalX E=""/>
+          <LocalY E=""/>
+          <GType E=""/>
+          <GX E=""/>
+          <GY E=""/>
+          <ZoomFactor E=""/>
+          <DeltaX E=""/>
+          <DeltaY E=""/>
+          <Velocity E=""/>
+          <RotAng E=""/>
+          <LocalDeltaX E=""/>
+          <LocalDeltaY E=""/>
+        </TAC>
+      </F>
+      <PouCalls/>
+    </ScreenDef>
+    <ScreenDef IDD="true" PT="false">
+      <FF>003A</FF>
+      <ULC X="0" EX="" Y="0" EY="" XP="0" YP="0"/>
+      <W E="" V="800" VP="100"/>
+      <H E="" V="480" VP="100"/>
+      <D>HawkTuah</D>
+      <GUID>CC9560317_58F2_4F9A_ACD9_39BCC6249BE0</GUID>
+      <C V="00FFFFFF" E=""/>
+      <Interface>
+        <Input/>
+        <Output>
+          <Net Name="GenericViewportID" Uid="2" DataType="U32"/>
+        </Output>
+      </Interface>
+      <PN>Display.Port</PN>
+      <Lay LO="0" AR="true" LAR="false" KA="false"/>
+      <F>
+        <VP N="Viewport_1" SX="0.600000023841858" SY="1" KA="true">
+          <La Sc="Def" Zo="0" Order="0" Flex="false" Sec="0">
+            <Pad L="0" R="0" T="0" B="0" A="0" UA="false"/>
+          </La>
+          <LMO>
+            <X/>
+            <Y/>
+            <W/>
+            <H/>
+          </LMO>
+          <En V="True" E=""/>
+          <GUID>C81C91453_9C2E_45A6_B70A_D57D4E0C91F6</GUID>
+          <W V="480" E="" VP="60"/>
+          <H V="480" E="" VP="100"/>
+          <T>
+            <IsSink V="False" E=""/>
+            <Output E=""/>
+            <LocalX E=""/>
+            <LocalY E=""/>
+            <GType E=""/>
+            <GX E=""/>
+            <GY E=""/>
+            <ZoomFactor E=""/>
+            <DeltaX E=""/>
+            <DeltaY E=""/>
+            <Velocity E=""/>
+            <RotAng E=""/>
+            <LocalDeltaX E=""/>
+            <LocalDeltaY E=""/>
+          </T>
+          <IP X="145" EX="" Y="0" EY="" XP="18.125" YP="0"/>
+          <R V="0" E=""/>
+          <RO X="0" EX="" Y="0" EY=""/>
+          <O>1</O>
+          <Pr V="0" E=""/>
+          <Vis E=""/>
+          <Outputs>
+            <X/>
+            <Y/>
+            <W/>
+            <H/>
+            <R/>
+            <ROX/>
+            <ROY/>
+          </Outputs>
+          <UID E="2"/>
+        </VP>
       </F>
       <PouCalls/>
     </ScreenDef>

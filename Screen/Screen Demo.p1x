@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 <Project ID="{1DE990A0-A902-404A-A4A2-F2AC0BE80FF1}" FileName="Screen Demo.p1x">
-	<FileFormat>008B</FileFormat>
-	<GUIVersion>2024.2.4.6047</GUIVersion>
-	<ProgrammableHW PartNumber="11277810/11277811" Description="DM700B ver:70487202v330 24.03r01 (SYS:70487200v330)" Comment="DM700B" HwdName="70487202" HwdVersion="3.30.0">
-		<SystemFile FileName="70487200v330.sys">
-			<APIDocument FileName="70487200v330.pdf"/>
-			<Skin FileName="TouchVersion.svg"/>
-		</SystemFile>
-		<Application Name="Screen Demo">
-			<PID Description="Screen Demo"/>
-			<MainModule ModuleName="MAINTASK" FileName="DM700B.scs"/>
-			<ScreenRepository FileName="SCREENREPO.SRD"/>
-			<MediaRepository FileName="appMedia.tar" isEmpty="true"/>
-			<Parameters FileName="ProjectParameters.json"/>
-		</Application>
-		<Output>
-			<Hexfile FileName="Screen Demo.lhx"/>
-			<OutputTargetPartNumber></OutputTargetPartNumber>
-			<OutputTargetSerialNumber></OutputTargetSerialNumber>
-		</Output>
-		<TargetPartNumber></TargetPartNumber>
-	</ProgrammableHW>
+  <FileFormat>008B</FileFormat>
+  <GUIVersion>2024.2.4.6047</GUIVersion>
+  <ProgrammableHW PartNumber="11277810/11277811" Description="DM700B ver:70487202v330 24.03r01 (SYS:70487200v330)" Comment="DM700B" HwdName="70487202" HwdVersion="3.30.0">
+    <SystemFile FileName="70487200v330.sys">
+      <APIDocument FileName="70487200v330.pdf"/>
+      <Skin FileName="TouchVersion.svg"/>
+    </SystemFile>
+    <Application Name="Screen Demo">
+      <PID Description="Screen Demo"/>
+      <MainModule ModuleName="MAINTASK" FileName="DM700B.scs"/>
+      <ScreenRepository FileName="SCREENREPO.SRD"/>
+      <MediaRepository FileName="appMedia.tar"/>
+      <Parameters FileName="ProjectParameters.json"/>
+    </Application>
+    <Output>
+      <Hexfile FileName="Screen Demo.lhx"/>
+      <OutputTargetPartNumber></OutputTargetPartNumber>
+      <OutputTargetSerialNumber></OutputTargetSerialNumber>
+    </Output>
+    <TargetPartNumber></TargetPartNumber>
+  </ProgrammableHW>
 </Project>
