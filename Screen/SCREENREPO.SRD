@@ -16,268 +16,85 @@
       <ULC X="0" EX="" Y="0" EY="" XP="0" YP="0"/>
       <W E="" V="800" VP="100"/>
       <H E="" V="480" VP="100"/>
-      <D>Joystick_Position</D>
-      <GUID>C951F7639_F003_4D16_B13B_9F5CA92AA2D8</GUID>
+      <D>Screen1Def</D>
+      <GUID>CE23C0FAC_6BD8_4751_A2BD_302F2E570AF2</GUID>
       <C V="00FFFFFF" E=""/>
       <Interface>
         <Input>
-          <Net Name="Y_Axis_Psn_Low" Uid="3" DataType="S16"/>
-          <Net Name="Y_Axis_Psn_High" Uid="4" DataType="S16"/>
+          <Net Name="Y_Axis_Psn" Uid="1" DataType="S16"/>
+          <Net Name="Y_Axis_Det" Uid="2" DataType="BOOL"/>
+          <Net Name="YGrp_Psn" Uid="3" DataType="S16"/>
+          <Net Name="YGrp_Det" Uid="4" DataType="BOOL"/>
+          <Net Name="X_Axis_Psn" Uid="5" DataType="S16"/>
+          <Net Name="X_Axis_Det" Uid="6" DataType="BOOL"/>
+          <Net Name="XGrp_Psn" Uid="7" DataType="S16"/>
+          <Net Name="XGrp_Det" Uid="8" DataType="BOOL"/>
+          <Net Name="T_Axis_Psn" Uid="9" DataType="S16"/>
+          <Net Name="T_Axis_Det" Uid="10" DataType="BOOL"/>
+          <Net Name="Status" Uid="11" DataType="U16"/>
+          <Net Name="Rx_EJM" Uid="12" DataType="BOOL"/>
+          <Net Name="Rx_BJM" Uid="13" DataType="BOOL"/>
+          <Net Name="Btn9" Uid="14" DataType="BOOL"/>
+          <Net Name="Btn8" Uid="15" DataType="BOOL"/>
+          <Net Name="Btn7" Uid="16" DataType="BOOL"/>
+          <Net Name="Btn6" Uid="17" DataType="BOOL"/>
+          <Net Name="Btn5" Uid="18" DataType="BOOL"/>
+          <Net Name="Btn4" Uid="19" DataType="BOOL"/>
+          <Net Name="Btn3" Uid="20" DataType="BOOL"/>
+          <Net Name="Btn2" Uid="21" DataType="BOOL"/>
+          <Net Name="Btn12" Uid="22" DataType="BOOL"/>
+          <Net Name="Btn11" Uid="23" DataType="BOOL"/>
+          <Net Name="Btn10" Uid="24" DataType="BOOL"/>
+          <Net Name="Btn1" Uid="25" DataType="BOOL"/>
         </Input>
-        <Output>
-          <Net Name="BoxIsTouched" Uid="5" DataType="U16"/>
-        </Output>
-      </Interface>
-      <PW>800</PW>
-      <PH>480</PH>
-      <PN>Display.Port</PN>
-      <Lay LO="0" AR="true" LAR="false" KA="false"/>
-      <F>
-        <L N="Line_1" SX="0.168750002980232" SY="0.00416666688397527">
-          <La Sc="Def" Zo="0" Order="0" Flex="false" Sec="0" Len="100">
-            <Pad L="0" R="0" T="0" B="0" A="0" UA="false"/>
-          </La>
-          <LMO>
-            <X0/>
-            <Y0/>
-            <X1/>
-            <Y1/>
-          </LMO>
-          <En V="True" E=""/>
-          <GUID>C7C74126C_1E05_40CC_8A45_09C221BB4F88</GUID>
-          <T>
-            <IsSink V="False" E=""/>
-            <Output E=""/>
-            <LocalX E=""/>
-            <LocalY E=""/>
-            <GType E=""/>
-            <GX E=""/>
-            <GY E=""/>
-            <ZoomFactor E=""/>
-            <DeltaX E=""/>
-            <DeltaY E=""/>
-            <Velocity E=""/>
-            <RotAng E=""/>
-            <LocalDeltaX E=""/>
-            <LocalDeltaY E=""/>
-          </T>
-          <C V="00000000" E=""/>
-          <W V="2" E=""/>
-          <SP X="300" EX="" Y="300" EY="3" XP="37.5" YP="62.5"/>
-          <EP X="500" EX="" Y="300" EY="3" XP="62.5" YP="62.5"/>
-          <O>5</O>
-          <Pr V="0" E=""/>
-          <Vis E=""/>
-        </L>
-        <L N="Line_2" SX="0.168750002980232" SY="0.00416666688397527">
-          <La Sc="Def" Zo="0" Order="0" Flex="false" Sec="0" Len="100">
-            <Pad L="0" R="0" T="0" B="0" A="0" UA="false"/>
-          </La>
-          <LMO>
-            <X0/>
-            <Y0/>
-            <X1/>
-            <Y1/>
-          </LMO>
-          <En V="True" E=""/>
-          <GUID>C21196E30_67D9_4C0F_8825_0AF1F8B7C650</GUID>
-          <T>
-            <IsSink V="False" E=""/>
-            <Output E=""/>
-            <LocalX E=""/>
-            <LocalY E=""/>
-            <GType E=""/>
-            <GX E=""/>
-            <GY E=""/>
-            <ZoomFactor E=""/>
-            <DeltaX E=""/>
-            <DeltaY E=""/>
-            <Velocity E=""/>
-            <RotAng E=""/>
-            <LocalDeltaX E=""/>
-            <LocalDeltaY E=""/>
-          </T>
-          <C V="00000000" E=""/>
-          <W V="2" E=""/>
-          <SP X="300" EX="" Y="180" EY="4" XP="37.5" YP="37.5"/>
-          <EP X="500" EX="" Y="180" EY="4" XP="62.5" YP="37.5"/>
-          <O>4</O>
-          <Pr V="0" E=""/>
-          <Vis E=""/>
-        </L>
-        <L N="Line_3" SX="0.00249999994412065" SY="0.19791667163372">
-          <La Sc="Def" Zo="0" Order="0" Flex="false" Sec="0" Len="100">
-            <Pad L="0" R="0" T="0" B="0" A="0" UA="false"/>
-          </La>
-          <LMO>
-            <X0/>
-            <Y0/>
-            <X1/>
-            <Y1/>
-          </LMO>
-          <En V="True" E=""/>
-          <GUID>C9A844AF8_7364_4FF7_A198_5D92FC9B1273</GUID>
-          <T>
-            <IsSink V="False" E=""/>
-            <Output E=""/>
-            <LocalX E=""/>
-            <LocalY E=""/>
-            <GType E=""/>
-            <GX E=""/>
-            <GY E=""/>
-            <ZoomFactor E=""/>
-            <DeltaX E=""/>
-            <DeltaY E=""/>
-            <Velocity E=""/>
-            <RotAng E=""/>
-            <LocalDeltaX E=""/>
-            <LocalDeltaY E=""/>
-          </T>
-          <C V="00000000" E=""/>
-          <W V="2" E=""/>
-          <SP X="500" EX="" Y="180" EY="4" XP="62.5" YP="37.5"/>
-          <EP X="500" EX="" Y="300" EY="3" XP="62.5" YP="62.5"/>
-          <O>3</O>
-          <Pr V="0" E=""/>
-          <Vis E=""/>
-        </L>
-        <L N="Line_4" SX="0.00249999994412065" SY="0.562499701976776">
-          <La Sc="Def" Zo="0" Order="0" Flex="false" Sec="0" Len="100">
-            <Pad L="0" R="0" T="0" B="0" A="0" UA="false"/>
-          </La>
-          <LMO>
-            <X0/>
-            <Y0/>
-            <X1/>
-            <Y1/>
-          </LMO>
-          <En V="True" E=""/>
-          <GUID>C4C537E94_2630_4CC8_B973_40E0C2D87324</GUID>
-          <T>
-            <IsSink V="False" E=""/>
-            <Output E=""/>
-            <LocalX E=""/>
-            <LocalY E=""/>
-            <GType E=""/>
-            <GX E=""/>
-            <GY E=""/>
-            <ZoomFactor E=""/>
-            <DeltaX E=""/>
-            <DeltaY E=""/>
-            <Velocity E=""/>
-            <RotAng E=""/>
-            <LocalDeltaX E=""/>
-            <LocalDeltaY E=""/>
-          </T>
-          <C V="00000000" E=""/>
-          <W V="2" E=""/>
-          <SP X="300" EX="" Y="180" EY="4" XP="37.5" YP="37.5"/>
-          <EP X="300" EX="" Y="300" EY="3" XP="37.5" YP="62.5"/>
-          <O>2</O>
-          <Pr V="0" E=""/>
-          <Vis E=""/>
-        </L>
-        <TAC N="HawkTuah" SX="0.25" SY="0.25" SS="false" SP="false" KA="false">
-          <La Sc="Def" Zo="0" Order="0" Flex="false" Sec="0">
-            <Pad L="0" R="0" T="0" B="0" A="0" UA="false"/>
-          </La>
-          <LMO>
-            <X/>
-            <Y/>
-            <W/>
-            <H/>
-          </LMO>
-          <En V="True" E=""/>
-          <GUID>C8BF4E976_9736_44A9_BBF4_52332431A88B</GUID>
-          <W V="200" E="" VP="25"/>
-          <H V="120" E="" VP="25"/>
-          <IsSink V="False" E=""/>
-          <IP X="300" EX="" Y="180" EY="4" XP="37.5" YP="37.5"/>
-          <O>1</O>
-          <Output E="5"/>
-          <LocalX E=""/>
-          <LocalY E=""/>
-          <GType E=""/>
-          <GX E=""/>
-          <GY E=""/>
-          <ZoomFactor E=""/>
-          <DeltaX E=""/>
-          <DeltaY E=""/>
-          <Velocity E=""/>
-          <RotAng E=""/>
-          <LocalDeltaX E=""/>
-          <LocalDeltaY E=""/>
-        </TAC>
-      </F>
-      <PouCalls/>
-    </ScreenDef>
-    <ScreenDef IDD="true" PT="false">
-      <FF>003A</FF>
-      <ULC X="0" EX="" Y="0" EY="" XP="0" YP="0"/>
-      <W E="" V="800" VP="100"/>
-      <H E="" V="480" VP="100"/>
-      <D>HawkTuah</D>
-      <GUID>CC9560317_58F2_4F9A_ACD9_39BCC6249BE0</GUID>
-      <C V="00FFFFFF" E=""/>
-      <Interface>
-        <Input/>
-        <Output>
-          <Net Name="GenericViewportID" Uid="2" DataType="U32"/>
-        </Output>
+        <Output/>
       </Interface>
       <PN>Display.Port</PN>
       <Lay LO="0" AR="true" LAR="false" KA="false"/>
-      <F>
-        <VP N="Viewport_1" SX="0.600000023841858" SY="1" KA="true">
-          <La Sc="Def" Zo="0" Order="0" Flex="false" Sec="0">
-            <Pad L="0" R="0" T="0" B="0" A="0" UA="false"/>
-          </La>
-          <LMO>
-            <X/>
-            <Y/>
-            <W/>
-            <H/>
-          </LMO>
-          <En V="True" E=""/>
-          <GUID>C81C91453_9C2E_45A6_B70A_D57D4E0C91F6</GUID>
-          <W V="480" E="" VP="60"/>
-          <H V="480" E="" VP="100"/>
-          <T>
-            <IsSink V="False" E=""/>
-            <Output E=""/>
-            <LocalX E=""/>
-            <LocalY E=""/>
-            <GType E=""/>
-            <GX E=""/>
-            <GY E=""/>
-            <ZoomFactor E=""/>
-            <DeltaX E=""/>
-            <DeltaY E=""/>
-            <Velocity E=""/>
-            <RotAng E=""/>
-            <LocalDeltaX E=""/>
-            <LocalDeltaY E=""/>
-          </T>
-          <IP X="145" EX="" Y="0" EY="" XP="18.125" YP="0"/>
-          <R V="0" E=""/>
-          <RO X="0" EX="" Y="0" EY=""/>
-          <O>1</O>
-          <Pr V="0" E=""/>
-          <Vis E=""/>
-          <Outputs>
-            <X/>
-            <Y/>
-            <W/>
-            <H/>
-            <R/>
-            <ROX/>
-            <ROY/>
-          </Outputs>
-          <UID E="2"/>
-        </VP>
-      </F>
+      <F/>
       <PouCalls/>
     </ScreenDef>
   </ScreenDefRepository>
   <ApplogDefRepository/>
+  <ExternalLibrary>PEV4dGVybmFsTGlicmFyeT48RXh0TGliIExpYnJhcnk9IldpZGdldCBMaWJyYXJ5IFNXMDAwMDE1
+NDd2MTAyLnNkbCI+PFNjcmVlbkxpYnJhcnk+PEZvbGRlciBOYW1lPSJXaWRnZXQgTGlicmFyeSBT
+VzAwMDAxNTQ3djEwMiI+PEZvbGRlciBOYW1lPSJNZW51Ij48Rm9sZGVyIE5hbWU9Ik1haW5NZW51
+Ij48VGV4dD48SUQ+MTwvSUQ+PERlc2NyaXB0aW9uPk5hbWU8L0Rlc2NyaXB0aW9uPjxVc2VkX2J5
+Lz48U3RyaW5nIExhbmd1YWdlSW5kZXg9IjEiIFRleHREYXRhPSIlMSQiLz48SW5wdXRzIENvdW50
+PSIxIj48RkMgVHlwZT0iU3RyaW5nIiBEaWdpdHM9IjIiIFZhbHVlPSIwIiBQcmVmaXg9IjAiIFBh
+ZGRpbmc9IjAiIEJhc2U9IjEiIEFsdD0iZmFsc2UiLz48L0lucHV0cz48L1RleHQ+PC9Gb2xkZXI+
+PEZvbGRlciBOYW1lPSJJY29ucyI+PEZvbGRlciBOYW1lPSJtYWluX21lbnUiPjxGb2xkZXIgTmFt
+ZT0iTG9ja19JY29uIi8+PC9Gb2xkZXI+PC9Gb2xkZXI+PC9Gb2xkZXI+PEZvbGRlciBOYW1lPSJH
+YXVnZSI+PEZvbGRlciBOYW1lPSJQYWdpbmF0aW9uIi8+PEZvbGRlciBOYW1lPSJMYXJnZURpYWwi
+PjxGb2xkZXIgTmFtZT0iT25lIj48Rm9sZGVyIE5hbWU9IkRpdmlkZXJzIj48Rm9sZGVyIE5hbWU9
+Ik1hc2tlZCIvPjxGb2xkZXIgTmFtZT0iTWFqb3JUaWNrcyI+PEZvbGRlciBOYW1lPSJMaWdodCIv
+PjxGb2xkZXIgTmFtZT0iRGFyayIvPjwvRm9sZGVyPjwvRm9sZGVyPjxGb2xkZXIgTmFtZT0iTGln
+aHQiLz48Rm9sZGVyIE5hbWU9IkRhcmsiLz48L0ZvbGRlcj48Rm9sZGVyIE5hbWU9IlR3byI+PEZv
+bGRlciBOYW1lPSJEYXJrIi8+PEZvbGRlciBOYW1lPSJMaWdodCIvPjwvRm9sZGVyPjxGb2xkZXIg
+TmFtZT0iVGhyZWUiPjxGb2xkZXIgTmFtZT0iRGFyayIvPjxGb2xkZXIgTmFtZT0iTGlnaHQiLz48
+L0ZvbGRlcj48L0ZvbGRlcj48Rm9sZGVyIE5hbWU9IlNtYWxsRGlhbCI+PEZvbGRlciBOYW1lPSJE
+YXJrIi8+PEZvbGRlciBOYW1lPSJMaWdodCIvPjwvRm9sZGVyPjxGb2xkZXIgTmFtZT0iTGluZWFy
+R2F1Z2VzIi8+PC9Gb2xkZXI+PEZvbGRlciBOYW1lPSJNdWx0aXBsaWVyIj48VGV4dD48SUQ+NTQ8
+L0lEPjxEZXNjcmlwdGlvbj54MTA8L0Rlc2NyaXB0aW9uPjxVc2VkX2J5Lz48U3RyaW5nIExhbmd1
+YWdlSW5kZXg9IjEiIFRleHREYXRhPSJ4MTAiLz48L1RleHQ+PFRleHQ+PElEPjU1PC9JRD48RGVz
+Y3JpcHRpb24+eDEwMDwvRGVzY3JpcHRpb24+PFVzZWRfYnkvPjxTdHJpbmcgTGFuZ3VhZ2VJbmRl
+eD0iMSIgVGV4dERhdGE9IngxMDAiLz48L1RleHQ+PFRleHQ+PElEPjU2PC9JRD48RGVzY3JpcHRp
+b24+eDEwMDA8L0Rlc2NyaXB0aW9uPjxVc2VkX2J5Lz48U3RyaW5nIExhbmd1YWdlSW5kZXg9IjEi
+IFRleHREYXRhPSJ4MTAwMCIvPjwvVGV4dD48VGV4dD48SUQ+NTc8L0lEPjxEZXNjcmlwdGlvbj54
+MTAwMDA8L0Rlc2NyaXB0aW9uPjxVc2VkX2J5Lz48U3RyaW5nIExhbmd1YWdlSW5kZXg9IjEiIFRl
+eHREYXRhPSJ4MTAwMDBcbiIvPjwvVGV4dD48VGV4dD48SUQ+NTk8L0lEPjxEZXNjcmlwdGlvbj5C
+bGFuazwvRGVzY3JpcHRpb24+PFVzZWRfYnkvPjxTdHJpbmcgTGFuZ3VhZ2VJbmRleD0iMSIgVGV4
+dERhdGE9IiIvPjwvVGV4dD48L0ZvbGRlcj48Rm9sZGVyIE5hbWU9Ik51bWJlcmJsb2NrIi8+PEZv
+bGRlciBOYW1lPSJMaWdodCI+PEZvbGRlciBOYW1lPSJCdXR0b25zIi8+PC9Gb2xkZXI+PEZvbGRl
+ciBOYW1lPSJCbGFjayI+PEZvbGRlciBOYW1lPSJCdXR0b25zIi8+PC9Gb2xkZXI+PFRleHQ+PElE
+PjYwPC9JRD48RGVzY3JpcHRpb24+U2lnbmVkTnVtPC9EZXNjcmlwdGlvbj48VXNlZF9ieS8+PFN0
+cmluZyBMYW5ndWFnZUluZGV4PSIxIiBUZXh0RGF0YT0iJTEkIi8+PElucHV0cyBDb3VudD0iMSI+
+PEZDIFR5cGU9IlNpZ25lZCIgRGlnaXRzPSIyIiBWYWx1ZT0iMCIgUHJlZml4PSIwIiBQYWRkaW5n
+PSIwIiBCYXNlPSIxIiBBbHQ9ImZhbHNlIi8+PC9JbnB1dHM+PC9UZXh0PjwvRm9sZGVyPjxMYW5n
+dWFnZU1hcHBpbmdzPjxMYW5ndWFnZU1hcHBpbmcgRXh0SUQ9IjEiIElEPSIxIi8+PC9MYW5ndWFn
+ZU1hcHBpbmdzPjxTZGxJdGVtc0lkTWFwPjxJdGVtIFNkbElEPSIxIiBJRD0iMSIvPjxJdGVtIFNk
+bElEPSI4MyIgSUQ9IjYwIi8+PEl0ZW0gU2RsSUQ9IjExMyIgSUQ9IjU0Ii8+PEl0ZW0gU2RsSUQ9
+IjExNCIgSUQ9IjU1Ii8+PEl0ZW0gU2RsSUQ9IjExNSIgSUQ9IjU2Ii8+PEl0ZW0gU2RsSUQ9IjEx
+NiIgSUQ9IjU3Ii8+PEl0ZW0gU2RsSUQ9IjExOCIgSUQ9IjU5Ii8+PC9TZGxJdGVtc0lkTWFwPjwv
+U2NyZWVuTGlicmFyeT48L0V4dExpYj48L0V4dGVybmFsTGlicmFyeT4=</ExternalLibrary>
 </ScreenRepository>

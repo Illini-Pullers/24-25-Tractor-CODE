@@ -11,7 +11,7 @@
       <PID Description="Screen Demo"/>
       <MainModule ModuleName="MAINTASK" FileName="DM700B.scs"/>
       <ScreenRepository FileName="SCREENREPO.SRD"/>
-      <MediaRepository FileName="appMedia.tar"/>
+      <MediaRepository FileName="appMedia.tar" isEmpty="true"/>
       <Parameters FileName="ProjectParameters.json"/>
     </Application>
     <Output>
