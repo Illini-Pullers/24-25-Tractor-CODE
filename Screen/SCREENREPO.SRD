@@ -4,22 +4,31 @@
   <ScreenLibrary Name="Library">
     <Text>
       <ID>61</ID>
-      <Description>TextGuage</Description>
+      <Description>TextGuagePoint</Description>
       <Used_by/>
-      <String LanguageIndex="1" TextData="%1$%2$%3$ "/>
-      <Inputs Count="3">
-        <FC Type="Unsigned" Digits="5" Value="0" Prefix="0" Padding="0" Base="1" Alt="false"/>
-        <FC Type="ASCII" Digits="2" Value="0" Prefix="0" Padding="0" Base="1" Alt="false"/>
-        <FC Type="Unsigned" Digits="5" Value="0" Prefix="0" Padding="0" Base="1" Alt="false"/>
+      <String LanguageIndex="1" TextData="%1$.%2$"/>
+      <Inputs Count="2">
+        <FC Type="Unsigned" Digits="6" Value="0" Prefix="0" Padding="0" Base="1" Alt="false"/>
+        <FC Type="Unsigned" Digits="6" Value="0" Prefix="0" Padding="0" Base="1" Alt="false"/>
       </Inputs>
     </Text>
     <Text>
       <ID>62</ID>
-      <Description>Units</Description>
+      <Description>Label&amp;Units</Description>
+      <Used_by/>
+      <String LanguageIndex="1" TextData="%1$ (%2$)"/>
+      <Inputs Count="2">
+        <FC Type="String" Digits="4" Value="0" Prefix="0" Padding="0" Base="1" Alt="false"/>
+        <FC Type="String" Digits="2" Value="0" Prefix="0" Padding="0" Base="1" Alt="false"/>
+      </Inputs>
+    </Text>
+    <Text>
+      <ID>63</ID>
+      <Description>TextGuageNoPoint</Description>
       <Used_by/>
       <String LanguageIndex="1" TextData="%1$"/>
       <Inputs Count="1">
-        <FC Type="String" Digits="4" Value="0" Prefix="0" Padding="0" Base="1" Alt="false"/>
+        <FC Type="Unsigned" Digits="6" Value="0" Prefix="0" Padding="0" Base="1" Alt="false"/>
       </Inputs>
     </Text>
     <LanguageDefinition DefLang="1" OrgLang="1">
@@ -69,13 +78,86 @@
           <Net Name="Value" Uid="29" DataType="U16"/>
           <Net Name="Units" Uid="30" DataType="STRING"/>
           <Net Name="Divisor" Uid="31" DataType="U16"/>
+          <Net Name="Label" Uid="36" DataType="STRING"/>
         </Input>
         <Output/>
       </Interface>
       <PN>Display.Port</PN>
       <Lay LO="0" AR="true" LAR="false" KA="false"/>
       <F>
-        <Wdg N="TextGuageWidget_1" SX="0.5" SY="0.416666656732559" WP="50" HP="41.6666679382324" W="400" H="200">
+        <L N="Line_1" SX="0.00249999994412065" SY="0.21875">
+          <La Sc="Def" Zo="0" Order="0" Flex="false" Sec="0" Len="100">
+            <Pad L="0" R="0" T="0" B="0" A="0" UA="false"/>
+          </La>
+          <LMO>
+            <X0/>
+            <Y0/>
+            <X1/>
+            <Y1/>
+          </LMO>
+          <En V="True" E=""/>
+          <GUID>C280E0C04_D74E_470F_8620_922AAAC5042E</GUID>
+          <T>
+            <IsSink V="False" E=""/>
+            <Output E=""/>
+            <LocalX E=""/>
+            <LocalY E=""/>
+            <GType E=""/>
+            <GX E=""/>
+            <GY E=""/>
+            <ZoomFactor E=""/>
+            <DeltaX E=""/>
+            <DeltaY E=""/>
+            <Velocity E=""/>
+            <RotAng E=""/>
+            <LocalDeltaX E=""/>
+            <LocalDeltaY E=""/>
+          </T>
+          <C V="00000000" E=""/>
+          <W V="2" E=""/>
+          <SP X="255" EX="" Y="105" EY="" XP="31.875" YP="21.875"/>
+          <EP X="255" EX="" Y="0" EY="" XP="31.875" YP="0"/>
+          <O>2</O>
+          <Pr V="0" E=""/>
+          <Vis E=""/>
+        </L>
+        <L N="Line_2" SX="0.318749994039536" SY="0.00416666688397527">
+          <La Sc="Def" Zo="0" Order="0" Flex="false" Sec="0" Len="100">
+            <Pad L="0" R="0" T="0" B="0" A="0" UA="false"/>
+          </La>
+          <LMO>
+            <X0/>
+            <Y0/>
+            <X1/>
+            <Y1/>
+          </LMO>
+          <En V="True" E=""/>
+          <GUID>CC589A7AB_C5E3_4B32_8744_560D5153D2E7</GUID>
+          <T>
+            <IsSink V="False" E=""/>
+            <Output E=""/>
+            <LocalX E=""/>
+            <LocalY E=""/>
+            <GType E=""/>
+            <GX E=""/>
+            <GY E=""/>
+            <ZoomFactor E=""/>
+            <DeltaX E=""/>
+            <DeltaY E=""/>
+            <Velocity E=""/>
+            <RotAng E=""/>
+            <LocalDeltaX E=""/>
+            <LocalDeltaY E=""/>
+          </T>
+          <C V="00000000" E=""/>
+          <W V="2" E=""/>
+          <SP X="0" EX="" Y="105" EY="" XP="0" YP="21.875"/>
+          <EP X="255" EX="" Y="105" EY="" XP="31.875" YP="21.875"/>
+          <O>1</O>
+          <Pr V="0" E=""/>
+          <Vis E=""/>
+        </L>
+        <Wdg N="TextGuageWidget_1" SX="0.319999992847443" SY="0.220833331346512" WP="32" HP="22.0833339691162" W="256" H="106">
           <La Sc="Def" Zo="0" Order="0" Flex="false" Sec="0">
             <Pad L="0" R="0" T="0" B="0" A="0" UA="false"/>
           </La>
@@ -86,13 +168,14 @@
             <H/>
           </LMO>
           <En V="True" E=""/>
-          <GUID>CFC60D42F_627D_49CA_B649_09FEA18F977F</GUID>
+          <GUID>C0E3401CA_3133_4E68_8933_AAAD850FABB0</GUID>
           <ID>C595C845D_EA56_4800_9722_2504005B7302</ID>
-          <O>1</O>
+          <O>3</O>
           <Intf>
-            <Net E="30" UidDef="8" UidInst="32" Dir="I" V=""/>
-            <Net E="31" UidDef="9" UidInst="33" Dir="I" V=""/>
-            <Net E="29" UidDef="10" UidInst="34" Dir="I" V=""/>
+            <Net E="30" UidDef="8" UidInst="37" Dir="I" V=""/>
+            <Net E="31" UidDef="9" UidInst="38" Dir="I" V=""/>
+            <Net E="29" UidDef="10" UidInst="39" Dir="I" V=""/>
+            <Net E="36" UidDef="12" UidInst="40" Dir="I" V=""/>
           </Intf>
           <IP X="0" EX="" Y="0" EY="" XP="0" YP="0"/>
         </Wdg>
@@ -153,8 +236,8 @@
     <ScreenDef IDD="true" PT="false">
       <FF>003A</FF>
       <ULC X="0" EX="" Y="0" EY="" XP="0" YP="0"/>
-      <W E="" V="400" VP="50"/>
-      <H E="" V="200" VP="41.6667"/>
+      <W E="" V="256" VP="32"/>
+      <H E="" V="106" VP="22.0833"/>
       <D>TextGuageWidget</D>
       <GUID>C595C845D_EA56_4800_9722_2504005B7302</GUID>
       <C V="00FFFFFF" E=""/>
@@ -163,13 +246,14 @@
           <Net Name="Units" Uid="8" DataType="STRING"/>
           <Net Name="Divisor" Uid="9" DataType="U16"/>
           <Net Name="Value" Uid="10" DataType="U16"/>
+          <Net Name="Label" Uid="12" DataType="STRING"/>
         </Input>
         <Output/>
       </Interface>
       <PN>Display.Port</PN>
-      <Lay LO="0" AR="true" LAR="false" KA="false"/>
+      <Lay LO="0" AR="false" LAR="true" KA="true"/>
       <F>
-        <Txt N="Text" SX="1" SY="0.524999976158142" W="400" H="105" WP="100" HP="52.5" Type="TDS">
+        <Txt N="NumbersPoint" SX="0.833333313465118" SY="0.479289948940277" W="255" H="81" WP="99.6094" HP="76.4151" Type="TDS">
           <La Sc="Def" Zo="0" Order="0" Flex="false" Sec="0">
             <Pad L="0" R="0" T="0" B="0" A="0" UA="false"/>
           </La>
@@ -179,12 +263,13 @@
             <W/>
             <H/>
           </LMO>
-          <En V="True" E=""/>
+          <En V="True" E="6"/>
           <F V="" E=""/>
-          <GUID>CD29A1C2C_9035_4277_8C38_57B4757E2AED</GUID>
+          <GUID>C284236D6_FE15_4675_9596_E007C363F7D2</GUID>
           <FF>
-            <N>Courier New</N>
-            <S>72</S>
+            <N>Franklin Gothic Book</N>
+            <S>48</S>
+            <B/>
           </FF>
           <J V="0" E=""/>
           <T>
@@ -205,17 +290,16 @@
           </T>
           <C V="00000000" E=""/>
           <SP X="0" EX="" Y="0" EY="" XP="0" YP="0"/>
-          <O>2</O>
+          <O>3</O>
           <Pr V="0" E=""/>
           <Vis E=""/>
           <ID V="61" E=""/>
           <D>
-            <DV V="0" E="7" FC="0"/>
-            <DV V="0" E="6" FC="1"/>
-            <DV V="0" E="4" FC="2"/>
+            <DV V="999" E="7" FC="0"/>
+            <DV V="999" E="4" FC="1"/>
           </D>
         </Txt>
-        <Txt N="Text_1" SX="1" SY="0.474999994039536" W="400" H="95" WP="100" HP="47.5" Type="TDS">
+        <Txt N="Words" SX="0.594405591487885" SY="0.236686795949936" W="255" H="40" WP="99.6094" HP="37.7359" Type="TDS">
           <La Sc="Def" Zo="0" Order="0" Flex="false" Sec="0">
             <Pad L="0" R="0" T="0" B="0" A="0" UA="false"/>
           </La>
@@ -227,10 +311,10 @@
           </LMO>
           <En V="True" E=""/>
           <F V="" E=""/>
-          <GUID>C28FD11B3_8079_4F70_80DE_B7AD74D51562</GUID>
+          <GUID>CC22EAE48_AC53_4D28_BABD_43ECDDB69057</GUID>
           <FF>
-            <N>Courier New</N>
-            <S>28</S>
+            <N>Gadugi</N>
+            <S>24</S>
           </FF>
           <J V="0" E=""/>
           <T>
@@ -250,13 +334,59 @@
             <LocalDeltaY E=""/>
           </T>
           <C V="00000000" E=""/>
-          <SP X="0" EX="" Y="105" EY="" XP="0" YP="52.5"/>
-          <O>1</O>
+          <SP X="0" EX="" Y="65" EY="" XP="0" YP="61.3207"/>
+          <O>2</O>
           <Pr V="0" E=""/>
           <Vis E=""/>
           <ID V="62" E=""/>
           <D>
-            <DV V="'0'" E="8" FC="0"/>
+            <DV V="'Label'" E="12" FC="0"/>
+            <DV V="'Units'" E="8" FC="1"/>
+          </D>
+        </Txt>
+        <Txt N="NumbersNoPoint" SX="0.594405591487885" SY="0.384615391492844" W="255" H="65" WP="99.6094" HP="61.3208" Type="TDS">
+          <La Sc="Def" Zo="0" Order="0" Flex="false" Sec="0">
+            <Pad L="0" R="0" T="0" B="0" A="0" UA="false"/>
+          </La>
+          <LMO>
+            <X/>
+            <Y/>
+            <W/>
+            <H/>
+          </LMO>
+          <En V="True" E="11"/>
+          <F V="" E=""/>
+          <GUID>C4C746452_A368_4725_80CA_9939EFCE1953</GUID>
+          <FF>
+            <N>Franklin Gothic Book</N>
+            <S>48</S>
+            <B/>
+          </FF>
+          <J V="0" E=""/>
+          <T>
+            <IsSink V="False" E=""/>
+            <Output E=""/>
+            <LocalX E=""/>
+            <LocalY E=""/>
+            <GType E=""/>
+            <GX E=""/>
+            <GY E=""/>
+            <ZoomFactor E=""/>
+            <DeltaX E=""/>
+            <DeltaY E=""/>
+            <Velocity E=""/>
+            <RotAng E=""/>
+            <LocalDeltaX E=""/>
+            <LocalDeltaY E=""/>
+          </T>
+          <C V="00000000" E=""/>
+          <SP X="0" EX="" Y="0" EY="" XP="0" YP="0"/>
+          <O>1</O>
+          <Pr V="0" E=""/>
+          <Vis E=""/>
+          <ID V="63" E=""/>
+          <D>
+            <DV V="999" E="7" FC="0"/>
           </D>
         </Txt>
       </F>
@@ -269,8 +399,9 @@
           <Input E="10" Name="value" Type="U16" V="0" UidInst="3"/>
           <Output E="" Name="decimal" Type="U16" UidInst="4"/>
           <Input E="9" Name="divisor" Type="U16" V="0" UidInst="5"/>
-          <Output E="" Name="point" Type="U8" UidInst="6"/>
+          <Output E="" Name="point" Type="BOOL" UidInst="6"/>
           <Output E="" Name="number" Type="U16" UidInst="7"/>
+          <Output E="" Name="nopoint" Type="BOOL" UidInst="11"/>
         </Call>
       </PouCalls>
     </ScreenDef>

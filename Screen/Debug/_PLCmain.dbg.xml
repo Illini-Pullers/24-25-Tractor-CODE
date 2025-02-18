@@ -6,22 +6,24 @@
 			<Interface>
 				<VariableInfo VariableName="value" VariableNameC="value" VariableType="UINT" VariableKind="VAR_INPUT" />
 				<VariableInfo VariableName="divisor" VariableNameC="divisor" VariableType="UINT" VariableKind="VAR_INPUT" />
-				<VariableInfo VariableName="point" VariableNameC="*point" VariableType="USINT" VariableKind="VAR_OUTPUT" />
+				<VariableInfo VariableName="point" VariableNameC="*point" VariableType="BOOL" VariableKind="VAR_OUTPUT" />
+				<VariableInfo VariableName="nopoint" VariableNameC="*nopoint" VariableType="BOOL" VariableKind="VAR_OUTPUT" />
 				<VariableInfo VariableName="number" VariableNameC="*number" VariableType="UINT" VariableKind="VAR_OUTPUT" />
 				<VariableInfo VariableName="decimal" VariableNameC="*decimal" VariableType="UINT" VariableKind="VAR_OUTPUT" />
 				<VariableInfo VariableName="TextGuagePOU" VariableNameC="TextGuagePOU" VariableType="DINT" VariableKind="VAR" />
 			</Interface>
-			<FuncInfo FuncNameC="p1Plc_func_TEXTGUAGEPOU" FuncStart="23" CodeStart="30" CodeEnd="54" Language="C">
+			<FuncInfo FuncNameC="p1Plc_func_TEXTGUAGEPOU" FuncStart="23" CodeStart="31" CodeEnd="57" Language="C">
 				<FuncDef>PLC_DINT p1Plc_func_TEXTGUAGEPOU(
     PLC_BOOL* ENO, 
     PLC_UINT value, 
     PLC_UINT divisor, 
-    PLC_USINT* point, 
+    PLC_BOOL* point, 
+    PLC_BOOL* nopoint, 
     PLC_UINT* number, 
     PLC_UINT* decimal);
 </FuncDef>
 				<Code>
-					<CodeLine PouLine="1" CLine="37" LineCount="16" />
+					<CodeLine PouLine="1" CLine="39" LineCount="17" />
 				</Code>
 			</FuncInfo>
 		</POU>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://www.plcopen.org/xml/tc6_0201">
   <fileHeader companyName="Danfoss" productName="PLUS+1 GUIDE" productVersion="2024.2.4.6047" creationDateTime="2025-02-18T01:05:45"/>
-  <contentHeader name="" modificationDateTime="2025-02-18T02:17:12">
+  <contentHeader name="" modificationDateTime="2025-02-18T12:54:54">
     <coordinateInfo>
       <fbd>
         <scaling x="1" y="1"/>
@@ -42,7 +42,12 @@
           <outputVars>
             <variable name="point">
               <type>
-                <USINT/>
+                <BOOL/>
+              </type>
+            </variable>
+            <variable name="nopoint">
+              <type>
+                <BOOL/>
               </type>
             </variable>
             <variable name="number">
@@ -67,14 +72,15 @@ while(divisor &gt;= 10){
   mag *= 10;
 }
 if(mag &gt;= 10){
-  *point = 46;
+  *point = true;
+  *nopoint = false;
 }
 else{
-  *point = 0;
+  *point = false;
+  *nopoint = true;
 }
 *number = value / mag;
-*decimal = value % mag;
-</code>
+*decimal = value % mag;</code>
           </C>
         </body>
         <addData>
@@ -85,7 +91,8 @@ VAR_INPUT
   divisor : UINT;
 END_VAR
 VAR_OUTPUT
-  point : USINT;
+  point : BOOL;
+  nopoint : BOOL;
   number : UINT;
   decimal : UINT;
 END_VAR
