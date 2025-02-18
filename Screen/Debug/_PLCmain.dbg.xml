@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DebugData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" TargetFileName="_PLCmain.c" xmlns="http://www.st2c.org/dbg-xml/tc120314">
+	<Globals />
+	<POUs>
+		<POU PouName="TextGuagePOU" PouKind="FUNCTION" SourceFileName="TEXTGUAGEPLC.XML">
+			<Interface>
+				<VariableInfo VariableName="value" VariableNameC="value" VariableType="UINT" VariableKind="VAR_INPUT" />
+				<VariableInfo VariableName="divisor" VariableNameC="divisor" VariableType="UINT" VariableKind="VAR_INPUT" />
+				<VariableInfo VariableName="point" VariableNameC="*point" VariableType="USINT" VariableKind="VAR_OUTPUT" />
+				<VariableInfo VariableName="number" VariableNameC="*number" VariableType="UINT" VariableKind="VAR_OUTPUT" />
+				<VariableInfo VariableName="decimal" VariableNameC="*decimal" VariableType="UINT" VariableKind="VAR_OUTPUT" />
+				<VariableInfo VariableName="TextGuagePOU" VariableNameC="TextGuagePOU" VariableType="DINT" VariableKind="VAR" />
+			</Interface>
+			<FuncInfo FuncNameC="p1Plc_func_TEXTGUAGEPOU" FuncStart="23" CodeStart="30" CodeEnd="54" Language="C">
+				<FuncDef>PLC_DINT p1Plc_func_TEXTGUAGEPOU(
+    PLC_BOOL* ENO, 
+    PLC_UINT value, 
+    PLC_UINT divisor, 
+    PLC_USINT* point, 
+    PLC_UINT* number, 
+    PLC_UINT* decimal);
+</FuncDef>
+				<Code>
+					<CodeLine PouLine="1" CLine="37" LineCount="16" />
+				</Code>
+			</FuncInfo>
+		</POU>
+	</POUs>
+</DebugData>

@@ -2,6 +2,26 @@
 <ScreenRepository>
   <FileFormat>006A</FileFormat>
   <ScreenLibrary Name="Library">
+    <Text>
+      <ID>61</ID>
+      <Description>TextGuage</Description>
+      <Used_by/>
+      <String LanguageIndex="1" TextData="%1$%2$%3$ "/>
+      <Inputs Count="3">
+        <FC Type="Unsigned" Digits="5" Value="0" Prefix="0" Padding="0" Base="1" Alt="false"/>
+        <FC Type="ASCII" Digits="2" Value="0" Prefix="0" Padding="0" Base="1" Alt="false"/>
+        <FC Type="Unsigned" Digits="5" Value="0" Prefix="0" Padding="0" Base="1" Alt="false"/>
+      </Inputs>
+    </Text>
+    <Text>
+      <ID>62</ID>
+      <Description>Units</Description>
+      <Used_by/>
+      <String LanguageIndex="1" TextData="%1$"/>
+      <Inputs Count="1">
+        <FC Type="String" Digits="4" Value="0" Prefix="0" Padding="0" Base="1" Alt="false"/>
+      </Inputs>
+    </Text>
     <LanguageDefinition DefLang="1" OrgLang="1">
       <Language>
         <Name>English</Name>
@@ -46,12 +66,37 @@
           <Net Name="Btn11" Uid="23" DataType="BOOL"/>
           <Net Name="Btn10" Uid="24" DataType="BOOL"/>
           <Net Name="Btn1" Uid="25" DataType="BOOL"/>
+          <Net Name="Value" Uid="29" DataType="U16"/>
+          <Net Name="Units" Uid="30" DataType="STRING"/>
+          <Net Name="Divisor" Uid="31" DataType="U16"/>
         </Input>
         <Output/>
       </Interface>
       <PN>Display.Port</PN>
       <Lay LO="0" AR="true" LAR="false" KA="false"/>
-      <F/>
+      <F>
+        <Wdg N="TextGuageWidget_1" SX="0.5" SY="0.416666656732559" WP="50" HP="41.6666679382324" W="400" H="200">
+          <La Sc="Def" Zo="0" Order="0" Flex="false" Sec="0">
+            <Pad L="0" R="0" T="0" B="0" A="0" UA="false"/>
+          </La>
+          <LMO>
+            <X/>
+            <Y/>
+            <W/>
+            <H/>
+          </LMO>
+          <En V="True" E=""/>
+          <GUID>CFC60D42F_627D_49CA_B649_09FEA18F977F</GUID>
+          <ID>C595C845D_EA56_4800_9722_2504005B7302</ID>
+          <O>1</O>
+          <Intf>
+            <Net E="30" UidDef="8" UidInst="32" Dir="I" V=""/>
+            <Net E="31" UidDef="9" UidInst="33" Dir="I" V=""/>
+            <Net E="29" UidDef="10" UidInst="34" Dir="I" V=""/>
+          </Intf>
+          <IP X="0" EX="" Y="0" EY="" XP="0" YP="0"/>
+        </Wdg>
+      </F>
       <PouCalls/>
     </ScreenDef>
     <ScreenDef IDD="true" PT="false">
@@ -104,6 +149,130 @@
       <Lay LO="0" AR="true" LAR="false" KA="false"/>
       <F/>
       <PouCalls/>
+    </ScreenDef>
+    <ScreenDef IDD="true" PT="false">
+      <FF>003A</FF>
+      <ULC X="0" EX="" Y="0" EY="" XP="0" YP="0"/>
+      <W E="" V="400" VP="50"/>
+      <H E="" V="200" VP="41.6667"/>
+      <D>TextGuageWidget</D>
+      <GUID>C595C845D_EA56_4800_9722_2504005B7302</GUID>
+      <C V="00FFFFFF" E=""/>
+      <Interface>
+        <Input>
+          <Net Name="Units" Uid="8" DataType="STRING"/>
+          <Net Name="Divisor" Uid="9" DataType="U16"/>
+          <Net Name="Value" Uid="10" DataType="U16"/>
+        </Input>
+        <Output/>
+      </Interface>
+      <PN>Display.Port</PN>
+      <Lay LO="0" AR="true" LAR="false" KA="false"/>
+      <F>
+        <Txt N="Text" SX="1" SY="0.524999976158142" W="400" H="105" WP="100" HP="52.5" Type="TDS">
+          <La Sc="Def" Zo="0" Order="0" Flex="false" Sec="0">
+            <Pad L="0" R="0" T="0" B="0" A="0" UA="false"/>
+          </La>
+          <LMO>
+            <X/>
+            <Y/>
+            <W/>
+            <H/>
+          </LMO>
+          <En V="True" E=""/>
+          <F V="" E=""/>
+          <GUID>CD29A1C2C_9035_4277_8C38_57B4757E2AED</GUID>
+          <FF>
+            <N>Courier New</N>
+            <S>72</S>
+          </FF>
+          <J V="0" E=""/>
+          <T>
+            <IsSink V="False" E=""/>
+            <Output E=""/>
+            <LocalX E=""/>
+            <LocalY E=""/>
+            <GType E=""/>
+            <GX E=""/>
+            <GY E=""/>
+            <ZoomFactor E=""/>
+            <DeltaX E=""/>
+            <DeltaY E=""/>
+            <Velocity E=""/>
+            <RotAng E=""/>
+            <LocalDeltaX E=""/>
+            <LocalDeltaY E=""/>
+          </T>
+          <C V="00000000" E=""/>
+          <SP X="0" EX="" Y="0" EY="" XP="0" YP="0"/>
+          <O>2</O>
+          <Pr V="0" E=""/>
+          <Vis E=""/>
+          <ID V="61" E=""/>
+          <D>
+            <DV V="0" E="7" FC="0"/>
+            <DV V="0" E="6" FC="1"/>
+            <DV V="0" E="4" FC="2"/>
+          </D>
+        </Txt>
+        <Txt N="Text_1" SX="1" SY="0.474999994039536" W="400" H="95" WP="100" HP="47.5" Type="TDS">
+          <La Sc="Def" Zo="0" Order="0" Flex="false" Sec="0">
+            <Pad L="0" R="0" T="0" B="0" A="0" UA="false"/>
+          </La>
+          <LMO>
+            <X/>
+            <Y/>
+            <W/>
+            <H/>
+          </LMO>
+          <En V="True" E=""/>
+          <F V="" E=""/>
+          <GUID>C28FD11B3_8079_4F70_80DE_B7AD74D51562</GUID>
+          <FF>
+            <N>Courier New</N>
+            <S>28</S>
+          </FF>
+          <J V="0" E=""/>
+          <T>
+            <IsSink V="False" E=""/>
+            <Output E=""/>
+            <LocalX E=""/>
+            <LocalY E=""/>
+            <GType E=""/>
+            <GX E=""/>
+            <GY E=""/>
+            <ZoomFactor E=""/>
+            <DeltaX E=""/>
+            <DeltaY E=""/>
+            <Velocity E=""/>
+            <RotAng E=""/>
+            <LocalDeltaX E=""/>
+            <LocalDeltaY E=""/>
+          </T>
+          <C V="00000000" E=""/>
+          <SP X="0" EX="" Y="105" EY="" XP="0" YP="52.5"/>
+          <O>1</O>
+          <Pr V="0" E=""/>
+          <Vis E=""/>
+          <ID V="62" E=""/>
+          <D>
+            <DV V="'0'" E="8" FC="0"/>
+          </D>
+        </Txt>
+      </F>
+      <PouCalls>
+        <Call PouName="TextGuagePOU" Name="TextGuagePOU_1" Type="C" Unit="TextGuagePLC.xml">
+          <GUID>C2F4D5C51_ACFC_4AA8_BFD2_B0C67D3C3AC7</GUID>
+          <Trig V="True" E=""/>
+          <Output E="" Name="#Return" Type="S32" UidInst="1"/>
+          <Output E="" Name="#RuntimeErrors" Type="U16" UidInst="2"/>
+          <Input E="10" Name="value" Type="U16" V="0" UidInst="3"/>
+          <Output E="" Name="decimal" Type="U16" UidInst="4"/>
+          <Input E="9" Name="divisor" Type="U16" V="0" UidInst="5"/>
+          <Output E="" Name="point" Type="U8" UidInst="6"/>
+          <Output E="" Name="number" Type="U16" UidInst="7"/>
+        </Call>
+      </PouCalls>
     </ScreenDef>
   </ScreenDefRepository>
   <ApplogDefRepository/>
