@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Project>
-  <File FileName="TEXTGUAGEPLC.XML" FileSize="2827" Crc="945803129"/>
-  <File FileName="SCREENREPO.SRD" FileSize="17278" Crc="2428943830"/>
-  <File FileName="70487200V330.SYS" FileSize="80427043" Crc="2884087083"/>
-  <File FileName="PROJECTPARAMETERS.JSON" FileSize="53" Crc="274569573"/>
+  <File FileName="SCREENREPO.SRD" FileSize="23452" Crc="2210141737"/>
   <File FileName="SCREEN DEMO.P1X" FileSize="1255" Crc="629899538"/>
   <File FileName="70487200V330.PDF" FileSize="657927" Crc="3090789078"/>
-  <File FileName="DM700B.SCS" FileSize="440143" Crc="1221870595"/>
+  <File FileName="TEXTGUAGEPLC.XML" FileSize="2827" Crc="945803129"/>
+  <File FileName="70487200V330.SYS" FileSize="80427043" Crc="2884087083"/>
+  <File FileName="001_7_OIL_WARNING_DAY.SVG" FileSize="256255" Crc="1608927301"/>
+  <File FileName="PROJECTPARAMETERS.JSON" FileSize="53" Crc="274569573"/>
+  <File FileName="001_5_DIAGNOSTICS_WARNING_DAY.SVG" FileSize="266880" Crc="3408555580"/>
+  <File FileName="001_8_SERVICEHOURS_WARNING_DAY.SVG" FileSize="265779" Crc="539921886"/>
+  <File FileName="DM700B.SCS" FileSize="440005" Crc="2702714221"/>
   <File FileName="TOUCHVERSION.SVG" FileSize="2232" Crc="23945582"/>
 </Project>

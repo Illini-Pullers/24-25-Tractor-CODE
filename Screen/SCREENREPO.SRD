@@ -31,6 +31,42 @@
         <FC Type="Unsigned" Digits="6" Value="0" Prefix="0" Padding="0" Base="1" Alt="false"/>
       </Inputs>
     </Text>
+    <Image SizeX="54" SizeY="54" KA="true">
+      <ID>64</ID>
+      <Description>MIL Indicator</Description>
+      <SourceFileName>001_5_Diagnostics_Warning_day.svg</SourceFileName>
+      <Width>54</Width>
+      <Height>54</Height>
+      <FlipH>false</FlipH>
+      <FlipV>false</FlipV>
+      <ImageFormatName>16777216 Colors (24 bit) with Alpha Layer</ImageFormatName>
+      <PixelOrigo>0</PixelOrigo>
+      <InsertionPoint X="0" Y="0"/>
+    </Image>
+    <Image SizeX="54" SizeY="54" KA="true">
+      <ID>65</ID>
+      <Description>Oil Pressure Indicator</Description>
+      <SourceFileName>001_7_Oil_Warning_day.svg</SourceFileName>
+      <Width>54</Width>
+      <Height>54</Height>
+      <FlipH>false</FlipH>
+      <FlipV>false</FlipV>
+      <ImageFormatName>16777216 Colors (24 bit) with Alpha Layer</ImageFormatName>
+      <PixelOrigo>0</PixelOrigo>
+      <InsertionPoint X="0" Y="0"/>
+    </Image>
+    <Image SizeX="54" SizeY="54" KA="true">
+      <ID>66</ID>
+      <Description>Service Indicator</Description>
+      <SourceFileName>001_8_ServiceHours_Warning_day.svg</SourceFileName>
+      <Width>54</Width>
+      <Height>54</Height>
+      <FlipH>false</FlipH>
+      <FlipV>false</FlipV>
+      <ImageFormatName>16777216 Colors (24 bit) with Alpha Layer</ImageFormatName>
+      <PixelOrigo>0</PixelOrigo>
+      <InsertionPoint X="0" Y="0"/>
+    </Image>
     <LanguageDefinition DefLang="1" OrgLang="1">
       <Language>
         <Name>English</Name>
@@ -75,10 +111,6 @@
           <Net Name="Btn11" Uid="23" DataType="BOOL"/>
           <Net Name="Btn10" Uid="24" DataType="BOOL"/>
           <Net Name="Btn1" Uid="25" DataType="BOOL"/>
-          <Net Name="Value" Uid="29" DataType="U16"/>
-          <Net Name="Units" Uid="30" DataType="STRING"/>
-          <Net Name="Divisor" Uid="31" DataType="U16"/>
-          <Net Name="Label" Uid="36" DataType="STRING"/>
         </Input>
         <Output/>
       </Interface>
@@ -117,7 +149,7 @@
           <W V="2" E=""/>
           <SP X="255" EX="" Y="105" EY="" XP="31.875" YP="21.875"/>
           <EP X="255" EX="" Y="0" EY="" XP="31.875" YP="0"/>
-          <O>2</O>
+          <O>3</O>
           <Pr V="0" E=""/>
           <Vis E=""/>
         </L>
@@ -153,7 +185,7 @@
           <W V="2" E=""/>
           <SP X="0" EX="" Y="105" EY="" XP="0" YP="21.875"/>
           <EP X="255" EX="" Y="105" EY="" XP="31.875" YP="21.875"/>
-          <O>1</O>
+          <O>2</O>
           <Pr V="0" E=""/>
           <Vis E=""/>
         </L>
@@ -170,14 +202,35 @@
           <En V="True" E=""/>
           <GUID>C0E3401CA_3133_4E68_8933_AAAD850FABB0</GUID>
           <ID>C595C845D_EA56_4800_9722_2504005B7302</ID>
-          <O>3</O>
+          <O>4</O>
           <Intf>
-            <Net E="30" UidDef="8" UidInst="37" Dir="I" V=""/>
-            <Net E="31" UidDef="9" UidInst="38" Dir="I" V=""/>
-            <Net E="29" UidDef="10" UidInst="39" Dir="I" V=""/>
-            <Net E="36" UidDef="12" UidInst="40" Dir="I" V=""/>
+            <Net E="" UidDef="8" UidInst="37" Dir="I" V="V"/>
+            <Net E="" UidDef="9" UidInst="38" Dir="I" V="1000"/>
+            <Net E="" UidDef="10" UidInst="39" Dir="I" V="11598"/>
+            <Net E="" UidDef="12" UidInst="40" Dir="I" V="Batt Volt"/>
           </Intf>
           <IP X="0" EX="" Y="0" EY="" XP="0" YP="0"/>
+        </Wdg>
+        <Wdg N="ErrorWidget_1" SX="0.0762500017881393" SY="0.375" WP="7.625" HP="37.5" W="61" H="180">
+          <La Sc="Def" Zo="0" Order="0" Flex="false" Sec="0">
+            <Pad L="0" R="0" T="0" B="0" A="0" UA="false"/>
+          </La>
+          <LMO>
+            <X/>
+            <Y/>
+            <W/>
+            <H/>
+          </LMO>
+          <En V="True" E=""/>
+          <GUID>CE1F48B9C_430F_4FCF_B627_25A0D9FA52CA</GUID>
+          <ID>CBE044DED_69F2_40AA_A384_0286F211B14D</ID>
+          <O>1</O>
+          <Intf>
+            <Net E="" UidDef="1" UidInst="41" Dir="I" V="False"/>
+            <Net E="" UidDef="2" UidInst="42" Dir="I" V="True"/>
+            <Net E="" UidDef="3" UidInst="43" Dir="I" V="True"/>
+          </Intf>
+          <IP X="740" EX="" Y="0" EY="" XP="92.5" YP="0"/>
         </Wdg>
       </F>
       <PouCalls/>
@@ -404,6 +457,136 @@
           <Output E="" Name="nopoint" Type="BOOL" UidInst="11"/>
         </Call>
       </PouCalls>
+    </ScreenDef>
+    <ScreenDef IDD="true" PT="false">
+      <FF>003A</FF>
+      <ULC X="0" EX="" Y="0" EY="" XP="0" YP="0"/>
+      <W E="" V="61" VP="7.625"/>
+      <H E="" V="180" VP="37.5"/>
+      <D>ErrorWidget</D>
+      <GUID>CBE044DED_69F2_40AA_A384_0286F211B14D</GUID>
+      <C V="00FFFFFF" E=""/>
+      <Interface>
+        <Input>
+          <Net Name="OilPressureOn" Uid="1" DataType="BOOL"/>
+          <Net Name="ServiceOn" Uid="2" DataType="BOOL"/>
+          <Net Name="MILOn" Uid="3" DataType="BOOL"/>
+        </Input>
+        <Output/>
+      </Interface>
+      <PN>Display.Port</PN>
+      <Lay LO="0" AR="false" LAR="false" KA="false"/>
+      <F>
+        <I N="MIL Indicator_1" SX="0.0750000029802322" SY="0.125" W="60" H="60" WP="98.3607" HP="33.3333" KA="true" Type="IDS">
+          <La Sc="Def" Zo="0" Order="0" Flex="false" Sec="0">
+            <Pad L="0" R="0" T="0" B="0" A="0" UA="false"/>
+          </La>
+          <LMO>
+            <X/>
+            <Y/>
+            <W/>
+            <H/>
+          </LMO>
+          <En V="True" E="3"/>
+          <GUID>CFF5EB701_8414_4DCC_96C0_5CE9584B9C89</GUID>
+          <T>
+            <IsSink V="False" E=""/>
+            <Output E=""/>
+            <LocalX E=""/>
+            <LocalY E=""/>
+            <GType E=""/>
+            <GX E=""/>
+            <GY E=""/>
+            <ZoomFactor E=""/>
+            <DeltaX E=""/>
+            <DeltaY E=""/>
+            <Velocity E=""/>
+            <RotAng E=""/>
+            <LocalDeltaX E=""/>
+            <LocalDeltaY E=""/>
+          </T>
+          <C V="01010100" E=""/>
+          <IP X="0" EX="" Y="0" EY="" XP="0" YP="0"/>
+          <R V="0" E=""/>
+          <O>3</O>
+          <Pr V="0" E=""/>
+          <Vis E=""/>
+          <ID V="64" E=""/>
+        </I>
+        <I N="Service Indicator_1" SX="0.0750000029802322" SY="0.125" W="60" H="60" WP="98.3607" HP="33.3333" KA="true" Type="IDS">
+          <La Sc="Def" Zo="0" Order="0" Flex="false" Sec="0">
+            <Pad L="0" R="0" T="0" B="0" A="0" UA="false"/>
+          </La>
+          <LMO>
+            <X/>
+            <Y/>
+            <W/>
+            <H/>
+          </LMO>
+          <En V="True" E="2"/>
+          <GUID>CC248F589_6039_4F1E_B0C8_B2C07E952D38</GUID>
+          <T>
+            <IsSink V="False" E=""/>
+            <Output E=""/>
+            <LocalX E=""/>
+            <LocalY E=""/>
+            <GType E=""/>
+            <GX E=""/>
+            <GY E=""/>
+            <ZoomFactor E=""/>
+            <DeltaX E=""/>
+            <DeltaY E=""/>
+            <Velocity E=""/>
+            <RotAng E=""/>
+            <LocalDeltaX E=""/>
+            <LocalDeltaY E=""/>
+          </T>
+          <C V="01010100" E=""/>
+          <IP X="0" EX="" Y="120" EY="" XP="0" YP="66.6667"/>
+          <R V="0" E=""/>
+          <O>2</O>
+          <Pr V="0" E=""/>
+          <Vis E=""/>
+          <ID V="66" E=""/>
+        </I>
+        <I N="Oil Pressure Indicator_1" SX="0.0750000029802322" SY="0.125" W="60" H="60" WP="98.3607" HP="33.3333" KA="true" Type="IDS">
+          <La Sc="Def" Zo="0" Order="0" Flex="false" Sec="0">
+            <Pad L="0" R="0" T="0" B="0" A="0" UA="false"/>
+          </La>
+          <LMO>
+            <X/>
+            <Y/>
+            <W/>
+            <H/>
+          </LMO>
+          <En V="True" E="1"/>
+          <GUID>C02AB4ABA_61B6_4A43_A934_CE4176FF6887</GUID>
+          <T>
+            <IsSink V="False" E=""/>
+            <Output E=""/>
+            <LocalX E=""/>
+            <LocalY E=""/>
+            <GType E=""/>
+            <GX E=""/>
+            <GY E=""/>
+            <ZoomFactor E=""/>
+            <DeltaX E=""/>
+            <DeltaY E=""/>
+            <Velocity E=""/>
+            <RotAng E=""/>
+            <LocalDeltaX E=""/>
+            <LocalDeltaY E=""/>
+          </T>
+          <C V="01010100" E=""/>
+          <IP X="0" EX="" Y="60" EY="" XP="0" YP="33.3333"/>
+          <R V="0" E=""/>
+          <O>1</O>
+          <Pr V="0" E=""/>
+          <Vis E=""/>
+          <ID V="65" E=""/>
+        </I>
+      </F>
+      <PouCalls/>
     </ScreenDef>
   </ScreenDefRepository>
   <ApplogDefRepository/>
