@@ -1,4 +1,13 @@
 {
     "FileFormat": "003A",
-    "Parameters": []
+    "Parameters": [
+        {
+            "GUID": "{0D968C05-E6D3-a778-452D-A42D8D7FB27B}",
+            "DataType": "U32",
+            "ParamName": "EngineService",
+            "ReadAccess": "_",
+            "WriteAccess": "_",
+            "NvIndex": "0-1"
+        }
+    ]
 }
