@@ -12,6 +12,7 @@
       <MainModule ModuleName="MAINTASK" FileName="DM700B.scs"/>
       <ScreenRepository FileName="SCREENREPO.SRD"/>
       <PLCopenXML FileName="TextGuagePLC.xml"/>
+      <PLCopenXML FileName="DialGuagePLC.xml"/>
       <DebugSettings FileName="DebugSettings.xml"/>
       <MediaRepository FileName="appMedia.tar" isEmpty="true"/>
       <Parameters FileName="ProjectParameters.json"/>

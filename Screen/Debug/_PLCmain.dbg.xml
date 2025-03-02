@@ -27,5 +27,42 @@
 				</Code>
 			</FuncInfo>
 		</POU>
+		<POU PouName="DialGuagePOU" PouKind="FUNCTION" SourceFileName="DIALGUAGEPLC.XML">
+			<Interface>
+				<VariableInfo VariableName="minVal" VariableNameC="minVal" VariableType="DINT" VariableKind="VAR_INPUT" />
+				<VariableInfo VariableName="maxVal" VariableNameC="maxVal" VariableType="DINT" VariableKind="VAR_INPUT" />
+				<VariableInfo VariableName="curVal" VariableNameC="curVal" VariableType="DINT" VariableKind="VAR_INPUT" />
+				<VariableInfo VariableName="tick1" VariableNameC="*tick1" VariableType="DINT" VariableKind="VAR_OUTPUT" />
+				<VariableInfo VariableName="tick2" VariableNameC="*tick2" VariableType="DINT" VariableKind="VAR_OUTPUT" />
+				<VariableInfo VariableName="tick3" VariableNameC="*tick3" VariableType="DINT" VariableKind="VAR_OUTPUT" />
+				<VariableInfo VariableName="tick4" VariableNameC="*tick4" VariableType="DINT" VariableKind="VAR_OUTPUT" />
+				<VariableInfo VariableName="tick5" VariableNameC="*tick5" VariableType="DINT" VariableKind="VAR_OUTPUT" />
+				<VariableInfo VariableName="tick6" VariableNameC="*tick6" VariableType="DINT" VariableKind="VAR_OUTPUT" />
+				<VariableInfo VariableName="tick7" VariableNameC="*tick7" VariableType="DINT" VariableKind="VAR_OUTPUT" />
+				<VariableInfo VariableName="tick8" VariableNameC="*tick8" VariableType="DINT" VariableKind="VAR_OUTPUT" />
+				<VariableInfo VariableName="rotation" VariableNameC="*rotation" VariableType="DINT" VariableKind="VAR_OUTPUT" />
+				<VariableInfo VariableName="DialGuagePOU" VariableNameC="DialGuagePOU" VariableType="DINT" VariableKind="VAR" />
+			</Interface>
+			<FuncInfo FuncNameC="p1Plc_func_DIALGUAGEPOU" FuncStart="59" CodeStart="73" CodeEnd="100" Language="C">
+				<FuncDef>PLC_DINT p1Plc_func_DIALGUAGEPOU(
+    PLC_BOOL* ENO, 
+    PLC_DINT minVal, 
+    PLC_DINT maxVal, 
+    PLC_DINT curVal, 
+    PLC_DINT* tick1, 
+    PLC_DINT* tick2, 
+    PLC_DINT* tick3, 
+    PLC_DINT* tick4, 
+    PLC_DINT* tick5, 
+    PLC_DINT* tick6, 
+    PLC_DINT* tick7, 
+    PLC_DINT* tick8, 
+    PLC_DINT* rotation);
+</FuncDef>
+				<Code>
+					<CodeLine PouLine="1" CLine="86" LineCount="13" />
+				</Code>
+			</FuncInfo>
+		</POU>
 	</POUs>
 </DebugData>

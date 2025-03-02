@@ -13,6 +13,15 @@
       </Inputs>
     </Text>
     <Text>
+      <ID>63</ID>
+      <Description>TextGuageNoPoint</Description>
+      <Used_by/>
+      <String LanguageIndex="1" TextData="%1$"/>
+      <Inputs Count="1">
+        <FC Type="Unsigned" Digits="6" Value="0" Prefix="0" Padding="0" Base="1" Alt="false"/>
+      </Inputs>
+    </Text>
+    <Text>
       <ID>62</ID>
       <Description>Label&amp;Units</Description>
       <Used_by/>
@@ -20,15 +29,6 @@
       <Inputs Count="2">
         <FC Type="String" Digits="4" Value="0" Prefix="0" Padding="0" Base="1" Alt="false"/>
         <FC Type="String" Digits="2" Value="0" Prefix="0" Padding="0" Base="1" Alt="false"/>
-      </Inputs>
-    </Text>
-    <Text>
-      <ID>63</ID>
-      <Description>TextGuageNoPoint</Description>
-      <Used_by/>
-      <String LanguageIndex="1" TextData="%1$"/>
-      <Inputs Count="1">
-        <FC Type="Unsigned" Digits="6" Value="0" Prefix="0" Padding="0" Base="1" Alt="false"/>
       </Inputs>
     </Text>
     <Image SizeX="54" SizeY="54" KA="true">
@@ -67,6 +67,39 @@
       <PixelOrigo>0</PixelOrigo>
       <InsertionPoint X="0" Y="0"/>
     </Image>
+    <Image SizeX="524" SizeY="471" KA="true">
+      <ID>68</ID>
+      <Description>DialBackground</Description>
+      <SourceFileName>GuageNoText.svg</SourceFileName>
+      <Width>524</Width>
+      <Height>471</Height>
+      <FlipH>false</FlipH>
+      <FlipV>false</FlipV>
+      <ImageFormatName>16777216 Colors (24 bit) with Alpha Layer</ImageFormatName>
+      <PixelOrigo>0</PixelOrigo>
+      <InsertionPoint X="0" Y="0"/>
+    </Image>
+    <Image SizeX="16" SizeY="206" KA="true">
+      <ID>70</ID>
+      <Description>DialNeedle</Description>
+      <SourceFileName>003_02_FullGauge_Needle_Day.svg</SourceFileName>
+      <Width>16</Width>
+      <Height>206</Height>
+      <FlipH>false</FlipH>
+      <FlipV>false</FlipV>
+      <ImageFormatName>16777216 Colors (24 bit) with Alpha Layer</ImageFormatName>
+      <PixelOrigo>0</PixelOrigo>
+      <InsertionPoint X="8" Y="80"/>
+    </Image>
+    <Text>
+      <ID>71</ID>
+      <Description>DialTicks</Description>
+      <Used_by/>
+      <String LanguageIndex="1" TextData="%1$"/>
+      <Inputs Count="1">
+        <FC Type="Signed" Digits="3" Value="0" Prefix="0" Padding="0" Base="1" Alt="false"/>
+      </Inputs>
+    </Text>
     <LanguageDefinition DefLang="1" OrgLang="1">
       <Language>
         <Name>English</Name>
@@ -149,7 +182,7 @@
           <W V="2" E=""/>
           <SP X="255" EX="" Y="105" EY="" XP="31.875" YP="21.875"/>
           <EP X="255" EX="" Y="0" EY="" XP="31.875" YP="0"/>
-          <O>3</O>
+          <O>4</O>
           <Pr V="0" E=""/>
           <Vis E=""/>
         </L>
@@ -185,7 +218,7 @@
           <W V="2" E=""/>
           <SP X="0" EX="" Y="105" EY="" XP="0" YP="21.875"/>
           <EP X="255" EX="" Y="105" EY="" XP="31.875" YP="21.875"/>
-          <O>2</O>
+          <O>3</O>
           <Pr V="0" E=""/>
           <Vis E=""/>
         </L>
@@ -202,7 +235,7 @@
           <En V="True" E=""/>
           <GUID>C0E3401CA_3133_4E68_8933_AAAD850FABB0</GUID>
           <ID>C595C845D_EA56_4800_9722_2504005B7302</ID>
-          <O>4</O>
+          <O>5</O>
           <Intf>
             <Net E="" UidDef="8" UidInst="37" Dir="I" V="V"/>
             <Net E="" UidDef="9" UidInst="38" Dir="I" V="1000"/>
@@ -224,13 +257,36 @@
           <En V="True" E=""/>
           <GUID>CE1F48B9C_430F_4FCF_B627_25A0D9FA52CA</GUID>
           <ID>CBE044DED_69F2_40AA_A384_0286F211B14D</ID>
-          <O>1</O>
+          <O>2</O>
           <Intf>
             <Net E="" UidDef="1" UidInst="41" Dir="I" V="False"/>
             <Net E="" UidDef="2" UidInst="42" Dir="I" V="True"/>
             <Net E="" UidDef="3" UidInst="43" Dir="I" V="True"/>
           </Intf>
           <IP X="740" EX="" Y="0" EY="" XP="92.5" YP="0"/>
+        </Wdg>
+        <Wdg N="DialGaugeWidget_2" SX="0.351249992847443" SY="0.543749988079071" WP="35.125" HP="54.375" W="281" H="261">
+          <La Sc="Def" Zo="0" Order="0" Flex="false" Sec="0">
+            <Pad L="0" R="0" T="0" B="0" A="0" UA="false"/>
+          </La>
+          <LMO>
+            <X/>
+            <Y/>
+            <W/>
+            <H/>
+          </LMO>
+          <En V="True" E=""/>
+          <GUID>C23B89B35_BF6F_49E6_BD8D_BE8EBE01F1CA</GUID>
+          <ID>C0C8C41A8_0476_438D_A0CE_9EE830CFDF57</ID>
+          <O>1</O>
+          <Intf>
+            <Net E="" UidDef="15" UidInst="49" Dir="I" V="-80"/>
+            <Net E="" UidDef="16" UidInst="50" Dir="I" V="240"/>
+            <Net E="" UidDef="17" UidInst="51" Dir="I" V="100"/>
+            <Net E="" UidDef="18" UidInst="52" Dir="I" V="Engine Speed"/>
+            <Net E="" UidDef="19" UidInst="53" Dir="I" V="MPH"/>
+          </Intf>
+          <IP X="315" EX="" Y="130" EY="" XP="39.375" YP="27.0833"/>
         </Wdg>
       </F>
       <PouCalls/>
@@ -587,6 +643,526 @@
         </I>
       </F>
       <PouCalls/>
+    </ScreenDef>
+    <ScreenDef IDD="true" PT="false">
+      <FF>003A</FF>
+      <ULC X="0" EX="" Y="0" EY="" XP="0" YP="0"/>
+      <W E="" V="281" VP="35.125"/>
+      <H E="" V="261" VP="54.375"/>
+      <D>DialGaugeWidget</D>
+      <GUID>C0C8C41A8_0476_438D_A0CE_9EE830CFDF57</GUID>
+      <C V="00FFFFFF" E=""/>
+      <Interface>
+        <Input>
+          <Net Name="MinInput" Uid="15" DataType="S32"/>
+          <Net Name="MaxInput" Uid="16" DataType="S32"/>
+          <Net Name="CurInput" Uid="17" DataType="S32"/>
+          <Net Name="Label" Uid="18" DataType="STRING"/>
+          <Net Name="Units" Uid="19" DataType="STRING"/>
+        </Input>
+        <Output/>
+      </Interface>
+      <PN>Display.Port</PN>
+      <Lay LO="0" AR="false" LAR="false" KA="false"/>
+      <F>
+        <I N="GuageNoText_1" SX="0.387499988079071" SY="0.580510497093201" W="310" H="279" WP="110.3203" HP="106.7606" KA="true" Type="IDS">
+          <La Sc="Def" Zo="0" Order="0" Flex="false" Sec="0">
+            <Pad L="0" R="0" T="0" B="0" A="0" UA="false"/>
+          </La>
+          <LMO>
+            <X/>
+            <Y/>
+            <W/>
+            <H/>
+          </LMO>
+          <En V="True" E=""/>
+          <GUID>C2058A4D6_A8D8_4FAA_9669_7CDF4C065710</GUID>
+          <T>
+            <IsSink V="False" E=""/>
+            <Output E=""/>
+            <LocalX E=""/>
+            <LocalY E=""/>
+            <GType E=""/>
+            <GX E=""/>
+            <GY E=""/>
+            <ZoomFactor E=""/>
+            <DeltaX E=""/>
+            <DeltaY E=""/>
+            <Velocity E=""/>
+            <RotAng E=""/>
+            <LocalDeltaX E=""/>
+            <LocalDeltaY E=""/>
+          </T>
+          <C V="01010100" E=""/>
+          <IP X="-15" EX="" Y="-10" EY="" XP="-5.3381" YP="-3.8314"/>
+          <R V="0" E=""/>
+          <O>11</O>
+          <Pr V="0" E=""/>
+          <Vis E=""/>
+          <ID V="68" E=""/>
+        </I>
+        <I N="DialNeedle_1" SX="0.0237499997019768" SY="0.504166662693024" W="19" H="242" WP="6.7616" HP="92.7203" KA="true" Type="IDS">
+          <La Sc="Def" Zo="0" Order="0" Flex="false" Sec="0">
+            <Pad L="0" R="0" T="0" B="0" A="0" UA="false"/>
+          </La>
+          <LMO>
+            <X/>
+            <Y/>
+            <W/>
+            <H/>
+          </LMO>
+          <En V="True" E=""/>
+          <GUID>C7C7F7603_B099_4792_9866_EC12582E60B8</GUID>
+          <T>
+            <IsSink V="False" E=""/>
+            <Output E=""/>
+            <LocalX E=""/>
+            <LocalY E=""/>
+            <GType E=""/>
+            <GX E=""/>
+            <GY E=""/>
+            <ZoomFactor E=""/>
+            <DeltaX E=""/>
+            <DeltaY E=""/>
+            <Velocity E=""/>
+            <RotAng E=""/>
+            <LocalDeltaX E=""/>
+            <LocalDeltaY E=""/>
+          </T>
+          <C V="01010100" E=""/>
+          <IP X="140" EX="" Y="145" EY="" XP="49.8221" YP="55.5556"/>
+          <R V="0" E="14"/>
+          <O>10</O>
+          <Pr V="0" E=""/>
+          <Vis E=""/>
+          <ID V="70" E=""/>
+        </I>
+        <Txt N="DialTicks_8" SX="0.0437499992549419" SY="0.0437499992549419" W="35" H="21" WP="12.4555" HP="8.046" Type="TDS">
+          <La Sc="Def" Zo="0" Order="0" Flex="false" Sec="0">
+            <Pad L="0" R="0" T="0" B="0" A="0" UA="false"/>
+          </La>
+          <LMO>
+            <X/>
+            <Y/>
+            <W/>
+            <H/>
+          </LMO>
+          <En V="True" E=""/>
+          <F V="" E=""/>
+          <GUID>C915812D1_DB87_4CC8_8ED6_651F0F4B15D5</GUID>
+          <FF>
+            <N>Courier New</N>
+            <S>12</S>
+            <B/>
+          </FF>
+          <J V="1" E=""/>
+          <T>
+            <IsSink V="False" E=""/>
+            <Output E=""/>
+            <LocalX E=""/>
+            <LocalY E=""/>
+            <GType E=""/>
+            <GX E=""/>
+            <GY E=""/>
+            <ZoomFactor E=""/>
+            <DeltaX E=""/>
+            <DeltaY E=""/>
+            <Velocity E=""/>
+            <RotAng E=""/>
+            <LocalDeltaX E=""/>
+            <LocalDeltaY E=""/>
+          </T>
+          <C V="00000000" E=""/>
+          <SP X="215" EX="" Y="170" EY="" XP="76.5125" YP="65.1341"/>
+          <O>9</O>
+          <Pr V="0" E=""/>
+          <Vis E=""/>
+          <ID V="71" E=""/>
+          <D>
+            <DV V="200" E="10" FC="0"/>
+          </D>
+        </Txt>
+        <Txt N="DialTicks_7" SX="0.0437499992549419" SY="0.0437499992549419" W="35" H="21" WP="12.4555" HP="8.046" Type="TDS">
+          <La Sc="Def" Zo="0" Order="0" Flex="false" Sec="0">
+            <Pad L="0" R="0" T="0" B="0" A="0" UA="false"/>
+          </La>
+          <LMO>
+            <X/>
+            <Y/>
+            <W/>
+            <H/>
+          </LMO>
+          <En V="True" E=""/>
+          <F V="" E=""/>
+          <GUID>C65DFF3B1_821B_4E43_A76A_E5061232C972</GUID>
+          <FF>
+            <N>Courier New</N>
+            <S>12</S>
+            <B/>
+          </FF>
+          <J V="1" E=""/>
+          <T>
+            <IsSink V="False" E=""/>
+            <Output E=""/>
+            <LocalX E=""/>
+            <LocalY E=""/>
+            <GType E=""/>
+            <GX E=""/>
+            <GY E=""/>
+            <ZoomFactor E=""/>
+            <DeltaX E=""/>
+            <DeltaY E=""/>
+            <Velocity E=""/>
+            <RotAng E=""/>
+            <LocalDeltaX E=""/>
+            <LocalDeltaY E=""/>
+          </T>
+          <C V="00000000" E=""/>
+          <SP X="220" EX="" Y="115" EY="" XP="78.2918" YP="44.0613"/>
+          <O>8</O>
+          <Pr V="0" E=""/>
+          <Vis E=""/>
+          <ID V="71" E=""/>
+          <D>
+            <DV V="200" E="6" FC="0"/>
+          </D>
+        </Txt>
+        <Txt N="DialTicks_6" SX="0.0437499992549419" SY="0.0437499992549419" W="35" H="21" WP="12.4555" HP="8.046" Type="TDS">
+          <La Sc="Def" Zo="0" Order="0" Flex="false" Sec="0">
+            <Pad L="0" R="0" T="0" B="0" A="0" UA="false"/>
+          </La>
+          <LMO>
+            <X/>
+            <Y/>
+            <W/>
+            <H/>
+          </LMO>
+          <En V="True" E=""/>
+          <F V="" E=""/>
+          <GUID>C86A5D95C_F736_4E00_9B29_5CFC302E8B31</GUID>
+          <FF>
+            <N>Courier New</N>
+            <S>12</S>
+            <B/>
+          </FF>
+          <J V="1" E=""/>
+          <T>
+            <IsSink V="False" E=""/>
+            <Output E=""/>
+            <LocalX E=""/>
+            <LocalY E=""/>
+            <GType E=""/>
+            <GX E=""/>
+            <GY E=""/>
+            <ZoomFactor E=""/>
+            <DeltaX E=""/>
+            <DeltaY E=""/>
+            <Velocity E=""/>
+            <RotAng E=""/>
+            <LocalDeltaX E=""/>
+            <LocalDeltaY E=""/>
+          </T>
+          <C V="00000000" E=""/>
+          <SP X="195" EX="" Y="65" EY="" XP="69.395" YP="24.9042"/>
+          <O>7</O>
+          <Pr V="0" E=""/>
+          <Vis E=""/>
+          <ID V="71" E=""/>
+          <D>
+            <DV V="200" E="4" FC="0"/>
+          </D>
+        </Txt>
+        <Txt N="DialTicks_5" SX="0.0437499992549419" SY="0.0437499992549419" W="35" H="21" WP="12.4555" HP="8.046" Type="TDS">
+          <La Sc="Def" Zo="0" Order="0" Flex="false" Sec="0">
+            <Pad L="0" R="0" T="0" B="0" A="0" UA="false"/>
+          </La>
+          <LMO>
+            <X/>
+            <Y/>
+            <W/>
+            <H/>
+          </LMO>
+          <En V="True" E=""/>
+          <F V="" E=""/>
+          <GUID>C7E9AFA96_6826_4657_9DD5_B23C54E8CDA4</GUID>
+          <FF>
+            <N>Courier New</N>
+            <S>12</S>
+            <B/>
+          </FF>
+          <J V="1" E=""/>
+          <T>
+            <IsSink V="False" E=""/>
+            <Output E=""/>
+            <LocalX E=""/>
+            <LocalY E=""/>
+            <GType E=""/>
+            <GX E=""/>
+            <GY E=""/>
+            <ZoomFactor E=""/>
+            <DeltaX E=""/>
+            <DeltaY E=""/>
+            <Velocity E=""/>
+            <RotAng E=""/>
+            <LocalDeltaX E=""/>
+            <LocalDeltaY E=""/>
+          </T>
+          <C V="00000000" E=""/>
+          <SP X="155" EX="" Y="30" EY="" XP="55.1601" YP="11.4943"/>
+          <O>6</O>
+          <Pr V="0" E=""/>
+          <Vis E=""/>
+          <ID V="71" E=""/>
+          <D>
+            <DV V="200" E="13" FC="0"/>
+          </D>
+        </Txt>
+        <Txt N="DialTicks_4" SX="0.0437499992549419" SY="0.0437499992549419" W="35" H="21" WP="12.4555" HP="8.046" Type="TDS">
+          <La Sc="Def" Zo="0" Order="0" Flex="false" Sec="0">
+            <Pad L="0" R="0" T="0" B="0" A="0" UA="false"/>
+          </La>
+          <LMO>
+            <X/>
+            <Y/>
+            <W/>
+            <H/>
+          </LMO>
+          <En V="True" E=""/>
+          <F V="" E=""/>
+          <GUID>C21789793_1A5B_4C7C_9F26_E8ACB241A12B</GUID>
+          <FF>
+            <N>Courier New</N>
+            <S>12</S>
+            <B/>
+          </FF>
+          <J V="1" E=""/>
+          <T>
+            <IsSink V="False" E=""/>
+            <Output E=""/>
+            <LocalX E=""/>
+            <LocalY E=""/>
+            <GType E=""/>
+            <GX E=""/>
+            <GY E=""/>
+            <ZoomFactor E=""/>
+            <DeltaX E=""/>
+            <DeltaY E=""/>
+            <Velocity E=""/>
+            <RotAng E=""/>
+            <LocalDeltaX E=""/>
+            <LocalDeltaY E=""/>
+          </T>
+          <C V="00000000" E=""/>
+          <SP X="90" EX="" Y="30" EY="" XP="32.0285" YP="11.4943"/>
+          <O>5</O>
+          <Pr V="0" E=""/>
+          <Vis E=""/>
+          <ID V="71" E=""/>
+          <D>
+            <DV V="200" E="9" FC="0"/>
+          </D>
+        </Txt>
+        <Txt N="DialTicks_3" SX="0.0437499992549419" SY="0.0437499992549419" W="35" H="21" WP="12.4555" HP="8.046" Type="TDS">
+          <La Sc="Def" Zo="0" Order="0" Flex="false" Sec="0">
+            <Pad L="0" R="0" T="0" B="0" A="0" UA="false"/>
+          </La>
+          <LMO>
+            <X/>
+            <Y/>
+            <W/>
+            <H/>
+          </LMO>
+          <En V="True" E=""/>
+          <F V="" E=""/>
+          <GUID>C5C445F88_731A_48B4_9545_2BEF2F970ACA</GUID>
+          <FF>
+            <N>Courier New</N>
+            <S>12</S>
+            <B/>
+          </FF>
+          <J V="1" E=""/>
+          <T>
+            <IsSink V="False" E=""/>
+            <Output E=""/>
+            <LocalX E=""/>
+            <LocalY E=""/>
+            <GType E=""/>
+            <GX E=""/>
+            <GY E=""/>
+            <ZoomFactor E=""/>
+            <DeltaX E=""/>
+            <DeltaY E=""/>
+            <Velocity E=""/>
+            <RotAng E=""/>
+            <LocalDeltaX E=""/>
+            <LocalDeltaY E=""/>
+          </T>
+          <C V="00000000" E=""/>
+          <SP X="45" EX="" Y="65" EY="" XP="16.0142" YP="24.9042"/>
+          <O>4</O>
+          <Pr V="0" E=""/>
+          <Vis E=""/>
+          <ID V="71" E=""/>
+          <D>
+            <DV V="200" E="5" FC="0"/>
+          </D>
+        </Txt>
+        <Txt N="DialTicks_2" SX="0.0437499992549419" SY="0.0437499992549419" W="35" H="21" WP="12.4555" HP="8.046" Type="TDS">
+          <La Sc="Def" Zo="0" Order="0" Flex="false" Sec="0">
+            <Pad L="0" R="0" T="0" B="0" A="0" UA="false"/>
+          </La>
+          <LMO>
+            <X/>
+            <Y/>
+            <W/>
+            <H/>
+          </LMO>
+          <En V="True" E=""/>
+          <F V="" E=""/>
+          <GUID>C9DD709CE_8277_4579_AE49_E5D2ABCC164F</GUID>
+          <FF>
+            <N>Courier New</N>
+            <S>12</S>
+            <B/>
+          </FF>
+          <J V="1" E=""/>
+          <T>
+            <IsSink V="False" E=""/>
+            <Output E=""/>
+            <LocalX E=""/>
+            <LocalY E=""/>
+            <GType E=""/>
+            <GX E=""/>
+            <GY E=""/>
+            <ZoomFactor E=""/>
+            <DeltaX E=""/>
+            <DeltaY E=""/>
+            <Velocity E=""/>
+            <RotAng E=""/>
+            <LocalDeltaX E=""/>
+            <LocalDeltaY E=""/>
+          </T>
+          <C V="00000000" E=""/>
+          <SP X="20" EX="" Y="115" EY="" XP="7.1174" YP="44.0613"/>
+          <O>3</O>
+          <Pr V="0" E=""/>
+          <Vis E=""/>
+          <ID V="71" E=""/>
+          <D>
+            <DV V="200" E="3" FC="0"/>
+          </D>
+        </Txt>
+        <Txt N="DialTicks_1" SX="0.0437499992549419" SY="0.0437499992549419" W="35" H="21" WP="12.4555" HP="8.046" Type="TDS">
+          <La Sc="Def" Zo="0" Order="0" Flex="false" Sec="0">
+            <Pad L="0" R="0" T="0" B="0" A="0" UA="false"/>
+          </La>
+          <LMO>
+            <X/>
+            <Y/>
+            <W/>
+            <H/>
+          </LMO>
+          <En V="True" E=""/>
+          <F V="" E=""/>
+          <GUID>CEF703F1A_0ED1_4ED0_8E00_0426B36C14D7</GUID>
+          <FF>
+            <N>Courier New</N>
+            <S>12</S>
+            <B/>
+          </FF>
+          <J V="1" E=""/>
+          <T>
+            <IsSink V="False" E=""/>
+            <Output E=""/>
+            <LocalX E=""/>
+            <LocalY E=""/>
+            <GType E=""/>
+            <GX E=""/>
+            <GY E=""/>
+            <ZoomFactor E=""/>
+            <DeltaX E=""/>
+            <DeltaY E=""/>
+            <Velocity E=""/>
+            <RotAng E=""/>
+            <LocalDeltaX E=""/>
+            <LocalDeltaY E=""/>
+          </T>
+          <C V="00000000" E=""/>
+          <SP X="30" EX="" Y="165" EY="" XP="10.6762" YP="63.2183"/>
+          <O>2</O>
+          <Pr V="0" E=""/>
+          <Vis E=""/>
+          <ID V="71" E=""/>
+          <D>
+            <DV V="200" E="11" FC="0"/>
+          </D>
+        </Txt>
+        <Txt N="Label&amp;Units_1" SX="0.996441304683685" SY="0.114942587912083" W="280" H="30" WP="99.6441" HP="11.4943" Type="TDS">
+          <La Sc="Def" Zo="0" Order="0" Flex="false" Sec="0">
+            <Pad L="0" R="0" T="0" B="0" A="0" UA="false"/>
+          </La>
+          <LMO>
+            <X/>
+            <Y/>
+            <W/>
+            <H/>
+          </LMO>
+          <En V="True" E=""/>
+          <F V="" E=""/>
+          <GUID>CC3FCB6C0_C474_4AF6_957D_6F1D5DDEC0E0</GUID>
+          <FF>
+            <N>Courier New</N>
+            <S>14</S>
+          </FF>
+          <J V="1" E=""/>
+          <T>
+            <IsSink V="False" E=""/>
+            <Output E=""/>
+            <LocalX E=""/>
+            <LocalY E=""/>
+            <GType E=""/>
+            <GX E=""/>
+            <GY E=""/>
+            <ZoomFactor E=""/>
+            <DeltaX E=""/>
+            <DeltaY E=""/>
+            <Velocity E=""/>
+            <RotAng E=""/>
+            <LocalDeltaX E=""/>
+            <LocalDeltaY E=""/>
+          </T>
+          <C V="00000000" E=""/>
+          <SP X="0" EX="" Y="230" EY="" XP="0" YP="88.1226"/>
+          <O>1</O>
+          <Pr V="0" E=""/>
+          <Vis E=""/>
+          <ID V="62" E=""/>
+          <D>
+            <DV V="0" E="18" FC="0"/>
+            <DV V="0" E="19" FC="1"/>
+          </D>
+        </Txt>
+      </F>
+      <PouCalls>
+        <Call PouName="DialGuagePOU" Name="DialGuagePOU" Type="C" Unit="DialGuagePLC.xml">
+          <GUID>C96267D37_DCA1_4359_9FC1_AA4796562615</GUID>
+          <Trig V="True" E=""/>
+          <Output E="" Name="#Return" Type="S32" UidInst="1"/>
+          <Output E="" Name="#RuntimeErrors" Type="U16" UidInst="2"/>
+          <Output E="" Name="tick2" Type="S32" UidInst="3"/>
+          <Output E="" Name="tick6" Type="S32" UidInst="4"/>
+          <Output E="" Name="tick3" Type="S32" UidInst="5"/>
+          <Output E="" Name="tick7" Type="S32" UidInst="6"/>
+          <Input E="16" Name="maxVal" Type="S32" V="0" UidInst="7"/>
+          <Input E="17" Name="curVal" Type="S32" V="0" UidInst="8"/>
+          <Output E="" Name="tick4" Type="S32" UidInst="9"/>
+          <Output E="" Name="tick8" Type="S32" UidInst="10"/>
+          <Output E="" Name="tick1" Type="S32" UidInst="11"/>
+          <Input E="15" Name="minVal" Type="S32" V="0" UidInst="12"/>
+          <Output E="" Name="tick5" Type="S32" UidInst="13"/>
+          <Output E="" Name="rotation" Type="S32" UidInst="14"/>
+        </Call>
+      </PouCalls>
     </ScreenDef>
   </ScreenDefRepository>
   <ApplogDefRepository/>

@@ -224,6 +224,7 @@
       <C>ECUInfoPacked.PRev0[x]</C>
       <C>ECUInfoPacked.PRev1[x]</C>
       <C>ECUInfoPacked.SerNr0[x]</C>
+      <C>EngineService#IN</C>
       <C>ID.Node.ClientAddr</C>
       <C>ImageViewer.ImageHeight</C>
       <C>ImageViewer.ImageWidth</C>
@@ -699,6 +700,7 @@
       <V342>0</V342>
       <V343>0</V343>
       <V344>0</V344>
+      <V345>0</V345>
     </R>
   </InitialValues>
 </DebugSettings>

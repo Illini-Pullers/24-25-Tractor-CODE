@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Project>
-  <File FileName="SCREENREPO.SRD" FileSize="23452" Crc="2210141737"/>
-  <File FileName="SCREEN DEMO.P1X" FileSize="1255" Crc="629899538"/>
+  <File FileName="SCREENREPO.SRD" FileSize="42214" Crc="3740499367"/>
+  <File FileName="SCREEN DEMO.P1X" FileSize="1304" Crc="3558461104"/>
   <File FileName="70487200V330.PDF" FileSize="657927" Crc="3090789078"/>
+  <File FileName="DIALGUAGEPLC.XML" FileSize="3791" Crc="929626886"/>
   <File FileName="TEXTGUAGEPLC.XML" FileSize="2827" Crc="945803129"/>
   <File FileName="70487200V330.SYS" FileSize="80427043" Crc="2884087083"/>
   <File FileName="001_7_OIL_WARNING_DAY.SVG" FileSize="256255" Crc="1608927301"/>
+  <File FileName="GUAGENOTEXT.SVG" FileSize="1052697" Crc="349085396"/>
+  <File FileName="003_02_FULLGAUGE_NEEDLE_DAY.SVG" FileSize="2623" Crc="2203230953"/>
   <File FileName="PROJECTPARAMETERS.JSON" FileSize="314" Crc="1526221595"/>
   <File FileName="001_5_DIAGNOSTICS_WARNING_DAY.SVG" FileSize="266880" Crc="3408555580"/>
   <File FileName="001_8_SERVICEHOURS_WARNING_DAY.SVG" FileSize="265779" Crc="539921886"/>
