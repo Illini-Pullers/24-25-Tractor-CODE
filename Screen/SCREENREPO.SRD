@@ -13,15 +13,6 @@
       </Inputs>
     </Text>
     <Text>
-      <ID>63</ID>
-      <Description>TextGuageNoPoint</Description>
-      <Used_by/>
-      <String LanguageIndex="1" TextData="%1$"/>
-      <Inputs Count="1">
-        <FC Type="Unsigned" Digits="6" Value="0" Prefix="0" Padding="0" Base="1" Alt="false"/>
-      </Inputs>
-    </Text>
-    <Text>
       <ID>62</ID>
       <Description>Label&amp;Units</Description>
       <Used_by/>
@@ -100,6 +91,28 @@
         <FC Type="Signed" Digits="3" Value="0" Prefix="0" Padding="0" Base="1" Alt="false"/>
       </Inputs>
     </Text>
+    <Image SizeX="1" SizeY="1" KA="false">
+      <ID>73</ID>
+      <Description>BlueSquare</Description>
+      <SourceFileName>lightblue.svg</SourceFileName>
+      <Width>1</Width>
+      <Height>1</Height>
+      <FlipH>false</FlipH>
+      <FlipV>false</FlipV>
+      <ImageFormatName>16777216 Colors (24 bit) with Alpha Layer</ImageFormatName>
+      <PixelOrigo>0</PixelOrigo>
+      <InsertionPoint X="0" Y="0"/>
+    </Image>
+    <Text>
+      <ID>74</ID>
+      <Description>Label&amp;Units2</Description>
+      <Used_by/>
+      <String LanguageIndex="1" TextData="%1$\n(%2$)"/>
+      <Inputs Count="2">
+        <FC Type="String" Digits="4" Value="0" Prefix="0" Padding="0" Base="1" Alt="false"/>
+        <FC Type="String" Digits="2" Value="0" Prefix="0" Padding="0" Base="1" Alt="false"/>
+      </Inputs>
+    </Text>
     <LanguageDefinition DefLang="1" OrgLang="1">
       <Language>
         <Name>English</Name>
@@ -118,133 +131,36 @@
       <GUID>CE23C0FAC_6BD8_4751_A2BD_302F2E570AF2</GUID>
       <C V="00FFFFFF" E=""/>
       <Interface>
-        <Input>
-          <Net Name="Y_Axis_Psn" Uid="1" DataType="S16"/>
-          <Net Name="Y_Axis_Det" Uid="2" DataType="BOOL"/>
-          <Net Name="YGrp_Psn" Uid="3" DataType="S16"/>
-          <Net Name="YGrp_Det" Uid="4" DataType="BOOL"/>
-          <Net Name="X_Axis_Psn" Uid="5" DataType="S16"/>
-          <Net Name="X_Axis_Det" Uid="6" DataType="BOOL"/>
-          <Net Name="XGrp_Psn" Uid="7" DataType="S16"/>
-          <Net Name="XGrp_Det" Uid="8" DataType="BOOL"/>
-          <Net Name="T_Axis_Psn" Uid="9" DataType="S16"/>
-          <Net Name="T_Axis_Det" Uid="10" DataType="BOOL"/>
-          <Net Name="Status" Uid="11" DataType="U16"/>
-          <Net Name="Rx_EJM" Uid="12" DataType="BOOL"/>
-          <Net Name="Rx_BJM" Uid="13" DataType="BOOL"/>
-          <Net Name="Btn9" Uid="14" DataType="BOOL"/>
-          <Net Name="Btn8" Uid="15" DataType="BOOL"/>
-          <Net Name="Btn7" Uid="16" DataType="BOOL"/>
-          <Net Name="Btn6" Uid="17" DataType="BOOL"/>
-          <Net Name="Btn5" Uid="18" DataType="BOOL"/>
-          <Net Name="Btn4" Uid="19" DataType="BOOL"/>
-          <Net Name="Btn3" Uid="20" DataType="BOOL"/>
-          <Net Name="Btn2" Uid="21" DataType="BOOL"/>
-          <Net Name="Btn12" Uid="22" DataType="BOOL"/>
-          <Net Name="Btn11" Uid="23" DataType="BOOL"/>
-          <Net Name="Btn10" Uid="24" DataType="BOOL"/>
-          <Net Name="Btn1" Uid="25" DataType="BOOL"/>
-        </Input>
+        <Input/>
         <Output/>
       </Interface>
       <PN>Display.Port</PN>
       <Lay LO="0" AR="true" LAR="false" KA="false"/>
       <F>
-        <L N="Line_1" SX="0.00249999994412065" SY="0.21875">
-          <La Sc="Def" Zo="0" Order="0" Flex="false" Sec="0" Len="100">
+        <Wdg N="DialGaugeWidget_1" SX="0.342500001192093" SY="0.53125" WP="34.25" HP="53.125" W="274" H="255">
+          <La Sc="Def" Zo="0" Order="0" Flex="false" Sec="0">
             <Pad L="0" R="0" T="0" B="0" A="0" UA="false"/>
           </La>
           <LMO>
-            <X0/>
-            <Y0/>
-            <X1/>
-            <Y1/>
+            <X/>
+            <Y/>
+            <W/>
+            <H/>
           </LMO>
           <En V="True" E=""/>
-          <GUID>C280E0C04_D74E_470F_8620_922AAAC5042E</GUID>
-          <T>
-            <IsSink V="False" E=""/>
-            <Output E=""/>
-            <LocalX E=""/>
-            <LocalY E=""/>
-            <GType E=""/>
-            <GX E=""/>
-            <GY E=""/>
-            <ZoomFactor E=""/>
-            <DeltaX E=""/>
-            <DeltaY E=""/>
-            <Velocity E=""/>
-            <RotAng E=""/>
-            <LocalDeltaX E=""/>
-            <LocalDeltaY E=""/>
-          </T>
-          <C V="00000000" E=""/>
-          <W V="2" E=""/>
-          <SP X="255" EX="" Y="105" EY="" XP="31.875" YP="21.875"/>
-          <EP X="255" EX="" Y="0" EY="" XP="31.875" YP="0"/>
+          <GUID>C20326AC1_B5B3_400A_83ED_FC62CB7A65DB</GUID>
+          <ID>C0C8C41A8_0476_438D_A0CE_9EE830CFDF57</ID>
           <O>4</O>
-          <Pr V="0" E=""/>
-          <Vis E=""/>
-        </L>
-        <L N="Line_2" SX="0.318749994039536" SY="0.00416666688397527">
-          <La Sc="Def" Zo="0" Order="0" Flex="false" Sec="0" Len="100">
-            <Pad L="0" R="0" T="0" B="0" A="0" UA="false"/>
-          </La>
-          <LMO>
-            <X0/>
-            <Y0/>
-            <X1/>
-            <Y1/>
-          </LMO>
-          <En V="True" E=""/>
-          <GUID>CC589A7AB_C5E3_4B32_8744_560D5153D2E7</GUID>
-          <T>
-            <IsSink V="False" E=""/>
-            <Output E=""/>
-            <LocalX E=""/>
-            <LocalY E=""/>
-            <GType E=""/>
-            <GX E=""/>
-            <GY E=""/>
-            <ZoomFactor E=""/>
-            <DeltaX E=""/>
-            <DeltaY E=""/>
-            <Velocity E=""/>
-            <RotAng E=""/>
-            <LocalDeltaX E=""/>
-            <LocalDeltaY E=""/>
-          </T>
-          <C V="00000000" E=""/>
-          <W V="2" E=""/>
-          <SP X="0" EX="" Y="105" EY="" XP="0" YP="21.875"/>
-          <EP X="255" EX="" Y="105" EY="" XP="31.875" YP="21.875"/>
-          <O>3</O>
-          <Pr V="0" E=""/>
-          <Vis E=""/>
-        </L>
-        <Wdg N="TextGuageWidget_1" SX="0.319999992847443" SY="0.220833331346512" WP="32" HP="22.0833339691162" W="256" H="106">
-          <La Sc="Def" Zo="0" Order="0" Flex="false" Sec="0">
-            <Pad L="0" R="0" T="0" B="0" A="0" UA="false"/>
-          </La>
-          <LMO>
-            <X/>
-            <Y/>
-            <W/>
-            <H/>
-          </LMO>
-          <En V="True" E=""/>
-          <GUID>C0E3401CA_3133_4E68_8933_AAAD850FABB0</GUID>
-          <ID>C595C845D_EA56_4800_9722_2504005B7302</ID>
-          <O>5</O>
           <Intf>
-            <Net E="" UidDef="8" UidInst="37" Dir="I" V="V"/>
-            <Net E="" UidDef="9" UidInst="38" Dir="I" V="1000"/>
-            <Net E="" UidDef="10" UidInst="39" Dir="I" V="11598"/>
-            <Net E="" UidDef="12" UidInst="40" Dir="I" V="Batt Volt"/>
+            <Net E="" UidDef="15" UidInst="8" Dir="I" V="-80"/>
+            <Net E="" UidDef="16" UidInst="9" Dir="I" V="240"/>
+            <Net E="" UidDef="17" UidInst="10" Dir="I" V="100"/>
+            <Net E="" UidDef="18" UidInst="11" Dir="I" V="Engine Speed"/>
+            <Net E="" UidDef="19" UidInst="12" Dir="I" V="MPH"/>
           </Intf>
-          <IP X="0" EX="" Y="0" EY="" XP="0" YP="0"/>
+          <IP X="485" EX="" Y="15" EY="" XP="60.6595" YP="3.125"/>
         </Wdg>
-        <Wdg N="ErrorWidget_1" SX="0.0762500017881393" SY="0.375" WP="7.625" HP="37.5" W="61" H="180">
+        <Wdg N="ErrorWidget_1" SX="0.132499992847443" SY="0.65625" WP="13.25" HP="65.625" W="106" H="315">
           <La Sc="Def" Zo="0" Order="0" Flex="false" Sec="0">
             <Pad L="0" R="0" T="0" B="0" A="0" UA="false"/>
           </La>
@@ -255,17 +171,39 @@
             <H/>
           </LMO>
           <En V="True" E=""/>
-          <GUID>CE1F48B9C_430F_4FCF_B627_25A0D9FA52CA</GUID>
+          <GUID>C429C3F80_3837_4D65_8130_71FCFDE30869</GUID>
           <ID>CBE044DED_69F2_40AA_A384_0286F211B14D</ID>
+          <O>3</O>
+          <Intf>
+            <Net E="" UidDef="1" UidInst="18" Dir="I" V="True"/>
+            <Net E="" UidDef="2" UidInst="19" Dir="I" V="False"/>
+            <Net E="" UidDef="3" UidInst="20" Dir="I" V="True"/>
+          </Intf>
+          <IP X="5" EX="" Y="5" EY="" XP="0.625" YP="1.0417"/>
+        </Wdg>
+        <Wdg N="TextGuageWidget_1" SX="0.462500005960464" SY="0.387499988079071" WP="46.25" HP="38.75" W="370" H="186">
+          <La Sc="Def" Zo="0" Order="0" Flex="false" Sec="0">
+            <Pad L="0" R="0" T="0" B="0" A="0" UA="false"/>
+          </La>
+          <LMO>
+            <X/>
+            <Y/>
+            <W/>
+            <H/>
+          </LMO>
+          <En V="True" E=""/>
+          <GUID>C982812B8_2AF2_4C63_8A53_1A1EA8FDA499</GUID>
+          <ID>C595C845D_EA56_4800_9722_2504005B7302</ID>
           <O>2</O>
           <Intf>
-            <Net E="" UidDef="1" UidInst="41" Dir="I" V="False"/>
-            <Net E="" UidDef="2" UidInst="42" Dir="I" V="True"/>
-            <Net E="" UidDef="3" UidInst="43" Dir="I" V="True"/>
+            <Net E="" UidDef="8" UidInst="21" Dir="I" V="V"/>
+            <Net E="" UidDef="9" UidInst="22" Dir="I" V="1000"/>
+            <Net E="" UidDef="10" UidInst="23" Dir="I" V="11598"/>
+            <Net E="" UidDef="12" UidInst="24" Dir="I" V="Batt Volt"/>
           </Intf>
-          <IP X="740" EX="" Y="0" EY="" XP="92.5" YP="0"/>
+          <IP X="175" EX="" Y="280" EY="" XP="21.875" YP="58.3333"/>
         </Wdg>
-        <Wdg N="DialGaugeWidget_2" SX="0.351249992847443" SY="0.543749988079071" WP="35.125" HP="54.375" W="281" H="261">
+        <Wdg N="LinearGaugeWidget_1" SX="0.15625" SY="0.40625" WP="15.625" HP="40.625" W="125" H="195">
           <La Sc="Def" Zo="0" Order="0" Flex="false" Sec="0">
             <Pad L="0" R="0" T="0" B="0" A="0" UA="false"/>
           </La>
@@ -276,17 +214,17 @@
             <H/>
           </LMO>
           <En V="True" E=""/>
-          <GUID>C23B89B35_BF6F_49E6_BD8D_BE8EBE01F1CA</GUID>
-          <ID>C0C8C41A8_0476_438D_A0CE_9EE830CFDF57</ID>
+          <GUID>C9E8EA868_6329_4A32_94E8_15A90C66F9DC</GUID>
+          <ID>C6FB34C09_32DB_4B99_968B_2AFEFC85D089</ID>
           <O>1</O>
           <Intf>
-            <Net E="" UidDef="15" UidInst="49" Dir="I" V="-80"/>
-            <Net E="" UidDef="16" UidInst="50" Dir="I" V="240"/>
-            <Net E="" UidDef="17" UidInst="51" Dir="I" V="100"/>
-            <Net E="" UidDef="18" UidInst="52" Dir="I" V="Engine Speed"/>
-            <Net E="" UidDef="19" UidInst="53" Dir="I" V="MPH"/>
+            <Net E="" UidDef="10" UidInst="25" Dir="I" V="0"/>
+            <Net E="" UidDef="11" UidInst="26" Dir="I" V="100"/>
+            <Net E="" UidDef="12" UidInst="27" Dir="I" V="60"/>
+            <Net E="" UidDef="13" UidInst="28" Dir="I" V="Fuel"/>
+            <Net E="" UidDef="14" UidInst="29" Dir="I" V="%"/>
           </Intf>
-          <IP X="315" EX="" Y="130" EY="" XP="39.375" YP="27.0833"/>
+          <IP X="235" EX="" Y="30" EY="" XP="29.375" YP="6.25"/>
         </Wdg>
       </F>
       <PouCalls/>
@@ -305,7 +243,29 @@
       </Interface>
       <PN>Display.Port</PN>
       <Lay LO="0" AR="true" LAR="false" KA="false"/>
-      <F/>
+      <F>
+        <Wdg N="ErrorWidget_1" SX="0.15625" SY="0.766666650772095" WP="15.625" HP="76.6666641235352" W="125" H="368">
+          <La Sc="Def" Zo="0" Order="0" Flex="false" Sec="0">
+            <Pad L="0" R="0" T="0" B="0" A="0" UA="false"/>
+          </La>
+          <LMO>
+            <X/>
+            <Y/>
+            <W/>
+            <H/>
+          </LMO>
+          <En V="True" E=""/>
+          <GUID>C4E331951_42A1_445B_A0FD_E47911CA1DBA</GUID>
+          <ID>CBE044DED_69F2_40AA_A384_0286F211B14D</ID>
+          <O>1</O>
+          <Intf>
+            <Net E="" UidDef="1" UidInst="1" Dir="I" V="True"/>
+            <Net E="" UidDef="2" UidInst="2" Dir="I" V="False"/>
+            <Net E="" UidDef="3" UidInst="3" Dir="I" V="True"/>
+          </Intf>
+          <IP X="350" EX="" Y="85" EY="" XP="43.75" YP="17.7083"/>
+        </Wdg>
+      </F>
       <PouCalls/>
     </ScreenDef>
     <ScreenDef IDD="true" PT="false">
@@ -322,7 +282,30 @@
       </Interface>
       <PN>Display.Port</PN>
       <Lay LO="0" AR="true" LAR="false" KA="false"/>
-      <F/>
+      <F>
+        <Wdg N="TextGuageWidget_1" SX="0.462500005960464" SY="0.387499988079071" WP="46.25" HP="38.75" W="370" H="186">
+          <La Sc="Def" Zo="0" Order="0" Flex="false" Sec="0">
+            <Pad L="0" R="0" T="0" B="0" A="0" UA="false"/>
+          </La>
+          <LMO>
+            <X/>
+            <Y/>
+            <W/>
+            <H/>
+          </LMO>
+          <En V="True" E=""/>
+          <GUID>CD8E1AF07_F644_4466_AA57_85252FB7D0AE</GUID>
+          <ID>C595C845D_EA56_4800_9722_2504005B7302</ID>
+          <O>1</O>
+          <Intf>
+            <Net E="" UidDef="8" UidInst="1" Dir="I" V="V"/>
+            <Net E="" UidDef="9" UidInst="2" Dir="I" V="1000"/>
+            <Net E="" UidDef="10" UidInst="3" Dir="I" V="11598"/>
+            <Net E="" UidDef="12" UidInst="4" Dir="I" V="Batt Volt"/>
+          </Intf>
+          <IP X="235" EX="" Y="130" EY="" XP="29.375" YP="27.0833"/>
+        </Wdg>
+      </F>
       <PouCalls/>
     </ScreenDef>
     <ScreenDef IDD="true" PT="false">
@@ -339,14 +322,38 @@
       </Interface>
       <PN>Display.Port</PN>
       <Lay LO="0" AR="true" LAR="false" KA="false"/>
-      <F/>
+      <F>
+        <Wdg N="LinearGaugeWidget_1" SX="0.15625" SY="0.40625" WP="15.625" HP="40.625" W="125" H="195">
+          <La Sc="Def" Zo="0" Order="0" Flex="false" Sec="0">
+            <Pad L="0" R="0" T="0" B="0" A="0" UA="false"/>
+          </La>
+          <LMO>
+            <X/>
+            <Y/>
+            <W/>
+            <H/>
+          </LMO>
+          <En V="True" E=""/>
+          <GUID>C17E51843_C56A_401D_B845_DBE2A9229B09</GUID>
+          <ID>C6FB34C09_32DB_4B99_968B_2AFEFC85D089</ID>
+          <O>1</O>
+          <Intf>
+            <Net E="" UidDef="10" UidInst="1" Dir="I" V="0"/>
+            <Net E="" UidDef="11" UidInst="2" Dir="I" V="100"/>
+            <Net E="" UidDef="12" UidInst="3" Dir="I" V="60"/>
+            <Net E="" UidDef="13" UidInst="4" Dir="I" V="Fuel"/>
+            <Net E="" UidDef="14" UidInst="5" Dir="I" V="%"/>
+          </Intf>
+          <IP X="330" EX="" Y="175" EY="" XP="41.25" YP="36.4583"/>
+        </Wdg>
+      </F>
       <PouCalls/>
     </ScreenDef>
     <ScreenDef IDD="true" PT="false">
       <FF>003A</FF>
       <ULC X="0" EX="" Y="0" EY="" XP="0" YP="0"/>
-      <W E="" V="256" VP="32"/>
-      <H E="" V="106" VP="22.0833"/>
+      <W E="" V="250" VP="31.25"/>
+      <H E="" V="126" VP="26.25"/>
       <D>TextGuageWidget</D>
       <GUID>C595C845D_EA56_4800_9722_2504005B7302</GUID>
       <C V="00FFFFFF" E=""/>
@@ -360,9 +367,9 @@
         <Output/>
       </Interface>
       <PN>Display.Port</PN>
-      <Lay LO="0" AR="false" LAR="true" KA="true"/>
+      <Lay LO="0" AR="true" LAR="true" KA="true"/>
       <F>
-        <Txt N="NumbersPoint" SX="0.833333313465118" SY="0.479289948940277" W="255" H="81" WP="99.6094" HP="76.4151" Type="TDS">
+        <Txt N="NumbersPoint" SX="1.00399994850159" SY="0.626984119415283" W="251" H="79" WP="100.4" HP="62.6984" SS="true" SP="true" Type="TDS">
           <La Sc="Def" Zo="0" Order="0" Flex="false" Sec="0">
             <Pad L="0" R="0" T="0" B="0" A="0" UA="false"/>
           </La>
@@ -372,7 +379,7 @@
             <W/>
             <H/>
           </LMO>
-          <En V="True" E="6"/>
+          <En V="True" E=""/>
           <F V="" E=""/>
           <GUID>C284236D6_FE15_4675_9596_E007C363F7D2</GUID>
           <FF>
@@ -398,8 +405,8 @@
             <LocalDeltaY E=""/>
           </T>
           <C V="00000000" E=""/>
-          <SP X="0" EX="" Y="0" EY="" XP="0" YP="0"/>
-          <O>3</O>
+          <SP X="-1" EX="" Y="1" EY="" XP="-0.4" YP="0.7936"/>
+          <O>2</O>
           <Pr V="0" E=""/>
           <Vis E=""/>
           <ID V="61" E=""/>
@@ -408,7 +415,7 @@
             <DV V="999" E="4" FC="1"/>
           </D>
         </Txt>
-        <Txt N="Words" SX="0.594405591487885" SY="0.236686795949936" W="255" H="40" WP="99.6094" HP="37.7359" Type="TDS">
+        <Txt N="Words" SX="0.984251976013184" SY="0.30405405163765" W="250" H="45" WP="100" HP="35.7143" SS="true" SP="true" Type="TDS">
           <La Sc="Def" Zo="0" Order="0" Flex="false" Sec="0">
             <Pad L="0" R="0" T="0" B="0" A="0" UA="false"/>
           </La>
@@ -423,7 +430,7 @@
           <GUID>CC22EAE48_AC53_4D28_BABD_43ECDDB69057</GUID>
           <FF>
             <N>Gadugi</N>
-            <S>24</S>
+            <S>26</S>
           </FF>
           <J V="0" E=""/>
           <T>
@@ -443,59 +450,14 @@
             <LocalDeltaY E=""/>
           </T>
           <C V="00000000" E=""/>
-          <SP X="0" EX="" Y="65" EY="" XP="0" YP="61.3207"/>
-          <O>2</O>
+          <SP X="0" EX="" Y="80" EY="" XP="0" YP="63.4921"/>
+          <O>1</O>
           <Pr V="0" E=""/>
           <Vis E=""/>
           <ID V="62" E=""/>
           <D>
             <DV V="'Label'" E="12" FC="0"/>
             <DV V="'Units'" E="8" FC="1"/>
-          </D>
-        </Txt>
-        <Txt N="NumbersNoPoint" SX="0.594405591487885" SY="0.384615391492844" W="255" H="65" WP="99.6094" HP="61.3208" Type="TDS">
-          <La Sc="Def" Zo="0" Order="0" Flex="false" Sec="0">
-            <Pad L="0" R="0" T="0" B="0" A="0" UA="false"/>
-          </La>
-          <LMO>
-            <X/>
-            <Y/>
-            <W/>
-            <H/>
-          </LMO>
-          <En V="True" E="11"/>
-          <F V="" E=""/>
-          <GUID>C4C746452_A368_4725_80CA_9939EFCE1953</GUID>
-          <FF>
-            <N>Franklin Gothic Book</N>
-            <S>48</S>
-            <B/>
-          </FF>
-          <J V="0" E=""/>
-          <T>
-            <IsSink V="False" E=""/>
-            <Output E=""/>
-            <LocalX E=""/>
-            <LocalY E=""/>
-            <GType E=""/>
-            <GX E=""/>
-            <GY E=""/>
-            <ZoomFactor E=""/>
-            <DeltaX E=""/>
-            <DeltaY E=""/>
-            <Velocity E=""/>
-            <RotAng E=""/>
-            <LocalDeltaX E=""/>
-            <LocalDeltaY E=""/>
-          </T>
-          <C V="00000000" E=""/>
-          <SP X="0" EX="" Y="0" EY="" XP="0" YP="0"/>
-          <O>1</O>
-          <Pr V="0" E=""/>
-          <Vis E=""/>
-          <ID V="63" E=""/>
-          <D>
-            <DV V="999" E="7" FC="0"/>
           </D>
         </Txt>
       </F>
@@ -508,9 +470,7 @@
           <Input E="10" Name="value" Type="U16" V="0" UidInst="3"/>
           <Output E="" Name="decimal" Type="U16" UidInst="4"/>
           <Input E="9" Name="divisor" Type="U16" V="0" UidInst="5"/>
-          <Output E="" Name="point" Type="BOOL" UidInst="6"/>
           <Output E="" Name="number" Type="U16" UidInst="7"/>
-          <Output E="" Name="nopoint" Type="BOOL" UidInst="11"/>
         </Call>
       </PouCalls>
     </ScreenDef>
@@ -531,9 +491,9 @@
         <Output/>
       </Interface>
       <PN>Display.Port</PN>
-      <Lay LO="0" AR="false" LAR="false" KA="false"/>
+      <Lay LO="0" AR="true" LAR="true" KA="true"/>
       <F>
-        <I N="MIL Indicator_1" SX="0.0750000029802322" SY="0.125" W="60" H="60" WP="98.3607" HP="33.3333" KA="true" Type="IDS">
+        <I N="MIL Indicator_1" SX="0.0750000029802322" SY="0.125" W="60" H="60" WP="98.3607" HP="33.3333" SS="true" SP="true" KA="true" Type="IDS">
           <La Sc="Def" Zo="0" Order="0" Flex="false" Sec="0">
             <Pad L="0" R="0" T="0" B="0" A="0" UA="false"/>
           </La>
@@ -569,7 +529,7 @@
           <Vis E=""/>
           <ID V="64" E=""/>
         </I>
-        <I N="Service Indicator_1" SX="0.0750000029802322" SY="0.125" W="60" H="60" WP="98.3607" HP="33.3333" KA="true" Type="IDS">
+        <I N="Service Indicator_1" SX="0.0750000029802322" SY="0.125" W="60" H="60" WP="98.3607" HP="33.3333" SS="true" SP="true" KA="true" Type="IDS">
           <La Sc="Def" Zo="0" Order="0" Flex="false" Sec="0">
             <Pad L="0" R="0" T="0" B="0" A="0" UA="false"/>
           </La>
@@ -605,7 +565,7 @@
           <Vis E=""/>
           <ID V="66" E=""/>
         </I>
-        <I N="Oil Pressure Indicator_1" SX="0.0750000029802322" SY="0.125" W="60" H="60" WP="98.3607" HP="33.3333" KA="true" Type="IDS">
+        <I N="Oil Pressure Indicator_1" SX="0.0750000029802322" SY="0.125" W="60" H="60" WP="98.3607" HP="33.3333" SS="true" SP="true" KA="true" Type="IDS">
           <La Sc="Def" Zo="0" Order="0" Flex="false" Sec="0">
             <Pad L="0" R="0" T="0" B="0" A="0" UA="false"/>
           </La>
@@ -663,9 +623,9 @@
         <Output/>
       </Interface>
       <PN>Display.Port</PN>
-      <Lay LO="0" AR="false" LAR="false" KA="false"/>
+      <Lay LO="0" AR="true" LAR="true" KA="true"/>
       <F>
-        <I N="GuageNoText_1" SX="0.387499988079071" SY="0.580510497093201" W="310" H="279" WP="110.3203" HP="106.7606" KA="true" Type="IDS">
+        <I N="GuageNoText_1" SX="0.387499988079071" SY="0.580510497093201" W="310" H="279" WP="110.3203" HP="106.8966" SS="true" SP="true" KA="true" Type="IDS">
           <La Sc="Def" Zo="0" Order="0" Flex="false" Sec="0">
             <Pad L="0" R="0" T="0" B="0" A="0" UA="false"/>
           </La>
@@ -701,7 +661,7 @@
           <Vis E=""/>
           <ID V="68" E=""/>
         </I>
-        <I N="DialNeedle_1" SX="0.0237499997019768" SY="0.504166662693024" W="19" H="242" WP="6.7616" HP="92.7203" KA="true" Type="IDS">
+        <I N="DialNeedle_1" SX="0.0237499997019768" SY="0.504166662693024" W="19" H="242" WP="6.7616" HP="92.7203" SS="true" SP="true" KA="true" Type="IDS">
           <La Sc="Def" Zo="0" Order="0" Flex="false" Sec="0">
             <Pad L="0" R="0" T="0" B="0" A="0" UA="false"/>
           </La>
@@ -737,7 +697,7 @@
           <Vis E=""/>
           <ID V="70" E=""/>
         </I>
-        <Txt N="DialTicks_8" SX="0.0437499992549419" SY="0.0437499992549419" W="35" H="21" WP="12.4555" HP="8.046" Type="TDS">
+        <Txt N="DialTicks_8" SX="0.124555163085461" SY="0.0804597735404968" W="35" H="21" WP="12.4555" HP="8.046" SS="true" SP="true" Type="TDS">
           <La Sc="Def" Zo="0" Order="0" Flex="false" Sec="0">
             <Pad L="0" R="0" T="0" B="0" A="0" UA="false"/>
           </La>
@@ -782,7 +742,7 @@
             <DV V="200" E="10" FC="0"/>
           </D>
         </Txt>
-        <Txt N="DialTicks_7" SX="0.0437499992549419" SY="0.0437499992549419" W="35" H="21" WP="12.4555" HP="8.046" Type="TDS">
+        <Txt N="DialTicks_7" SX="0.124555163085461" SY="0.0804597735404968" W="35" H="21" WP="12.4555" HP="8.046" SS="true" SP="true" Type="TDS">
           <La Sc="Def" Zo="0" Order="0" Flex="false" Sec="0">
             <Pad L="0" R="0" T="0" B="0" A="0" UA="false"/>
           </La>
@@ -827,7 +787,7 @@
             <DV V="200" E="6" FC="0"/>
           </D>
         </Txt>
-        <Txt N="DialTicks_6" SX="0.0437499992549419" SY="0.0437499992549419" W="35" H="21" WP="12.4555" HP="8.046" Type="TDS">
+        <Txt N="DialTicks_6" SX="0.124555163085461" SY="0.0804597735404968" W="35" H="21" WP="12.4555" HP="8.046" SS="true" SP="true" Type="TDS">
           <La Sc="Def" Zo="0" Order="0" Flex="false" Sec="0">
             <Pad L="0" R="0" T="0" B="0" A="0" UA="false"/>
           </La>
@@ -872,7 +832,7 @@
             <DV V="200" E="4" FC="0"/>
           </D>
         </Txt>
-        <Txt N="DialTicks_5" SX="0.0437499992549419" SY="0.0437499992549419" W="35" H="21" WP="12.4555" HP="8.046" Type="TDS">
+        <Txt N="DialTicks_5" SX="0.124555163085461" SY="0.0804597735404968" W="35" H="21" WP="12.4555" HP="8.046" SS="true" SP="true" Type="TDS">
           <La Sc="Def" Zo="0" Order="0" Flex="false" Sec="0">
             <Pad L="0" R="0" T="0" B="0" A="0" UA="false"/>
           </La>
@@ -917,7 +877,7 @@
             <DV V="200" E="13" FC="0"/>
           </D>
         </Txt>
-        <Txt N="DialTicks_4" SX="0.0437499992549419" SY="0.0437499992549419" W="35" H="21" WP="12.4555" HP="8.046" Type="TDS">
+        <Txt N="DialTicks_4" SX="0.124555163085461" SY="0.0804597735404968" W="35" H="21" WP="12.4555" HP="8.046" SS="true" SP="true" Type="TDS">
           <La Sc="Def" Zo="0" Order="0" Flex="false" Sec="0">
             <Pad L="0" R="0" T="0" B="0" A="0" UA="false"/>
           </La>
@@ -962,7 +922,7 @@
             <DV V="200" E="9" FC="0"/>
           </D>
         </Txt>
-        <Txt N="DialTicks_3" SX="0.0437499992549419" SY="0.0437499992549419" W="35" H="21" WP="12.4555" HP="8.046" Type="TDS">
+        <Txt N="DialTicks_3" SX="0.124555163085461" SY="0.0804597735404968" W="35" H="21" WP="12.4555" HP="8.046" SS="true" SP="true" Type="TDS">
           <La Sc="Def" Zo="0" Order="0" Flex="false" Sec="0">
             <Pad L="0" R="0" T="0" B="0" A="0" UA="false"/>
           </La>
@@ -1007,7 +967,7 @@
             <DV V="200" E="5" FC="0"/>
           </D>
         </Txt>
-        <Txt N="DialTicks_2" SX="0.0437499992549419" SY="0.0437499992549419" W="35" H="21" WP="12.4555" HP="8.046" Type="TDS">
+        <Txt N="DialTicks_2" SX="0.124555163085461" SY="0.0804597735404968" W="35" H="21" WP="12.4555" HP="8.046" SS="true" SP="true" Type="TDS">
           <La Sc="Def" Zo="0" Order="0" Flex="false" Sec="0">
             <Pad L="0" R="0" T="0" B="0" A="0" UA="false"/>
           </La>
@@ -1052,7 +1012,7 @@
             <DV V="200" E="3" FC="0"/>
           </D>
         </Txt>
-        <Txt N="DialTicks_1" SX="0.0437499992549419" SY="0.0437499992549419" W="35" H="21" WP="12.4555" HP="8.046" Type="TDS">
+        <Txt N="DialTicks_1" SX="0.124555163085461" SY="0.0804597735404968" W="35" H="21" WP="12.4555" HP="8.046" SS="true" SP="true" Type="TDS">
           <La Sc="Def" Zo="0" Order="0" Flex="false" Sec="0">
             <Pad L="0" R="0" T="0" B="0" A="0" UA="false"/>
           </La>
@@ -1097,7 +1057,7 @@
             <DV V="200" E="11" FC="0"/>
           </D>
         </Txt>
-        <Txt N="Label&amp;Units_1" SX="0.996441304683685" SY="0.114942587912083" W="280" H="30" WP="99.6441" HP="11.4943" Type="TDS">
+        <Txt N="Label&amp;Units_1" SX="0.996441304683685" SY="0.114942587912083" W="280" H="30" WP="99.6441" HP="11.4943" SS="true" SP="true" Type="TDS">
           <La Sc="Def" Zo="0" Order="0" Flex="false" Sec="0">
             <Pad L="0" R="0" T="0" B="0" A="0" UA="false"/>
           </La>
@@ -1138,8 +1098,8 @@
           <Vis E=""/>
           <ID V="62" E=""/>
           <D>
-            <DV V="0" E="18" FC="0"/>
-            <DV V="0" E="19" FC="1"/>
+            <DV V="'0'" E="18" FC="0"/>
+            <DV V="'0'" E="19" FC="1"/>
           </D>
         </Txt>
       </F>
@@ -1161,6 +1121,565 @@
           <Input E="15" Name="minVal" Type="S32" V="0" UidInst="12"/>
           <Output E="" Name="tick5" Type="S32" UidInst="13"/>
           <Output E="" Name="rotation" Type="S32" UidInst="14"/>
+        </Call>
+      </PouCalls>
+    </ScreenDef>
+    <ScreenDef IDD="true" PT="false">
+      <FF>003A</FF>
+      <ULC X="0" EX="" Y="0" EY="" XP="0" YP="0"/>
+      <W E="" V="125" VP="15.625"/>
+      <H E="" V="195" VP="40.625"/>
+      <D>LinearGaugeWidget</D>
+      <GUID>C6FB34C09_32DB_4B99_968B_2AFEFC85D089</GUID>
+      <C V="00FFFFFF" E=""/>
+      <Interface>
+        <Input>
+          <Net Name="Min" Uid="10" DataType="S32"/>
+          <Net Name="Max" Uid="11" DataType="S32"/>
+          <Net Name="Current" Uid="12" DataType="S32"/>
+          <Net Name="Label" Uid="13" DataType="STRING"/>
+          <Net Name="Units" Uid="14" DataType="STRING"/>
+        </Input>
+        <Output/>
+      </Interface>
+      <PN>Display.Port</PN>
+      <Lay LO="0" AR="false" LAR="true" KA="true"/>
+      <F>
+        <I N="BlueSquare_1" SX="0.399999797344208" SY="0.769230365753174" W="50" H="150" WP="40" HP="76.923" SS="true" SP="true" KA="true" Type="IDS">
+          <La Sc="Def" Zo="0" Order="0" Flex="false" Sec="0">
+            <Pad L="0" R="0" T="0" B="0" A="0" UA="false"/>
+          </La>
+          <LMO>
+            <X/>
+            <Y/>
+            <W/>
+            <H/>
+          </LMO>
+          <En V="True" E=""/>
+          <GUID>C3A67AD8C_C136_45B5_8D56_AB0D74E87A18</GUID>
+          <T>
+            <IsSink V="False" E=""/>
+            <Output E=""/>
+            <LocalX E=""/>
+            <LocalY E=""/>
+            <GType E=""/>
+            <GX E=""/>
+            <GY E=""/>
+            <ZoomFactor E=""/>
+            <DeltaX E=""/>
+            <DeltaY E=""/>
+            <Velocity E=""/>
+            <RotAng E=""/>
+            <LocalDeltaX E=""/>
+            <LocalDeltaY E=""/>
+          </T>
+          <C V="01010100" E=""/>
+          <IP X="50" EX="" Y="75" EY="9" XP="40" YP="38.4615"/>
+          <R V="0" E=""/>
+          <O>14</O>
+          <Pr V="0" E=""/>
+          <Vis E=""/>
+          <ID V="73" E=""/>
+        </I>
+        <Txt N="Label&amp;Units2_1" SX="0.125" SY="0.0874999985098839" W="100" H="42" WP="80" HP="21.5385" SS="true" SP="true" Type="TDS">
+          <La Sc="Def" Zo="0" Order="0" Flex="false" Sec="0">
+            <Pad L="0" R="0" T="0" B="0" A="0" UA="false"/>
+          </La>
+          <LMO>
+            <X/>
+            <Y/>
+            <W/>
+            <H/>
+          </LMO>
+          <En V="True" E=""/>
+          <F V="" E=""/>
+          <GUID>C1ED2F799_45ED_4627_9562_776F91F8AE3F</GUID>
+          <FF>
+            <N>Courier New</N>
+            <S>14</S>
+          </FF>
+          <J V="1" E=""/>
+          <T>
+            <IsSink V="False" E=""/>
+            <Output E=""/>
+            <LocalX E=""/>
+            <LocalY E=""/>
+            <GType E=""/>
+            <GX E=""/>
+            <GY E=""/>
+            <ZoomFactor E=""/>
+            <DeltaX E=""/>
+            <DeltaY E=""/>
+            <Velocity E=""/>
+            <RotAng E=""/>
+            <LocalDeltaX E=""/>
+            <LocalDeltaY E=""/>
+          </T>
+          <C V="00000000" E=""/>
+          <SP X="25" EX="" Y="0" EY="" XP="20" YP="0"/>
+          <O>2</O>
+          <Pr V="0" E=""/>
+          <Vis E=""/>
+          <ID V="74" E=""/>
+          <D>
+            <DV V="'Label'" E="13" FC="0"/>
+            <DV V="'Units'" E="14" FC="1"/>
+          </D>
+        </Txt>
+        <Txt N="Value" SX="0.239999994635582" SY="0.102564103901386" W="30" H="20" WP="24" HP="10.2564" SS="true" SP="true" Type="TDS">
+          <La Sc="Def" Zo="0" Order="0" Flex="false" Sec="0">
+            <Pad L="0" R="0" T="0" B="0" A="0" UA="false"/>
+          </La>
+          <LMO>
+            <X/>
+            <Y/>
+            <W/>
+            <H/>
+          </LMO>
+          <En V="True" E=""/>
+          <F V="" E=""/>
+          <GUID>C326E5E97_04A9_40EB_B971_4AAF0A7C3301</GUID>
+          <FF>
+            <N>Courier New</N>
+            <S>16</S>
+          </FF>
+          <J V="0" E=""/>
+          <T>
+            <IsSink V="False" E=""/>
+            <Output E=""/>
+            <LocalX E=""/>
+            <LocalY E=""/>
+            <GType E=""/>
+            <GX E=""/>
+            <GY E=""/>
+            <ZoomFactor E=""/>
+            <DeltaX E=""/>
+            <DeltaY E=""/>
+            <Velocity E=""/>
+            <RotAng E=""/>
+            <LocalDeltaX E=""/>
+            <LocalDeltaY E=""/>
+          </T>
+          <C V="00000000" E=""/>
+          <SP X="0" EX="" Y="65" EY="15" XP="0" YP="33.3334"/>
+          <O>1</O>
+          <Pr V="0" E=""/>
+          <Vis E=""/>
+          <ID V="71" E=""/>
+          <D>
+            <DV V="80" E="12" FC="0"/>
+          </D>
+        </Txt>
+        <L N="Line_1" SX="0.0625" SY="0.00416666688397527" SS="" SP="">
+          <La Sc="Def" Zo="0" Order="0" Flex="false" Sec="0" Len="100">
+            <Pad L="0" R="0" T="0" B="0" A="0" UA="false"/>
+          </La>
+          <LMO>
+            <X0/>
+            <Y0/>
+            <X1/>
+            <Y1/>
+          </LMO>
+          <En V="True" E=""/>
+          <GUID>C8A87E2C6_09ED_4094_8766_E74C08F12703</GUID>
+          <T>
+            <IsSink V="False" E=""/>
+            <Output E=""/>
+            <LocalX E=""/>
+            <LocalY E=""/>
+            <GType E=""/>
+            <GX E=""/>
+            <GY E=""/>
+            <ZoomFactor E=""/>
+            <DeltaX E=""/>
+            <DeltaY E=""/>
+            <Velocity E=""/>
+            <RotAng E=""/>
+            <LocalDeltaX E=""/>
+            <LocalDeltaY E=""/>
+          </T>
+          <C V="00000000" E=""/>
+          <W V="2" E=""/>
+          <SP X="50" EX="" Y="195" EY="" XP="40" YP="100"/>
+          <EP X="100" EX="" Y="195" EY="" XP="80" YP="100"/>
+          <O>13</O>
+          <Pr V="0" E=""/>
+          <Vis E=""/>
+        </L>
+        <L N="Line_2" SX="0.00249999994412065" SY="0.302083343267441" SS="" SP="">
+          <La Sc="Def" Zo="0" Order="0" Flex="false" Sec="0" Len="100">
+            <Pad L="0" R="0" T="0" B="0" A="0" UA="false"/>
+          </La>
+          <LMO>
+            <X0/>
+            <Y0/>
+            <X1/>
+            <Y1/>
+          </LMO>
+          <En V="True" E=""/>
+          <GUID>C14935E04_4915_4FC6_82B1_1FA7CC6F6738</GUID>
+          <T>
+            <IsSink V="False" E=""/>
+            <Output E=""/>
+            <LocalX E=""/>
+            <LocalY E=""/>
+            <GType E=""/>
+            <GX E=""/>
+            <GY E=""/>
+            <ZoomFactor E=""/>
+            <DeltaX E=""/>
+            <DeltaY E=""/>
+            <Velocity E=""/>
+            <RotAng E=""/>
+            <LocalDeltaX E=""/>
+            <LocalDeltaY E=""/>
+          </T>
+          <C V="00000000" E=""/>
+          <W V="2" E=""/>
+          <SP X="50" EX="" Y="195" EY="" XP="40" YP="100"/>
+          <EP X="50" EX="" Y="45" EY="" XP="40" YP="23.0769"/>
+          <O>12</O>
+          <Pr V="0" E=""/>
+          <Vis E=""/>
+        </L>
+        <L N="Line_3" SX="0.0625" SY="0.00416666688397527" SS="" SP="">
+          <La Sc="Def" Zo="0" Order="0" Flex="false" Sec="0" Len="100">
+            <Pad L="0" R="0" T="0" B="0" A="0" UA="false"/>
+          </La>
+          <LMO>
+            <X0/>
+            <Y0/>
+            <X1/>
+            <Y1/>
+          </LMO>
+          <En V="True" E=""/>
+          <GUID>C96E6C5A9_C6B2_4E1B_AFE2_E56C5B754A0F</GUID>
+          <T>
+            <IsSink V="False" E=""/>
+            <Output E=""/>
+            <LocalX E=""/>
+            <LocalY E=""/>
+            <GType E=""/>
+            <GX E=""/>
+            <GY E=""/>
+            <ZoomFactor E=""/>
+            <DeltaX E=""/>
+            <DeltaY E=""/>
+            <Velocity E=""/>
+            <RotAng E=""/>
+            <LocalDeltaX E=""/>
+            <LocalDeltaY E=""/>
+          </T>
+          <C V="00000000" E=""/>
+          <W V="2" E=""/>
+          <SP X="50" EX="" Y="45" EY="" XP="40" YP="23.0769"/>
+          <EP X="100" EX="" Y="45" EY="" XP="80" YP="23.0769"/>
+          <O>11</O>
+          <Pr V="0" E=""/>
+          <Vis E=""/>
+        </L>
+        <L N="Line_4" SX="0.00249999994412065" SY="0.3125" SS="" SP="">
+          <La Sc="Def" Zo="0" Order="0" Flex="false" Sec="0" Len="100">
+            <Pad L="0" R="0" T="0" B="0" A="0" UA="false"/>
+          </La>
+          <LMO>
+            <X0/>
+            <Y0/>
+            <X1/>
+            <Y1/>
+          </LMO>
+          <En V="True" E=""/>
+          <GUID>C46AC6751_3ECF_4EDC_B78A_45B8B7CC66E2</GUID>
+          <T>
+            <IsSink V="False" E=""/>
+            <Output E=""/>
+            <LocalX E=""/>
+            <LocalY E=""/>
+            <GType E=""/>
+            <GX E=""/>
+            <GY E=""/>
+            <ZoomFactor E=""/>
+            <DeltaX E=""/>
+            <DeltaY E=""/>
+            <Velocity E=""/>
+            <RotAng E=""/>
+            <LocalDeltaX E=""/>
+            <LocalDeltaY E=""/>
+          </T>
+          <C V="00000000" E=""/>
+          <W V="2" E=""/>
+          <SP X="100" EX="" Y="195" EY="" XP="80" YP="100"/>
+          <EP X="100" EX="" Y="45" EY="" XP="80" YP="23.0769"/>
+          <O>10</O>
+          <Pr V="0" E=""/>
+          <Vis E=""/>
+        </L>
+        <L N="Line_5" SX="0.0125000001862645" SY="0.00416666688397527" SS="" SP="">
+          <La Sc="Def" Zo="0" Order="0" Flex="false" Sec="0" Len="100">
+            <Pad L="0" R="0" T="0" B="0" A="0" UA="false"/>
+          </La>
+          <LMO>
+            <X0/>
+            <Y0/>
+            <X1/>
+            <Y1/>
+          </LMO>
+          <En V="True" E=""/>
+          <GUID>C640597CC_74CA_496F_BBCD_77C1ED5DDB99</GUID>
+          <T>
+            <IsSink V="False" E=""/>
+            <Output E=""/>
+            <LocalX E=""/>
+            <LocalY E=""/>
+            <GType E=""/>
+            <GX E=""/>
+            <GY E=""/>
+            <ZoomFactor E=""/>
+            <DeltaX E=""/>
+            <DeltaY E=""/>
+            <Velocity E=""/>
+            <RotAng E=""/>
+            <LocalDeltaX E=""/>
+            <LocalDeltaY E=""/>
+          </T>
+          <C V="00000000" E=""/>
+          <W V="2" E=""/>
+          <SP X="50" EX="" Y="75" EY="" XP="40" YP="38.4615"/>
+          <EP X="60" EX="" Y="75" EY="" XP="48" YP="38.4615"/>
+          <O>9</O>
+          <Pr V="0" E=""/>
+          <Vis E=""/>
+        </L>
+        <L N="Line_6" SX="0.0125000001862645" SY="0.00416666688397527" SS="" SP="">
+          <La Sc="Def" Zo="0" Order="0" Flex="false" Sec="0" Len="100">
+            <Pad L="0" R="0" T="0" B="0" A="0" UA="false"/>
+          </La>
+          <LMO>
+            <X0/>
+            <Y0/>
+            <X1/>
+            <Y1/>
+          </LMO>
+          <En V="True" E=""/>
+          <GUID>C54720D5D_5BA3_4CEC_987F_AB899734457F</GUID>
+          <T>
+            <IsSink V="False" E=""/>
+            <Output E=""/>
+            <LocalX E=""/>
+            <LocalY E=""/>
+            <GType E=""/>
+            <GX E=""/>
+            <GY E=""/>
+            <ZoomFactor E=""/>
+            <DeltaX E=""/>
+            <DeltaY E=""/>
+            <Velocity E=""/>
+            <RotAng E=""/>
+            <LocalDeltaX E=""/>
+            <LocalDeltaY E=""/>
+          </T>
+          <C V="00000000" E=""/>
+          <W V="2" E=""/>
+          <SP X="50" EX="" Y="105" EY="" XP="40" YP="53.8462"/>
+          <EP X="60" EX="" Y="105" EY="" XP="48" YP="53.8462"/>
+          <O>8</O>
+          <Pr V="0" E=""/>
+          <Vis E=""/>
+        </L>
+        <L N="Line_7" SX="0.0125000001862645" SY="0.00416666688397527" SS="" SP="">
+          <La Sc="Def" Zo="0" Order="0" Flex="false" Sec="0" Len="100">
+            <Pad L="0" R="0" T="0" B="0" A="0" UA="false"/>
+          </La>
+          <LMO>
+            <X0/>
+            <Y0/>
+            <X1/>
+            <Y1/>
+          </LMO>
+          <En V="True" E=""/>
+          <GUID>CA930657A_5A60_4922_A410_FE8E2A7C60E9</GUID>
+          <T>
+            <IsSink V="False" E=""/>
+            <Output E=""/>
+            <LocalX E=""/>
+            <LocalY E=""/>
+            <GType E=""/>
+            <GX E=""/>
+            <GY E=""/>
+            <ZoomFactor E=""/>
+            <DeltaX E=""/>
+            <DeltaY E=""/>
+            <Velocity E=""/>
+            <RotAng E=""/>
+            <LocalDeltaX E=""/>
+            <LocalDeltaY E=""/>
+          </T>
+          <C V="00000000" E=""/>
+          <W V="2" E=""/>
+          <SP X="50" EX="" Y="135" EY="" XP="40" YP="69.2308"/>
+          <EP X="60" EX="" Y="135" EY="" XP="48" YP="69.2308"/>
+          <O>7</O>
+          <Pr V="0" E=""/>
+          <Vis E=""/>
+        </L>
+        <L N="Line_8" SX="0.0125000001862645" SY="0.00416666688397527" SS="" SP="">
+          <La Sc="Def" Zo="0" Order="0" Flex="false" Sec="0" Len="100">
+            <Pad L="0" R="0" T="0" B="0" A="0" UA="false"/>
+          </La>
+          <LMO>
+            <X0/>
+            <Y0/>
+            <X1/>
+            <Y1/>
+          </LMO>
+          <En V="True" E=""/>
+          <GUID>CC6D05F45_A80C_4879_A93F_F19D2156E00E</GUID>
+          <T>
+            <IsSink V="False" E=""/>
+            <Output E=""/>
+            <LocalX E=""/>
+            <LocalY E=""/>
+            <GType E=""/>
+            <GX E=""/>
+            <GY E=""/>
+            <ZoomFactor E=""/>
+            <DeltaX E=""/>
+            <DeltaY E=""/>
+            <Velocity E=""/>
+            <RotAng E=""/>
+            <LocalDeltaX E=""/>
+            <LocalDeltaY E=""/>
+          </T>
+          <C V="00000000" E=""/>
+          <W V="2" E=""/>
+          <SP X="50" EX="" Y="165" EY="" XP="40" YP="84.6154"/>
+          <EP X="60" EX="" Y="165" EY="" XP="48" YP="84.6154"/>
+          <O>6</O>
+          <Pr V="0" E=""/>
+          <Vis E=""/>
+        </L>
+        <L N="Line_9" SX="0.0136180110275745" SY="0.0141434352844954" SS="" SP="">
+          <La Sc="Def" Zo="0" Order="0" Flex="false" Sec="0" Len="100">
+            <Pad L="0" R="0" T="0" B="0" A="0" UA="false"/>
+          </La>
+          <LMO>
+            <X0/>
+            <Y0/>
+            <X1/>
+            <Y1/>
+          </LMO>
+          <En V="True" E=""/>
+          <GUID>C69461E3C_A4C3_4A35_B580_0996200AE203</GUID>
+          <T>
+            <IsSink V="False" E=""/>
+            <Output E=""/>
+            <LocalX E=""/>
+            <LocalY E=""/>
+            <GType E=""/>
+            <GX E=""/>
+            <GY E=""/>
+            <ZoomFactor E=""/>
+            <DeltaX E=""/>
+            <DeltaY E=""/>
+            <Velocity E=""/>
+            <RotAng E=""/>
+            <LocalDeltaX E=""/>
+            <LocalDeltaY E=""/>
+          </T>
+          <C V="00000000" E=""/>
+          <W V="2" E=""/>
+          <SP X="35" EX="" Y="70" EY="6" XP="28" YP="35.8973"/>
+          <EP X="45" EX="" Y="75" EY="9" XP="36" YP="38.4615"/>
+          <O>5</O>
+          <Pr V="0" E=""/>
+          <Vis E=""/>
+        </L>
+        <L N="Line_10" SX="0.0136180110275745" SY="0.0141434352844954" SS="" SP="">
+          <La Sc="Def" Zo="0" Order="0" Flex="false" Sec="0" Len="100">
+            <Pad L="0" R="0" T="0" B="0" A="0" UA="false"/>
+          </La>
+          <LMO>
+            <X0/>
+            <Y0/>
+            <X1/>
+            <Y1/>
+          </LMO>
+          <En V="True" E=""/>
+          <GUID>CB890A691_F32A_4ADF_846B_7A25FF0BD369</GUID>
+          <T>
+            <IsSink V="False" E=""/>
+            <Output E=""/>
+            <LocalX E=""/>
+            <LocalY E=""/>
+            <GType E=""/>
+            <GX E=""/>
+            <GY E=""/>
+            <ZoomFactor E=""/>
+            <DeltaX E=""/>
+            <DeltaY E=""/>
+            <Velocity E=""/>
+            <RotAng E=""/>
+            <LocalDeltaX E=""/>
+            <LocalDeltaY E=""/>
+          </T>
+          <C V="00000000" E=""/>
+          <W V="2" E=""/>
+          <SP X="35" EX="" Y="80" EY="3" XP="28" YP="41.0257"/>
+          <EP X="45" EX="" Y="75" EY="9" XP="36" YP="38.4615"/>
+          <O>4</O>
+          <Pr V="0" E=""/>
+          <Vis E=""/>
+        </L>
+        <L N="Line_11" SX="0.00249999994412065" SY="0.020833333954215" SS="" SP="">
+          <La Sc="Def" Zo="0" Order="0" Flex="false" Sec="0" Len="100">
+            <Pad L="0" R="0" T="0" B="0" A="0" UA="false"/>
+          </La>
+          <LMO>
+            <X0/>
+            <Y0/>
+            <X1/>
+            <Y1/>
+          </LMO>
+          <En V="True" E=""/>
+          <GUID>C705D3F44_3EFA_4C2A_9546_1CB8258E7AFA</GUID>
+          <T>
+            <IsSink V="False" E=""/>
+            <Output E=""/>
+            <LocalX E=""/>
+            <LocalY E=""/>
+            <GType E=""/>
+            <GX E=""/>
+            <GY E=""/>
+            <ZoomFactor E=""/>
+            <DeltaX E=""/>
+            <DeltaY E=""/>
+            <Velocity E=""/>
+            <RotAng E=""/>
+            <LocalDeltaX E=""/>
+            <LocalDeltaY E=""/>
+          </T>
+          <C V="00000000" E=""/>
+          <W V="2" E=""/>
+          <SP X="35" EX="" Y="80" EY="3" XP="28" YP="41.0257"/>
+          <EP X="35" EX="" Y="70" EY="6" XP="28" YP="35.8973"/>
+          <O>3</O>
+          <Pr V="0" E=""/>
+          <Vis E=""/>
+        </L>
+      </F>
+      <PouCalls>
+        <Call PouName="LinearGaugePOU" Name="LinearGaugePOU_1" Type="C" Unit="LinearGaugePLC.xml">
+          <GUID>CDF7EF4B7_D679_4653_9208_11C717C55AC8</GUID>
+          <Trig V="True" E=""/>
+          <Output E="" Name="#Return" Type="S32" UidInst="1"/>
+          <Output E="" Name="#RuntimeErrors" Type="U16" UidInst="2"/>
+          <Output E="" Name="ArrowBottomLeft" Type="S32" UidInst="3"/>
+          <Input E="11" Name="MaxValue" Type="S32" V="0" UidInst="4"/>
+          <Input E="12" Name="CurValue" Type="S32" V="0" UidInst="5"/>
+          <Output E="" Name="ArrowTopLeft" Type="S32" UidInst="6"/>
+          <Input E="10" Name="MinValue" Type="S32" V="0" UidInst="8"/>
+          <Output E="" Name="ArrowRight" Type="S32" UidInst="9"/>
+          <Output E="" Name="TextTop" Type="S32" UidInst="15"/>
         </Call>
       </PouCalls>
     </ScreenDef>
@@ -1203,8 +1722,8 @@ cHV0cyBDb3VudD0iMSI+PEZDIFR5cGU9IlNpZ25lZCIgRGlnaXRzPSIyIiBWYWx1ZT0iMCIgUHJl
 Zml4PSIwIiBQYWRkaW5nPSIwIiBCYXNlPSIxIiBBbHQ9ImZhbHNlIi8+PC9JbnB1dHM+PC9UZXh0
 PjwvRm9sZGVyPjxMYW5ndWFnZU1hcHBpbmdzPjxMYW5ndWFnZU1hcHBpbmcgRXh0SUQ9IjEiIElE
 PSIxIi8+PC9MYW5ndWFnZU1hcHBpbmdzPjxTZGxJdGVtc0lkTWFwPjxJdGVtIFNkbElEPSIxIiBJ
-RD0iMSIvPjxJdGVtIFNkbElEPSIxMTMiIElEPSI1NCIvPjxJdGVtIFNkbElEPSI4MyIgSUQ9IjYw
-Ii8+PEl0ZW0gU2RsSUQ9IjExNCIgSUQ9IjU1Ii8+PEl0ZW0gU2RsSUQ9IjExNSIgSUQ9IjU2Ii8+
+RD0iMSIvPjxJdGVtIFNkbElEPSIxMTMiIElEPSI1NCIvPjxJdGVtIFNkbElEPSIxMTQiIElEPSI1
+NSIvPjxJdGVtIFNkbElEPSI4MyIgSUQ9IjYwIi8+PEl0ZW0gU2RsSUQ9IjExNSIgSUQ9IjU2Ii8+
 PEl0ZW0gU2RsSUQ9IjExNiIgSUQ9IjU3Ii8+PEl0ZW0gU2RsSUQ9IjExOCIgSUQ9IjU5Ii8+PC9T
 ZGxJdGVtc0lkTWFwPjwvU2NyZWVuTGlicmFyeT48L0V4dExpYj48L0V4dGVybmFsTGlicmFyeT4=</ExternalLibrary>
 </ScreenRepository>

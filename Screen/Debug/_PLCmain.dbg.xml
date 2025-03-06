@@ -6,24 +6,20 @@
 			<Interface>
 				<VariableInfo VariableName="value" VariableNameC="value" VariableType="UINT" VariableKind="VAR_INPUT" />
 				<VariableInfo VariableName="divisor" VariableNameC="divisor" VariableType="UINT" VariableKind="VAR_INPUT" />
-				<VariableInfo VariableName="point" VariableNameC="*point" VariableType="BOOL" VariableKind="VAR_OUTPUT" />
-				<VariableInfo VariableName="nopoint" VariableNameC="*nopoint" VariableType="BOOL" VariableKind="VAR_OUTPUT" />
 				<VariableInfo VariableName="number" VariableNameC="*number" VariableType="UINT" VariableKind="VAR_OUTPUT" />
 				<VariableInfo VariableName="decimal" VariableNameC="*decimal" VariableType="UINT" VariableKind="VAR_OUTPUT" />
 				<VariableInfo VariableName="TextGuagePOU" VariableNameC="TextGuagePOU" VariableType="DINT" VariableKind="VAR" />
 			</Interface>
-			<FuncInfo FuncNameC="p1Plc_func_TEXTGUAGEPOU" FuncStart="23" CodeStart="31" CodeEnd="57" Language="C">
+			<FuncInfo FuncNameC="p1Plc_func_TEXTGUAGEPOU" FuncStart="23" CodeStart="29" CodeEnd="45" Language="C">
 				<FuncDef>PLC_DINT p1Plc_func_TEXTGUAGEPOU(
     PLC_BOOL* ENO, 
     PLC_UINT value, 
     PLC_UINT divisor, 
-    PLC_BOOL* point, 
-    PLC_BOOL* nopoint, 
     PLC_UINT* number, 
     PLC_UINT* decimal);
 </FuncDef>
 				<Code>
-					<CodeLine PouLine="1" CLine="39" LineCount="17" />
+					<CodeLine PouLine="1" CLine="35" LineCount="9" />
 				</Code>
 			</FuncInfo>
 		</POU>
@@ -43,7 +39,7 @@
 				<VariableInfo VariableName="rotation" VariableNameC="*rotation" VariableType="DINT" VariableKind="VAR_OUTPUT" />
 				<VariableInfo VariableName="DialGuagePOU" VariableNameC="DialGuagePOU" VariableType="DINT" VariableKind="VAR" />
 			</Interface>
-			<FuncInfo FuncNameC="p1Plc_func_DIALGUAGEPOU" FuncStart="59" CodeStart="73" CodeEnd="100" Language="C">
+			<FuncInfo FuncNameC="p1Plc_func_DIALGUAGEPOU" FuncStart="47" CodeStart="61" CodeEnd="88" Language="C">
 				<FuncDef>PLC_DINT p1Plc_func_DIALGUAGEPOU(
     PLC_BOOL* ENO, 
     PLC_DINT minVal, 
@@ -60,7 +56,34 @@
     PLC_DINT* rotation);
 </FuncDef>
 				<Code>
-					<CodeLine PouLine="1" CLine="86" LineCount="13" />
+					<CodeLine PouLine="1" CLine="74" LineCount="13" />
+				</Code>
+			</FuncInfo>
+		</POU>
+		<POU PouName="LinearGaugePOU" PouKind="FUNCTION" SourceFileName="LINEARGAUGEPLC.XML">
+			<Interface>
+				<VariableInfo VariableName="CurValue" VariableNameC="CurValue" VariableType="DINT" VariableKind="VAR_INPUT" />
+				<VariableInfo VariableName="MaxValue" VariableNameC="MaxValue" VariableType="DINT" VariableKind="VAR_INPUT" />
+				<VariableInfo VariableName="MinValue" VariableNameC="MinValue" VariableType="DINT" VariableKind="VAR_INPUT" />
+				<VariableInfo VariableName="TextTop" VariableNameC="*TextTop" VariableType="DINT" VariableKind="VAR_OUTPUT" />
+				<VariableInfo VariableName="ArrowBottomLeft" VariableNameC="*ArrowBottomLeft" VariableType="DINT" VariableKind="VAR_OUTPUT" />
+				<VariableInfo VariableName="ArrowTopLeft" VariableNameC="*ArrowTopLeft" VariableType="DINT" VariableKind="VAR_OUTPUT" />
+				<VariableInfo VariableName="ArrowRight" VariableNameC="*ArrowRight" VariableType="DINT" VariableKind="VAR_OUTPUT" />
+				<VariableInfo VariableName="LinearGaugePOU" VariableNameC="LinearGaugePOU" VariableType="DINT" VariableKind="VAR" />
+			</Interface>
+			<FuncInfo FuncNameC="p1Plc_func_LINEARGAUGEPOU" FuncStart="90" CodeStart="99" CodeEnd="114" Language="C">
+				<FuncDef>PLC_DINT p1Plc_func_LINEARGAUGEPOU(
+    PLC_BOOL* ENO, 
+    PLC_DINT CurValue, 
+    PLC_DINT MaxValue, 
+    PLC_DINT MinValue, 
+    PLC_DINT* TextTop, 
+    PLC_DINT* ArrowBottomLeft, 
+    PLC_DINT* ArrowTopLeft, 
+    PLC_DINT* ArrowRight);
+</FuncDef>
+				<Code>
+					<CodeLine PouLine="1" CLine="107" LineCount="6" />
 				</Code>
 			</FuncInfo>
 		</POU>

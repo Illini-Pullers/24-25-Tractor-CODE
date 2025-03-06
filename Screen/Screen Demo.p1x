@@ -13,6 +13,7 @@
       <ScreenRepository FileName="SCREENREPO.SRD"/>
       <PLCopenXML FileName="TextGuagePLC.xml"/>
       <PLCopenXML FileName="DialGuagePLC.xml"/>
+      <PLCopenXML FileName="LinearGaugePLC.xml"/>
       <DebugSettings FileName="DebugSettings.xml"/>
       <MediaRepository FileName="appMedia.tar" isEmpty="true"/>
       <Parameters FileName="ProjectParameters.json"/>
