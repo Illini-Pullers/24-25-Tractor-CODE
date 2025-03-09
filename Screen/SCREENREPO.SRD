@@ -8,8 +8,8 @@
       <Used_by/>
       <String LanguageIndex="1" TextData="%1$.%2$"/>
       <Inputs Count="2">
-        <FC Type="Unsigned" Digits="6" Value="0" Prefix="0" Padding="0" Base="1" Alt="false"/>
-        <FC Type="Unsigned" Digits="6" Value="0" Prefix="0" Padding="0" Base="1" Alt="false"/>
+        <FC Type="Signed" Digits="6" Value="0" Prefix="0" Padding="0" Base="1" Alt="false"/>
+        <FC Type="Signed" Digits="6" Value="0" Prefix="0" Padding="0" Base="1" Alt="false"/>
       </Inputs>
     </Text>
     <Text>
@@ -131,7 +131,13 @@
       <GUID>CE23C0FAC_6BD8_4751_A2BD_302F2E570AF2</GUID>
       <C V="00FFFFFF" E=""/>
       <Interface>
-        <Input/>
+        <Input>
+          <Net Name="Malfctn_Lmp" Uid="30" DataType="BOOL"/>
+          <Net Name="EngineOilPress" Uid="31" DataType="S32"/>
+          <Net Name="EngOilPrssrLowLmpCmd" Uid="32" DataType="BOOL"/>
+          <Net Name="BattVoltage" Uid="33" DataType="S32"/>
+          <Net Name="BarometricP" Uid="34" DataType="S32"/>
+        </Input>
         <Output/>
       </Interface>
       <PN>Display.Port</PN>
@@ -152,11 +158,12 @@
           <ID>C0C8C41A8_0476_438D_A0CE_9EE830CFDF57</ID>
           <O>4</O>
           <Intf>
-            <Net E="" UidDef="15" UidInst="8" Dir="I" V="-80"/>
-            <Net E="" UidDef="16" UidInst="9" Dir="I" V="240"/>
-            <Net E="" UidDef="17" UidInst="10" Dir="I" V="100"/>
-            <Net E="" UidDef="18" UidInst="11" Dir="I" V="Engine Speed"/>
-            <Net E="" UidDef="19" UidInst="12" Dir="I" V="MPH"/>
+            <Net E="" UidDef="15" UidInst="8" Dir="I" V="0"/>
+            <Net E="" UidDef="16" UidInst="9" Dir="I" V="100"/>
+            <Net E="31" UidDef="17" UidInst="10" Dir="I" V=""/>
+            <Net E="" UidDef="18" UidInst="11" Dir="I" V="Engine Oil Pressure"/>
+            <Net E="" UidDef="19" UidInst="12" Dir="I" V="kPa"/>
+            <Net E="" UidDef="24" UidInst="36" Dir="I" V="1"/>
           </Intf>
           <IP X="485" EX="" Y="15" EY="" XP="60.6595" YP="3.125"/>
         </Wdg>
@@ -175,9 +182,9 @@
           <ID>CBE044DED_69F2_40AA_A384_0286F211B14D</ID>
           <O>3</O>
           <Intf>
-            <Net E="" UidDef="1" UidInst="18" Dir="I" V="True"/>
+            <Net E="32" UidDef="1" UidInst="18" Dir="I" V="True"/>
             <Net E="" UidDef="2" UidInst="19" Dir="I" V="False"/>
-            <Net E="" UidDef="3" UidInst="20" Dir="I" V="True"/>
+            <Net E="30" UidDef="3" UidInst="20" Dir="I" V="True"/>
           </Intf>
           <IP X="5" EX="" Y="5" EY="" XP="0.625" YP="1.0417"/>
         </Wdg>
@@ -198,7 +205,7 @@
           <Intf>
             <Net E="" UidDef="8" UidInst="21" Dir="I" V="V"/>
             <Net E="" UidDef="9" UidInst="22" Dir="I" V="1000"/>
-            <Net E="" UidDef="10" UidInst="23" Dir="I" V="11598"/>
+            <Net E="33" UidDef="10" UidInst="23" Dir="I" V=""/>
             <Net E="" UidDef="12" UidInst="24" Dir="I" V="Batt Volt"/>
           </Intf>
           <IP X="175" EX="" Y="280" EY="" XP="21.875" YP="58.3333"/>
@@ -218,11 +225,12 @@
           <ID>C6FB34C09_32DB_4B99_968B_2AFEFC85D089</ID>
           <O>1</O>
           <Intf>
+            <Net E="" UidDef="17" UidInst="35" Dir="I" V="10"/>
             <Net E="" UidDef="10" UidInst="25" Dir="I" V="0"/>
-            <Net E="" UidDef="11" UidInst="26" Dir="I" V="100"/>
-            <Net E="" UidDef="12" UidInst="27" Dir="I" V="60"/>
-            <Net E="" UidDef="13" UidInst="28" Dir="I" V="Fuel"/>
-            <Net E="" UidDef="14" UidInst="29" Dir="I" V="%"/>
+            <Net E="" UidDef="11" UidInst="26" Dir="I" V="1250"/>
+            <Net E="34" UidDef="12" UidInst="27" Dir="I" V=""/>
+            <Net E="" UidDef="13" UidInst="28" Dir="I" V="Air Pressure"/>
+            <Net E="" UidDef="14" UidInst="29" Dir="I" V="kPa"/>
           </Intf>
           <IP X="235" EX="" Y="30" EY="" XP="29.375" YP="6.25"/>
         </Wdg>
@@ -338,6 +346,7 @@
           <ID>C6FB34C09_32DB_4B99_968B_2AFEFC85D089</ID>
           <O>1</O>
           <Intf>
+            <Net E="" UidDef="17" UidInst="6" Dir="I" V="1"/>
             <Net E="" UidDef="10" UidInst="1" Dir="I" V="0"/>
             <Net E="" UidDef="11" UidInst="2" Dir="I" V="100"/>
             <Net E="" UidDef="12" UidInst="3" Dir="I" V="60"/>
@@ -360,8 +369,8 @@
       <Interface>
         <Input>
           <Net Name="Units" Uid="8" DataType="STRING"/>
-          <Net Name="Divisor" Uid="9" DataType="U16"/>
-          <Net Name="Value" Uid="10" DataType="U16"/>
+          <Net Name="Divisor" Uid="9" DataType="S32"/>
+          <Net Name="Value" Uid="10" DataType="S32"/>
           <Net Name="Label" Uid="12" DataType="STRING"/>
         </Input>
         <Output/>
@@ -411,8 +420,8 @@
           <Vis E=""/>
           <ID V="61" E=""/>
           <D>
-            <DV V="999" E="7" FC="0"/>
-            <DV V="999" E="4" FC="1"/>
+            <DV V="999" E="16" FC="0"/>
+            <DV V="999" E="15" FC="1"/>
           </D>
         </Txt>
         <Txt N="Words" SX="0.984251976013184" SY="0.30405405163765" W="250" H="45" WP="100" HP="35.7143" SS="true" SP="true" Type="TDS">
@@ -465,12 +474,12 @@
         <Call PouName="TextGuagePOU" Name="TextGuagePOU_1" Type="C" Unit="TextGuagePLC.xml">
           <GUID>C2F4D5C51_ACFC_4AA8_BFD2_B0C67D3C3AC7</GUID>
           <Trig V="True" E=""/>
+          <Output E="" Name="Decimal" Type="S32" UidInst="15"/>
+          <Output E="" Name="Number" Type="S32" UidInst="16"/>
           <Output E="" Name="#Return" Type="S32" UidInst="1"/>
           <Output E="" Name="#RuntimeErrors" Type="U16" UidInst="2"/>
-          <Input E="10" Name="value" Type="U16" V="0" UidInst="3"/>
-          <Output E="" Name="decimal" Type="U16" UidInst="4"/>
-          <Input E="9" Name="divisor" Type="U16" V="0" UidInst="5"/>
-          <Output E="" Name="number" Type="U16" UidInst="7"/>
+          <Input E="10" Name="Value" Type="S32" V="0" UidInst="13"/>
+          <Input E="9" Name="Divisor" Type="S32" V="0" UidInst="14"/>
         </Call>
       </PouCalls>
     </ScreenDef>
@@ -619,6 +628,7 @@
           <Net Name="CurInput" Uid="17" DataType="S32"/>
           <Net Name="Label" Uid="18" DataType="STRING"/>
           <Net Name="Units" Uid="19" DataType="STRING"/>
+          <Net Name="Divisor" Uid="24" DataType="S32"/>
         </Input>
         <Output/>
       </Interface>
@@ -691,7 +701,7 @@
           </T>
           <C V="01010100" E=""/>
           <IP X="140" EX="" Y="145" EY="" XP="49.8221" YP="55.5556"/>
-          <R V="0" E="14"/>
+          <R V="0" E="28"/>
           <O>10</O>
           <Pr V="0" E=""/>
           <Vis E=""/>
@@ -739,7 +749,7 @@
           <Vis E=""/>
           <ID V="71" E=""/>
           <D>
-            <DV V="200" E="10" FC="0"/>
+            <DV V="200" E="29" FC="0"/>
           </D>
         </Txt>
         <Txt N="DialTicks_7" SX="0.124555163085461" SY="0.0804597735404968" W="35" H="21" WP="12.4555" HP="8.046" SS="true" SP="true" Type="TDS">
@@ -784,7 +794,7 @@
           <Vis E=""/>
           <ID V="71" E=""/>
           <D>
-            <DV V="200" E="6" FC="0"/>
+            <DV V="200" E="26" FC="0"/>
           </D>
         </Txt>
         <Txt N="DialTicks_6" SX="0.124555163085461" SY="0.0804597735404968" W="35" H="21" WP="12.4555" HP="8.046" SS="true" SP="true" Type="TDS">
@@ -829,7 +839,7 @@
           <Vis E=""/>
           <ID V="71" E=""/>
           <D>
-            <DV V="200" E="4" FC="0"/>
+            <DV V="200" E="33" FC="0"/>
           </D>
         </Txt>
         <Txt N="DialTicks_5" SX="0.124555163085461" SY="0.0804597735404968" W="35" H="21" WP="12.4555" HP="8.046" SS="true" SP="true" Type="TDS">
@@ -874,7 +884,7 @@
           <Vis E=""/>
           <ID V="71" E=""/>
           <D>
-            <DV V="200" E="13" FC="0"/>
+            <DV V="200" E="31" FC="0"/>
           </D>
         </Txt>
         <Txt N="DialTicks_4" SX="0.124555163085461" SY="0.0804597735404968" W="35" H="21" WP="12.4555" HP="8.046" SS="true" SP="true" Type="TDS">
@@ -919,7 +929,7 @@
           <Vis E=""/>
           <ID V="71" E=""/>
           <D>
-            <DV V="200" E="9" FC="0"/>
+            <DV V="200" E="27" FC="0"/>
           </D>
         </Txt>
         <Txt N="DialTicks_3" SX="0.124555163085461" SY="0.0804597735404968" W="35" H="21" WP="12.4555" HP="8.046" SS="true" SP="true" Type="TDS">
@@ -964,7 +974,7 @@
           <Vis E=""/>
           <ID V="71" E=""/>
           <D>
-            <DV V="200" E="5" FC="0"/>
+            <DV V="200" E="25" FC="0"/>
           </D>
         </Txt>
         <Txt N="DialTicks_2" SX="0.124555163085461" SY="0.0804597735404968" W="35" H="21" WP="12.4555" HP="8.046" SS="true" SP="true" Type="TDS">
@@ -1009,7 +1019,7 @@
           <Vis E=""/>
           <ID V="71" E=""/>
           <D>
-            <DV V="200" E="3" FC="0"/>
+            <DV V="200" E="32" FC="0"/>
           </D>
         </Txt>
         <Txt N="DialTicks_1" SX="0.124555163085461" SY="0.0804597735404968" W="35" H="21" WP="12.4555" HP="8.046" SS="true" SP="true" Type="TDS">
@@ -1054,7 +1064,7 @@
           <Vis E=""/>
           <ID V="71" E=""/>
           <D>
-            <DV V="200" E="11" FC="0"/>
+            <DV V="200" E="30" FC="0"/>
           </D>
         </Txt>
         <Txt N="Label&amp;Units_1" SX="0.996441304683685" SY="0.114942587912083" W="280" H="30" WP="99.6441" HP="11.4943" SS="true" SP="true" Type="TDS">
@@ -1107,20 +1117,21 @@
         <Call PouName="DialGuagePOU" Name="DialGuagePOU" Type="C" Unit="DialGuagePLC.xml">
           <GUID>C96267D37_DCA1_4359_9FC1_AA4796562615</GUID>
           <Trig V="True" E=""/>
+          <Output E="" Name="Tick4" Type="S32" UidInst="31"/>
+          <Output E="" Name="Tick1" Type="S32" UidInst="32"/>
           <Output E="" Name="#Return" Type="S32" UidInst="1"/>
           <Output E="" Name="#RuntimeErrors" Type="U16" UidInst="2"/>
-          <Output E="" Name="tick2" Type="S32" UidInst="3"/>
-          <Output E="" Name="tick6" Type="S32" UidInst="4"/>
-          <Output E="" Name="tick3" Type="S32" UidInst="5"/>
-          <Output E="" Name="tick7" Type="S32" UidInst="6"/>
-          <Input E="16" Name="maxVal" Type="S32" V="0" UidInst="7"/>
-          <Input E="17" Name="curVal" Type="S32" V="0" UidInst="8"/>
-          <Output E="" Name="tick4" Type="S32" UidInst="9"/>
-          <Output E="" Name="tick8" Type="S32" UidInst="10"/>
-          <Output E="" Name="tick1" Type="S32" UidInst="11"/>
-          <Input E="15" Name="minVal" Type="S32" V="0" UidInst="12"/>
-          <Output E="" Name="tick5" Type="S32" UidInst="13"/>
-          <Output E="" Name="rotation" Type="S32" UidInst="14"/>
+          <Output E="" Name="Tick5" Type="S32" UidInst="33"/>
+          <Input E="16" Name="MaxValue" Type="S32" V="0" UidInst="20"/>
+          <Input E="17" Name="CurValue" Type="S32" V="0" UidInst="21"/>
+          <Input E="15" Name="MinValue" Type="S32" V="0" UidInst="22"/>
+          <Input E="24" Name="Divisor" Type="S32" V="0" UidInst="23"/>
+          <Output E="" Name="Tick2" Type="S32" UidInst="25"/>
+          <Output E="" Name="Tick6" Type="S32" UidInst="26"/>
+          <Output E="" Name="Tick3" Type="S32" UidInst="27"/>
+          <Output E="" Name="Rotation" Type="S32" UidInst="28"/>
+          <Output E="" Name="Tick7" Type="S32" UidInst="29"/>
+          <Output E="" Name="Tick0" Type="S32" UidInst="30"/>
         </Call>
       </PouCalls>
     </ScreenDef>
@@ -1134,11 +1145,12 @@
       <C V="00FFFFFF" E=""/>
       <Interface>
         <Input>
-          <Net Name="Min" Uid="10" DataType="S32"/>
-          <Net Name="Max" Uid="11" DataType="S32"/>
-          <Net Name="Current" Uid="12" DataType="S32"/>
+          <Net Name="MinInput" Uid="10" DataType="S32"/>
+          <Net Name="MaxInput" Uid="11" DataType="S32"/>
+          <Net Name="CurInput" Uid="12" DataType="S32"/>
           <Net Name="Label" Uid="13" DataType="STRING"/>
           <Net Name="Units" Uid="14" DataType="STRING"/>
+          <Net Name="Divisor" Uid="17" DataType="S32"/>
         </Input>
         <Output/>
       </Interface>
@@ -1181,7 +1193,7 @@
           <Vis E=""/>
           <ID V="73" E=""/>
         </I>
-        <Txt N="Label&amp;Units2_1" SX="0.125" SY="0.0874999985098839" W="100" H="42" WP="80" HP="21.5385" SS="true" SP="true" Type="TDS">
+        <Txt N="Label&amp;Units2_1" SX="1" SY="0.215384617447853" W="125" H="42" WP="100" HP="21.5385" SS="true" SP="true" Type="TDS">
           <La Sc="Def" Zo="0" Order="0" Flex="false" Sec="0">
             <Pad L="0" R="0" T="0" B="0" A="0" UA="false"/>
           </La>
@@ -1196,7 +1208,7 @@
           <GUID>C1ED2F799_45ED_4627_9562_776F91F8AE3F</GUID>
           <FF>
             <N>Courier New</N>
-            <S>14</S>
+            <S>12</S>
           </FF>
           <J V="1" E=""/>
           <T>
@@ -1216,7 +1228,7 @@
             <LocalDeltaY E=""/>
           </T>
           <C V="00000000" E=""/>
-          <SP X="25" EX="" Y="0" EY="" XP="20" YP="0"/>
+          <SP X="0" EX="" Y="0" EY="" XP="0" YP="0"/>
           <O>2</O>
           <Pr V="0" E=""/>
           <Vis E=""/>
@@ -1680,8 +1692,26 @@
           <Input E="10" Name="MinValue" Type="S32" V="0" UidInst="8"/>
           <Output E="" Name="ArrowRight" Type="S32" UidInst="9"/>
           <Output E="" Name="TextTop" Type="S32" UidInst="15"/>
+          <Input E="17" Name="Divisor" Type="S32" V="0" UidInst="16"/>
         </Call>
       </PouCalls>
+    </ScreenDef>
+    <ScreenDef IDD="true" PT="false">
+      <FF>003A</FF>
+      <ULC X="0" EX="" Y="0" EY="" XP="0" YP="0"/>
+      <W E="" V="800" VP="100"/>
+      <H E="" V="480" VP="100"/>
+      <D>ScreenDef</D>
+      <GUID>CE6CB9BDC_8ED7_49AA_9B3E_FBE577F3BB7E</GUID>
+      <C V="00FFFFFF" E=""/>
+      <Interface>
+        <Input/>
+        <Output/>
+      </Interface>
+      <PN>Display.Port</PN>
+      <Lay LO="0" AR="true" LAR="false" KA="false"/>
+      <F/>
+      <PouCalls/>
     </ScreenDef>
   </ScreenDefRepository>
   <ApplogDefRepository/>
@@ -1722,8 +1752,8 @@ cHV0cyBDb3VudD0iMSI+PEZDIFR5cGU9IlNpZ25lZCIgRGlnaXRzPSIyIiBWYWx1ZT0iMCIgUHJl
 Zml4PSIwIiBQYWRkaW5nPSIwIiBCYXNlPSIxIiBBbHQ9ImZhbHNlIi8+PC9JbnB1dHM+PC9UZXh0
 PjwvRm9sZGVyPjxMYW5ndWFnZU1hcHBpbmdzPjxMYW5ndWFnZU1hcHBpbmcgRXh0SUQ9IjEiIElE
 PSIxIi8+PC9MYW5ndWFnZU1hcHBpbmdzPjxTZGxJdGVtc0lkTWFwPjxJdGVtIFNkbElEPSIxIiBJ
-RD0iMSIvPjxJdGVtIFNkbElEPSIxMTMiIElEPSI1NCIvPjxJdGVtIFNkbElEPSIxMTQiIElEPSI1
-NSIvPjxJdGVtIFNkbElEPSI4MyIgSUQ9IjYwIi8+PEl0ZW0gU2RsSUQ9IjExNSIgSUQ9IjU2Ii8+
+RD0iMSIvPjxJdGVtIFNkbElEPSI4MyIgSUQ9IjYwIi8+PEl0ZW0gU2RsSUQ9IjExMyIgSUQ9IjU0
+Ii8+PEl0ZW0gU2RsSUQ9IjExNCIgSUQ9IjU1Ii8+PEl0ZW0gU2RsSUQ9IjExNSIgSUQ9IjU2Ii8+
 PEl0ZW0gU2RsSUQ9IjExNiIgSUQ9IjU3Ii8+PEl0ZW0gU2RsSUQ9IjExOCIgSUQ9IjU5Ii8+PC9T
 ZGxJdGVtc0lkTWFwPjwvU2NyZWVuTGlicmFyeT48L0V4dExpYj48L0V4dGVybmFsTGlicmFyeT4=</ExternalLibrary>
 </ScreenRepository>

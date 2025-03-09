@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://www.plcopen.org/xml/tc6_0201">
   <fileHeader companyName="Danfoss" productName="PLUS+1 GUIDE" productVersion="2024.2.4.6047" creationDateTime="2025-03-05T23:59:56"/>
-  <contentHeader name="" modificationDateTime="2025-03-06T00:58:08">
+  <contentHeader name="" modificationDateTime="2025-03-08T19:47:50">
     <coordinateInfo>
       <fbd>
         <scaling x="1" y="1"/>
@@ -43,6 +43,11 @@
                 <DINT/>
               </type>
             </variable>
+            <variable name="Divisor">
+              <type>
+                <DINT/>
+              </type>
+            </variable>
           </inputVars>
           <outputVars>
             <variable name="TextTop">
@@ -71,6 +76,11 @@
           <C>
             <code xmlns="http://www.w3.org/1999/xhtml">//Write the C Code function body here.
 //You have access to everything defined in any of the available header files listed under the PLC Units node in the Project Manager
+CurValue /= Divisor;
+MaxValue /= Divisor;
+MinValue /= Divisor;
+
+
 *ArrowRight = 195 - 150 * (CurValue - MinValue) / (MaxValue - MinValue);
 *ArrowTopLeft = *ArrowRight - 5;
 *ArrowBottomLeft = *ArrowRight + 5;
@@ -84,6 +94,7 @@ VAR_INPUT
   CurValue : DINT;
   MaxValue : DINT;
   MinValue : DINT;
+  Divisor : DINT;
 END_VAR
 VAR_OUTPUT
   TextTop : DINT;

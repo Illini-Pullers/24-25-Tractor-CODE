@@ -6,8 +6,7 @@
             "DataType": "U32",
             "ParamName": "EngineService",
             "ReadAccess": "_",
-            "WriteAccess": "_",
-            "NvIndex": "0-1"
+            "WriteAccess": "_"
         }
     ]
 }
