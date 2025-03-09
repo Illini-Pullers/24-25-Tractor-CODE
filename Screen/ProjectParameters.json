@@ -7,6 +7,70 @@
             "ParamName": "EngineService",
             "ReadAccess": "_",
             "WriteAccess": "_"
+        },
+        {
+            "GUID": "{0A07ADA8-9EAF-6fe8-229E-2E3012EF53F8}",
+            "DataType": "S32",
+            "ParamName": "Service1",
+            "ReadAccess": "_",
+            "WriteAccess": "_",
+            "NvIndex": "0-1"
+        },
+        {
+            "GUID": "{0A07AD26-9C85-9d39-F7EF-0508B16246F7}",
+            "DataType": "S32",
+            "ParamName": "Service2",
+            "ReadAccess": "_",
+            "WriteAccess": "_",
+            "NvIndex": "2-3"
+        },
+        {
+            "GUID": "{0A07ACA4-9A5A-4a8a-CD40-DDDF51D53AF7}",
+            "DataType": "S32",
+            "ParamName": "Service3",
+            "ReadAccess": "_",
+            "WriteAccess": "_",
+            "NvIndex": "4-5"
+        },
+        {
+            "GUID": "{0A07AB79-955F-3f92-D148-E7810C5ED0C3}",
+            "DataType": "S32",
+            "ParamName": "Service5",
+            "ReadAccess": "_",
+            "WriteAccess": "_",
+            "NvIndex": "6-7"
+        },
+        {
+            "GUID": "{0A07ABFB-978A-9241-FCF7-0FAA6DEBDCC4}",
+            "DataType": "S32",
+            "ParamName": "Service6",
+            "ReadAccess": "_",
+            "WriteAccess": "_",
+            "NvIndex": "8-9"
+        },
+        {
+            "GUID": "{0A07AE85-A25E-2fab-D061-D97650AB1CC5}",
+            "DataType": "S32",
+            "ParamName": "Service0",
+            "ReadAccess": "_",
+            "WriteAccess": "_",
+            "NvIndex": "10-11"
+        },
+        {
+            "GUID": "{0A07AA9C-91B0-7fcf-2285-3C3CCEA207F6}",
+            "DataType": "S32",
+            "ParamName": "Service4",
+            "ReadAccess": "_",
+            "WriteAccess": "_",
+            "NvIndex": "12-13"
+        },
+        {
+            "GUID": "{0A07AC7D-99B4-64ef-26A5-37D3CD78E9C4}",
+            "DataType": "S32",
+            "ParamName": "Service7",
+            "ReadAccess": "_",
+            "WriteAccess": "_",
+            "NvIndex": "14-15"
         }
     ]
 }

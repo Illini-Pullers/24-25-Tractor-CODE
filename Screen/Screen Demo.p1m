@@ -1,19 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Project>
-  <File FileName="SCREENREPO.SRD" FileSize="61181" Crc="41059429"/>
-  <File FileName="SCREEN DEMO.P1X" FileSize="1355" Crc="3660817858"/>
+  <File FileName="SCREENREPO.SRD" FileSize="115023" Crc="3266972929"/>
+  <File FileName="SCREEN DEMO.P1X" FileSize="1455" Crc="664735743"/>
   <File FileName="LINEARGAUGEPLC.XML" FileSize="3197" Crc="1304110993"/>
-  <File FileName="70487200V330.PDF" FileSize="657927" Crc="3090789078"/>
   <File FileName="DIALGUAGEPLC.XML" FileSize="4050" Crc="335627430"/>
   <File FileName="TEXTGUAGEPLC.XML" FileSize="2348" Crc="130679940"/>
-  <File FileName="LIGHTBLUE.SVG" FileSize="190" Crc="1313760686"/>
+  <File FileName="70487200V330.SYS" FileSize="80427043" Crc="2884087083"/>
   <File FileName="001_7_OIL_WARNING_DAY.SVG" FileSize="256255" Crc="1608927301"/>
   <File FileName="GUAGENOTEXT.SVG" FileSize="1052698" Crc="1605598021"/>
+  <File FileName="PROJECTPARAMETERS.JSON" FileSize="2297" Crc="1349947549"/>
+  <File FileName="SERVICEPLC.XML" FileSize="7334" Crc="4128525466"/>
+  <File FileName="GUIDE EXTENSIONS.XML" FileSize="-1" Crc="0"/>
+  <File FileName="TOUCHVERSION.SVG" FileSize="2232" Crc="23945582"/>
+  <File FileName="X-SYMBOL-SVGREPO-COM.SVG" FileSize="1067" Crc="3279664468"/>
+  <File FileName="70487200V330.PDF" FileSize="657927" Crc="3090789078"/>
+  <File FileName="LIGHTBLUE.SVG" FileSize="190" Crc="1313760686"/>
   <File FileName="003_02_FULLGAUGE_NEEDLE_DAY.SVG" FileSize="2701" Crc="1686713968"/>
-  <File FileName="PROJECTPARAMETERS.JSON" FileSize="283" Crc="3166659500"/>
   <File FileName="001_5_DIAGNOSTICS_WARNING_DAY.SVG" FileSize="266880" Crc="3408555580"/>
   <File FileName="001_8_SERVICEHOURS_WARNING_DAY.SVG" FileSize="265779" Crc="539921886"/>
-  <File FileName="70487200V330.SYS" FileSize="80427043" Crc="2884087083"/>
-  <File FileName="DM700B.SCS" FileSize="389169" Crc="4184412249"/>
-  <File FileName="TOUCHVERSION.SVG" FileSize="2232" Crc="23945582"/>
+  <File FileName="DM700B.SCS" FileSize="397316" Crc="1552765611"/>
 </Project>

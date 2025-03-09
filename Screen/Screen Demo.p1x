@@ -11,9 +11,11 @@
       <PID Description="Screen Demo"/>
       <MainModule ModuleName="MAINTASK" FileName="DM700B.scs"/>
       <ScreenRepository FileName="SCREENREPO.SRD"/>
+      <PLCopenXML FileName="GUIDE extensions.xml"/>
       <PLCopenXML FileName="TextGuagePLC.xml"/>
       <PLCopenXML FileName="DialGuagePLC.xml"/>
       <PLCopenXML FileName="LinearGaugePLC.xml"/>
+      <PLCopenXML FileName="ServicePLC.xml"/>
       <DebugSettings FileName="DebugSettings.xml"/>
       <MediaRepository FileName="appMedia.tar" isEmpty="true"/>
       <Parameters FileName="ProjectParameters.json"/>
