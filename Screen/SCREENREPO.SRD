@@ -23,18 +23,6 @@
       </Inputs>
     </Text>
     <Image SizeX="54" SizeY="54" KA="true">
-      <ID>64</ID>
-      <Description>MIL Indicator</Description>
-      <SourceFileName>001_5_Diagnostics_Warning_day.svg</SourceFileName>
-      <Width>54</Width>
-      <Height>54</Height>
-      <FlipH>false</FlipH>
-      <FlipV>false</FlipV>
-      <ImageFormatName>16777216 Colors (24 bit) with Alpha Layer</ImageFormatName>
-      <PixelOrigo>0</PixelOrigo>
-      <InsertionPoint X="0" Y="0"/>
-    </Image>
-    <Image SizeX="54" SizeY="54" KA="true">
       <ID>65</ID>
       <Description>Oil Pressure Indicator</Description>
       <SourceFileName>001_7_Oil_Warning_day.svg</SourceFileName>
@@ -139,10 +127,22 @@
     </Text>
     <Image SizeX="800" SizeY="800" KA="true">
       <ID>78</ID>
-      <Description>x-symbol-svgrepo-com</Description>
+      <Description>XSymbol</Description>
       <SourceFileName>x-symbol-svgrepo-com.svg</SourceFileName>
       <Width>800</Width>
       <Height>800</Height>
+      <FlipH>false</FlipH>
+      <FlipV>false</FlipV>
+      <ImageFormatName>16777216 Colors (24 bit) with Alpha Layer</ImageFormatName>
+      <PixelOrigo>0</PixelOrigo>
+      <InsertionPoint X="0" Y="0"/>
+    </Image>
+    <Image SizeX="54" SizeY="54" KA="true">
+      <ID>79</ID>
+      <Description>MIL Indicator</Description>
+      <SourceFileName>009_23_EngineFailureMalfunction_WARNING_day.svg</SourceFileName>
+      <Width>54</Width>
+      <Height>54</Height>
       <FlipH>false</FlipH>
       <FlipV>false</FlipV>
       <ImageFormatName>16777216 Colors (24 bit) with Alpha Layer</ImageFormatName>
@@ -195,7 +195,7 @@
           <O>4</O>
           <Intf>
             <Net E="" UidDef="15" UidInst="8" Dir="I" V="0"/>
-            <Net E="" UidDef="16" UidInst="9" Dir="I" V="100"/>
+            <Net E="" UidDef="16" UidInst="9" Dir="I" V="999"/>
             <Net E="31" UidDef="17" UidInst="10" Dir="I" V=""/>
             <Net E="" UidDef="18" UidInst="11" Dir="I" V="Engine Oil Pressure"/>
             <Net E="" UidDef="19" UidInst="12" Dir="I" V="kPa"/>
@@ -240,7 +240,7 @@
           <O>2</O>
           <Intf>
             <Net E="" UidDef="8" UidInst="21" Dir="I" V="V"/>
-            <Net E="" UidDef="9" UidInst="22" Dir="I" V="1000"/>
+            <Net E="" UidDef="9" UidInst="22" Dir="I" V="100"/>
             <Net E="33" UidDef="10" UidInst="23" Dir="I" V=""/>
             <Net E="" UidDef="12" UidInst="24" Dir="I" V="Batt Volt"/>
           </Intf>
@@ -538,42 +538,6 @@
       <PN>Display.Port</PN>
       <Lay LO="0" AR="true" LAR="true" KA="true"/>
       <F>
-        <I N="MIL Indicator_1" SX="0.0750000029802322" SY="0.125" W="60" H="60" WP="98.3607" HP="33.3333" SS="true" SP="true" KA="true" Type="IDS">
-          <La Sc="Def" Zo="0" Order="0" Flex="false" Sec="0">
-            <Pad L="0" R="0" T="0" B="0" A="0" UA="false"/>
-          </La>
-          <LMO>
-            <X/>
-            <Y/>
-            <W/>
-            <H/>
-          </LMO>
-          <En V="True" E="3"/>
-          <GUID>CFF5EB701_8414_4DCC_96C0_5CE9584B9C89</GUID>
-          <T>
-            <IsSink V="False" E=""/>
-            <Output E=""/>
-            <LocalX E=""/>
-            <LocalY E=""/>
-            <GType E=""/>
-            <GX E=""/>
-            <GY E=""/>
-            <ZoomFactor E=""/>
-            <DeltaX E=""/>
-            <DeltaY E=""/>
-            <Velocity E=""/>
-            <RotAng E=""/>
-            <LocalDeltaX E=""/>
-            <LocalDeltaY E=""/>
-          </T>
-          <C V="01010100" E=""/>
-          <IP X="0" EX="" Y="0" EY="" XP="0" YP="0"/>
-          <R V="0" E=""/>
-          <O>3</O>
-          <Pr V="0" E=""/>
-          <Vis E=""/>
-          <ID V="64" E=""/>
-        </I>
         <I N="Service Indicator_1" SX="0.0750000029802322" SY="0.125" W="60" H="60" WP="98.3607" HP="33.3333" SS="true" SP="true" KA="true" Type="IDS">
           <La Sc="Def" Zo="0" Order="0" Flex="false" Sec="0">
             <Pad L="0" R="0" T="0" B="0" A="0" UA="false"/>
@@ -605,7 +569,7 @@
           <C V="01010100" E=""/>
           <IP X="0" EX="" Y="120" EY="" XP="0" YP="66.6667"/>
           <R V="0" E=""/>
-          <O>2</O>
+          <O>3</O>
           <Pr V="0" E=""/>
           <Vis E=""/>
           <ID V="66" E=""/>
@@ -641,10 +605,46 @@
           <C V="01010100" E=""/>
           <IP X="0" EX="" Y="60" EY="" XP="0" YP="33.3333"/>
           <R V="0" E=""/>
-          <O>1</O>
+          <O>2</O>
           <Pr V="0" E=""/>
           <Vis E=""/>
           <ID V="65" E=""/>
+        </I>
+        <I N="MIL Indicator_1" SX="0.983606576919556" SY="0.333333343267441" W="60" H="60" WP="98.3607" HP="33.3333" SS="true" SP="true" KA="true" Type="IDS">
+          <La Sc="Def" Zo="0" Order="0" Flex="false" Sec="0">
+            <Pad L="0" R="0" T="0" B="0" A="0" UA="false"/>
+          </La>
+          <LMO>
+            <X/>
+            <Y/>
+            <W/>
+            <H/>
+          </LMO>
+          <En V="True" E="3"/>
+          <GUID>C44F0202B_789C_4108_B4B0_18C4E9E2BCCB</GUID>
+          <T>
+            <IsSink V="False" E=""/>
+            <Output E=""/>
+            <LocalX E=""/>
+            <LocalY E=""/>
+            <GType E=""/>
+            <GX E=""/>
+            <GY E=""/>
+            <ZoomFactor E=""/>
+            <DeltaX E=""/>
+            <DeltaY E=""/>
+            <Velocity E=""/>
+            <RotAng E=""/>
+            <LocalDeltaX E=""/>
+            <LocalDeltaY E=""/>
+          </T>
+          <C V="01010100" E=""/>
+          <IP X="0" EX="" Y="0" EY="" XP="0" YP="0"/>
+          <R V="0" E=""/>
+          <O>1</O>
+          <Pr V="0" E=""/>
+          <Vis E=""/>
+          <ID V="79" E=""/>
         </I>
       </F>
       <PouCalls/>
@@ -702,7 +702,7 @@
           <C V="01010100" E=""/>
           <IP X="-15" EX="" Y="-10" EY="" XP="-5.3381" YP="-3.8314"/>
           <R V="0" E=""/>
-          <O>11</O>
+          <O>12</O>
           <Pr V="0" E=""/>
           <Vis E=""/>
           <ID V="68" E=""/>
@@ -738,7 +738,7 @@
           <C V="01010100" E=""/>
           <IP X="140" EX="" Y="145" EY="" XP="49.8221" YP="55.5556"/>
           <R V="0" E="28"/>
-          <O>10</O>
+          <O>11</O>
           <Pr V="0" E=""/>
           <Vis E=""/>
           <ID V="70" E=""/>
@@ -780,7 +780,7 @@
           </T>
           <C V="00000000" E=""/>
           <SP X="215" EX="" Y="170" EY="" XP="76.5125" YP="65.1341"/>
-          <O>9</O>
+          <O>10</O>
           <Pr V="0" E=""/>
           <Vis E=""/>
           <ID V="71" E=""/>
@@ -825,7 +825,7 @@
           </T>
           <C V="00000000" E=""/>
           <SP X="220" EX="" Y="115" EY="" XP="78.2918" YP="44.0613"/>
-          <O>8</O>
+          <O>9</O>
           <Pr V="0" E=""/>
           <Vis E=""/>
           <ID V="71" E=""/>
@@ -870,7 +870,7 @@
           </T>
           <C V="00000000" E=""/>
           <SP X="195" EX="" Y="65" EY="" XP="69.395" YP="24.9042"/>
-          <O>7</O>
+          <O>8</O>
           <Pr V="0" E=""/>
           <Vis E=""/>
           <ID V="71" E=""/>
@@ -915,7 +915,7 @@
           </T>
           <C V="00000000" E=""/>
           <SP X="155" EX="" Y="30" EY="" XP="55.1601" YP="11.4943"/>
-          <O>6</O>
+          <O>7</O>
           <Pr V="0" E=""/>
           <Vis E=""/>
           <ID V="71" E=""/>
@@ -960,7 +960,7 @@
           </T>
           <C V="00000000" E=""/>
           <SP X="90" EX="" Y="30" EY="" XP="32.0285" YP="11.4943"/>
-          <O>5</O>
+          <O>6</O>
           <Pr V="0" E=""/>
           <Vis E=""/>
           <ID V="71" E=""/>
@@ -1005,7 +1005,7 @@
           </T>
           <C V="00000000" E=""/>
           <SP X="45" EX="" Y="65" EY="" XP="16.0142" YP="24.9042"/>
-          <O>4</O>
+          <O>5</O>
           <Pr V="0" E=""/>
           <Vis E=""/>
           <ID V="71" E=""/>
@@ -1050,7 +1050,7 @@
           </T>
           <C V="00000000" E=""/>
           <SP X="20" EX="" Y="115" EY="" XP="7.1174" YP="44.0613"/>
-          <O>3</O>
+          <O>4</O>
           <Pr V="0" E=""/>
           <Vis E=""/>
           <ID V="71" E=""/>
@@ -1095,7 +1095,7 @@
           </T>
           <C V="00000000" E=""/>
           <SP X="30" EX="" Y="165" EY="" XP="10.6762" YP="63.2183"/>
-          <O>2</O>
+          <O>3</O>
           <Pr V="0" E=""/>
           <Vis E=""/>
           <ID V="71" E=""/>
@@ -1139,13 +1139,58 @@
           </T>
           <C V="00000000" E=""/>
           <SP X="0" EX="" Y="230" EY="" XP="0" YP="88.1226"/>
-          <O>1</O>
+          <O>2</O>
           <Pr V="0" E=""/>
           <Vis E=""/>
           <ID V="62" E=""/>
           <D>
-            <DV V="0" E="18" FC="0"/>
-            <DV V="0" E="19" FC="1"/>
+            <DV V="'0'" E="18" FC="0"/>
+            <DV V="'0'" E="19" FC="1"/>
+          </D>
+        </Txt>
+        <Txt N="DialTicks_9" SX="0.160142600536346" SY="0.114942528307438" W="45" H="30" WP="16.0143" HP="11.4943" SS="true" SP="true" Type="TDS">
+          <La Sc="Def" Zo="0" Order="0" Flex="false" Sec="0">
+            <Pad L="0" R="0" T="0" B="0" A="0" UA="false"/>
+          </La>
+          <LMO>
+            <X/>
+            <Y/>
+            <W/>
+            <H/>
+          </LMO>
+          <En V="True" E=""/>
+          <F V="" E=""/>
+          <GUID>C0D9A0C46_1C43_4A32_99A6_DDB9AFC9B797</GUID>
+          <FF>
+            <N>Courier New</N>
+            <S>16</S>
+            <B/>
+          </FF>
+          <J V="1" E=""/>
+          <T>
+            <IsSink V="False" E=""/>
+            <Output E=""/>
+            <LocalX E=""/>
+            <LocalY E=""/>
+            <GType E=""/>
+            <GX E=""/>
+            <GY E=""/>
+            <ZoomFactor E=""/>
+            <DeltaX E=""/>
+            <DeltaY E=""/>
+            <Velocity E=""/>
+            <RotAng E=""/>
+            <LocalDeltaX E=""/>
+            <LocalDeltaY E=""/>
+          </T>
+          <C V="00FFFFFF" E=""/>
+          <SP X="115" EX="" Y="170" EY="" XP="40.9252" YP="65.1341"/>
+          <O>1</O>
+          <Pr V="0" E=""/>
+          <Vis E=""/>
+          <ID V="71" E=""/>
+          <D>
+            <DV V="200" E="34" FC="0"/>
           </D>
         </Txt>
       </F>
@@ -1158,6 +1203,7 @@
           <Output E="" Name="#Return" Type="S32" UidInst="1"/>
           <Output E="" Name="#RuntimeErrors" Type="U16" UidInst="2"/>
           <Output E="" Name="Tick5" Type="S32" UidInst="33"/>
+          <Output E="" Name="CurOutput" Type="S32" UidInst="34"/>
           <Input E="16" Name="MaxValue" Type="S32" V="0" UidInst="20"/>
           <Input E="17" Name="CurValue" Type="S32" V="0" UidInst="21"/>
           <Input E="15" Name="MinValue" Type="S32" V="0" UidInst="22"/>
@@ -1270,8 +1316,8 @@
           <Vis E=""/>
           <ID V="74" E=""/>
           <D>
-            <DV V="Label" E="13" FC="0"/>
-            <DV V="Units" E="14" FC="1"/>
+            <DV V="'Label'" E="13" FC="0"/>
+            <DV V="'Units'" E="14" FC="1"/>
           </D>
         </Txt>
         <Txt N="Value" SX="0.239999994635582" SY="0.102564103901386" W="30" H="20" WP="24" HP="10.2564" SS="true" SP="true" Type="TDS">
@@ -1289,9 +1335,9 @@
           <GUID>C326E5E97_04A9_40EB_B971_4AAF0A7C3301</GUID>
           <FF>
             <N>Courier New</N>
-            <S>16</S>
+            <S>12</S>
           </FF>
-          <J V="0" E=""/>
+          <J V="2" E=""/>
           <T>
             <IsSink V="False" E=""/>
             <Output E=""/>
@@ -1315,7 +1361,7 @@
           <Vis E=""/>
           <ID V="71" E=""/>
           <D>
-            <DV V="80" E="12" FC="0"/>
+            <DV V="999" E="18" FC="0"/>
           </D>
         </Txt>
         <L N="Line_1" SX="0.0625" SY="0.00416666688397527" SS="" SP="">
@@ -1348,8 +1394,8 @@
           </T>
           <C V="00000000" E=""/>
           <W V="2" E=""/>
-          <SP X="50" EX="" Y="195" EY="" XP="40" YP="100"/>
-          <EP X="100" EX="" Y="195" EY="" XP="80" YP="100"/>
+          <SP X="50" EX="" Y="194" EY="" XP="40" YP="99.4872"/>
+          <EP X="100" EX="" Y="194" EY="" XP="80" YP="99.4872"/>
           <O>13</O>
           <Pr V="0" E=""/>
           <Vis E=""/>
@@ -1729,6 +1775,7 @@
           <Output E="" Name="ArrowRight" Type="S32" UidInst="9"/>
           <Output E="" Name="TextTop" Type="S32" UidInst="15"/>
           <Input E="17" Name="Divisor" Type="S32" V="0" UidInst="16"/>
+          <Output E="" Name="CurOutput" Type="S32" UidInst="18"/>
         </Call>
       </PouCalls>
     </ScreenDef>
@@ -2187,7 +2234,7 @@
           <Vis E=""/>
           <ID V="76" E=""/>
           <D>
-            <DV V="'0'" E="61" FC="0"/>
+            <DV V="0" E="61" FC="0"/>
           </D>
         </Txt>
         <Txt N="Hours_6" AP="1" SX="0.137500002980232" SY="0.0416666679084301" W="110" H="20" WP="13.75" HP="4.1667" Type="TDS">
@@ -2583,7 +2630,7 @@
           <Vis E=""/>
           <ID V="76" E=""/>
           <D>
-            <DV V="'0'" E="58" FC="0"/>
+            <DV V="0" E="58" FC="0"/>
           </D>
         </Txt>
         <Txt N="Text_2" AP="1" SX="0.581250011920929" SY="0.0416666679084301" W="465" H="20" WP="58.125" HP="4.1667" Type="TDS">
@@ -2627,7 +2674,7 @@
           <Vis E=""/>
           <ID V="76" E=""/>
           <D>
-            <DV V="'0'" E="55" FC="0"/>
+            <DV V="0" E="55" FC="0"/>
           </D>
         </Txt>
         <Txt N="Text_3" AP="1" SX="0.581250011920929" SY="0.0416666679084301" W="465" H="20" WP="58.125" HP="4.1667" Type="TDS">
@@ -2671,7 +2718,7 @@
           <Vis E=""/>
           <ID V="76" E=""/>
           <D>
-            <DV V="'0'" E="52" FC="0"/>
+            <DV V="0" E="52" FC="0"/>
           </D>
         </Txt>
         <Txt N="Text_4" AP="1" SX="0.581250011920929" SY="0.0416666679084301" W="465" H="20" WP="58.125" HP="4.1667" Type="TDS">
@@ -2715,7 +2762,7 @@
           <Vis E=""/>
           <ID V="76" E=""/>
           <D>
-            <DV V="'0'" E="49" FC="0"/>
+            <DV V="0" E="49" FC="0"/>
           </D>
         </Txt>
         <Txt N="Text_5" AP="1" SX="0.581250011920929" SY="0.0416666679084301" W="465" H="20" WP="58.125" HP="4.1667" Type="TDS">
@@ -2759,7 +2806,7 @@
           <Vis E=""/>
           <ID V="76" E=""/>
           <D>
-            <DV V="'0'" E="46" FC="0"/>
+            <DV V="0" E="46" FC="0"/>
           </D>
         </Txt>
         <Txt N="Text_6" AP="1" SX="0.581250011920929" SY="0.0416666679084301" W="465" H="20" WP="58.125" HP="4.1667" Type="TDS">
@@ -2803,7 +2850,7 @@
           <Vis E=""/>
           <ID V="76" E=""/>
           <D>
-            <DV V="'0'" E="43" FC="0"/>
+            <DV V="0" E="43" FC="0"/>
           </D>
         </Txt>
         <Txt N="Text_7" AP="1" SX="0.581250011920929" SY="0.0416666679084301" W="465" H="20" WP="58.125" HP="4.1667" Type="TDS">
@@ -2847,7 +2894,7 @@
           <Vis E=""/>
           <ID V="76" E=""/>
           <D>
-            <DV V="'0'" E="40" FC="0"/>
+            <DV V="0" E="40" FC="0"/>
           </D>
         </Txt>
         <L N="Line_1" SX="0.875" SY="0.00416666688397527">
