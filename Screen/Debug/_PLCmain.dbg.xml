@@ -4,59 +4,63 @@
 	<POUs>
 		<POU PouName="TextGuagePOU" PouKind="FUNCTION" SourceFileName="TEXTGUAGEPLC.XML">
 			<Interface>
-				<VariableInfo VariableName="value" VariableNameC="value" VariableType="UINT" VariableKind="VAR_INPUT" />
-				<VariableInfo VariableName="divisor" VariableNameC="divisor" VariableType="UINT" VariableKind="VAR_INPUT" />
-				<VariableInfo VariableName="number" VariableNameC="*number" VariableType="UINT" VariableKind="VAR_OUTPUT" />
-				<VariableInfo VariableName="decimal" VariableNameC="*decimal" VariableType="UINT" VariableKind="VAR_OUTPUT" />
+				<VariableInfo VariableName="Value" VariableNameC="Value" VariableType="DINT" VariableKind="VAR_INPUT" />
+				<VariableInfo VariableName="Divisor" VariableNameC="Divisor" VariableType="DINT" VariableKind="VAR_INPUT" />
+				<VariableInfo VariableName="Number" VariableNameC="*Number" VariableType="DINT" VariableKind="VAR_OUTPUT" />
+				<VariableInfo VariableName="Decimal" VariableNameC="*Decimal" VariableType="DINT" VariableKind="VAR_OUTPUT" />
 				<VariableInfo VariableName="TextGuagePOU" VariableNameC="TextGuagePOU" VariableType="DINT" VariableKind="VAR" />
 			</Interface>
-			<FuncInfo FuncNameC="p1Plc_func_TEXTGUAGEPOU" FuncStart="23" CodeStart="29" CodeEnd="45" Language="C">
+			<FuncInfo FuncNameC="p1Plc_func_TEXTGUAGEPOU" FuncStart="25" CodeStart="31" CodeEnd="42" Language="C">
 				<FuncDef>PLC_DINT p1Plc_func_TEXTGUAGEPOU(
     PLC_BOOL* ENO, 
-    PLC_UINT value, 
-    PLC_UINT divisor, 
-    PLC_UINT* number, 
-    PLC_UINT* decimal);
+    PLC_DINT Value, 
+    PLC_DINT Divisor, 
+    PLC_DINT* Number, 
+    PLC_DINT* Decimal);
 </FuncDef>
 				<Code>
-					<CodeLine PouLine="1" CLine="35" LineCount="9" />
+					<CodeLine PouLine="1" CLine="37" LineCount="4" />
 				</Code>
 			</FuncInfo>
 		</POU>
 		<POU PouName="DialGuagePOU" PouKind="FUNCTION" SourceFileName="DIALGUAGEPLC.XML">
 			<Interface>
-				<VariableInfo VariableName="minVal" VariableNameC="minVal" VariableType="DINT" VariableKind="VAR_INPUT" />
-				<VariableInfo VariableName="maxVal" VariableNameC="maxVal" VariableType="DINT" VariableKind="VAR_INPUT" />
-				<VariableInfo VariableName="curVal" VariableNameC="curVal" VariableType="DINT" VariableKind="VAR_INPUT" />
-				<VariableInfo VariableName="tick1" VariableNameC="*tick1" VariableType="DINT" VariableKind="VAR_OUTPUT" />
-				<VariableInfo VariableName="tick2" VariableNameC="*tick2" VariableType="DINT" VariableKind="VAR_OUTPUT" />
-				<VariableInfo VariableName="tick3" VariableNameC="*tick3" VariableType="DINT" VariableKind="VAR_OUTPUT" />
-				<VariableInfo VariableName="tick4" VariableNameC="*tick4" VariableType="DINT" VariableKind="VAR_OUTPUT" />
-				<VariableInfo VariableName="tick5" VariableNameC="*tick5" VariableType="DINT" VariableKind="VAR_OUTPUT" />
-				<VariableInfo VariableName="tick6" VariableNameC="*tick6" VariableType="DINT" VariableKind="VAR_OUTPUT" />
-				<VariableInfo VariableName="tick7" VariableNameC="*tick7" VariableType="DINT" VariableKind="VAR_OUTPUT" />
-				<VariableInfo VariableName="tick8" VariableNameC="*tick8" VariableType="DINT" VariableKind="VAR_OUTPUT" />
-				<VariableInfo VariableName="rotation" VariableNameC="*rotation" VariableType="DINT" VariableKind="VAR_OUTPUT" />
+				<VariableInfo VariableName="CurValue" VariableNameC="CurValue" VariableType="DINT" VariableKind="VAR_INPUT" />
+				<VariableInfo VariableName="MaxValue" VariableNameC="MaxValue" VariableType="DINT" VariableKind="VAR_INPUT" />
+				<VariableInfo VariableName="MinValue" VariableNameC="MinValue" VariableType="DINT" VariableKind="VAR_INPUT" />
+				<VariableInfo VariableName="Divisor" VariableNameC="Divisor" VariableType="DINT" VariableKind="VAR_INPUT" />
+				<VariableInfo VariableName="Tick0" VariableNameC="*Tick0" VariableType="DINT" VariableKind="VAR_OUTPUT" />
+				<VariableInfo VariableName="Tick1" VariableNameC="*Tick1" VariableType="DINT" VariableKind="VAR_OUTPUT" />
+				<VariableInfo VariableName="Tick2" VariableNameC="*Tick2" VariableType="DINT" VariableKind="VAR_OUTPUT" />
+				<VariableInfo VariableName="Tick3" VariableNameC="*Tick3" VariableType="DINT" VariableKind="VAR_OUTPUT" />
+				<VariableInfo VariableName="Tick4" VariableNameC="*Tick4" VariableType="DINT" VariableKind="VAR_OUTPUT" />
+				<VariableInfo VariableName="Tick5" VariableNameC="*Tick5" VariableType="DINT" VariableKind="VAR_OUTPUT" />
+				<VariableInfo VariableName="Tick6" VariableNameC="*Tick6" VariableType="DINT" VariableKind="VAR_OUTPUT" />
+				<VariableInfo VariableName="Tick7" VariableNameC="*Tick7" VariableType="DINT" VariableKind="VAR_OUTPUT" />
+				<VariableInfo VariableName="Rotation" VariableNameC="*Rotation" VariableType="DINT" VariableKind="VAR_OUTPUT" />
+				<VariableInfo VariableName="CurOutput" VariableNameC="*CurOutput" VariableType="DINT" VariableKind="VAR_OUTPUT" />
 				<VariableInfo VariableName="DialGuagePOU" VariableNameC="DialGuagePOU" VariableType="DINT" VariableKind="VAR" />
 			</Interface>
-			<FuncInfo FuncNameC="p1Plc_func_DIALGUAGEPOU" FuncStart="47" CodeStart="61" CodeEnd="88" Language="C">
+			<FuncInfo FuncNameC="p1Plc_func_DIALGUAGEPOU" FuncStart="44" CodeStart="60" CodeEnd="92" Language="C">
 				<FuncDef>PLC_DINT p1Plc_func_DIALGUAGEPOU(
     PLC_BOOL* ENO, 
-    PLC_DINT minVal, 
-    PLC_DINT maxVal, 
-    PLC_DINT curVal, 
-    PLC_DINT* tick1, 
-    PLC_DINT* tick2, 
-    PLC_DINT* tick3, 
-    PLC_DINT* tick4, 
-    PLC_DINT* tick5, 
-    PLC_DINT* tick6, 
-    PLC_DINT* tick7, 
-    PLC_DINT* tick8, 
-    PLC_DINT* rotation);
+    PLC_DINT CurValue, 
+    PLC_DINT MaxValue, 
+    PLC_DINT MinValue, 
+    PLC_DINT Divisor, 
+    PLC_DINT* Tick0, 
+    PLC_DINT* Tick1, 
+    PLC_DINT* Tick2, 
+    PLC_DINT* Tick3, 
+    PLC_DINT* Tick4, 
+    PLC_DINT* Tick5, 
+    PLC_DINT* Tick6, 
+    PLC_DINT* Tick7, 
+    PLC_DINT* Rotation, 
+    PLC_DINT* CurOutput);
 </FuncDef>
 				<Code>
-					<CodeLine PouLine="1" CLine="74" LineCount="13" />
+					<CodeLine PouLine="1" CLine="74" LineCount="17" />
 				</Code>
 			</FuncInfo>
 		</POU>
@@ -65,25 +69,197 @@
 				<VariableInfo VariableName="CurValue" VariableNameC="CurValue" VariableType="DINT" VariableKind="VAR_INPUT" />
 				<VariableInfo VariableName="MaxValue" VariableNameC="MaxValue" VariableType="DINT" VariableKind="VAR_INPUT" />
 				<VariableInfo VariableName="MinValue" VariableNameC="MinValue" VariableType="DINT" VariableKind="VAR_INPUT" />
+				<VariableInfo VariableName="Divisor" VariableNameC="Divisor" VariableType="DINT" VariableKind="VAR_INPUT" />
 				<VariableInfo VariableName="TextTop" VariableNameC="*TextTop" VariableType="DINT" VariableKind="VAR_OUTPUT" />
 				<VariableInfo VariableName="ArrowBottomLeft" VariableNameC="*ArrowBottomLeft" VariableType="DINT" VariableKind="VAR_OUTPUT" />
 				<VariableInfo VariableName="ArrowTopLeft" VariableNameC="*ArrowTopLeft" VariableType="DINT" VariableKind="VAR_OUTPUT" />
 				<VariableInfo VariableName="ArrowRight" VariableNameC="*ArrowRight" VariableType="DINT" VariableKind="VAR_OUTPUT" />
+				<VariableInfo VariableName="CurOutput" VariableNameC="*CurOutput" VariableType="DINT" VariableKind="VAR_OUTPUT" />
 				<VariableInfo VariableName="LinearGaugePOU" VariableNameC="LinearGaugePOU" VariableType="DINT" VariableKind="VAR" />
 			</Interface>
-			<FuncInfo FuncNameC="p1Plc_func_LINEARGAUGEPOU" FuncStart="90" CodeStart="99" CodeEnd="114" Language="C">
+			<FuncInfo FuncNameC="p1Plc_func_LINEARGAUGEPOU" FuncStart="94" CodeStart="105" CodeEnd="127" Language="C">
 				<FuncDef>PLC_DINT p1Plc_func_LINEARGAUGEPOU(
     PLC_BOOL* ENO, 
     PLC_DINT CurValue, 
     PLC_DINT MaxValue, 
     PLC_DINT MinValue, 
+    PLC_DINT Divisor, 
     PLC_DINT* TextTop, 
     PLC_DINT* ArrowBottomLeft, 
     PLC_DINT* ArrowTopLeft, 
-    PLC_DINT* ArrowRight);
+    PLC_DINT* ArrowRight, 
+    PLC_DINT* CurOutput);
 </FuncDef>
 				<Code>
-					<CodeLine PouLine="1" CLine="107" LineCount="6" />
+					<CodeLine PouLine="1" CLine="114" LineCount="12" />
+				</Code>
+			</FuncInfo>
+		</POU>
+		<POU PouName="ServicePOU" PouKind="FUNCTION" SourceFileName="SERVICEPLC.XML">
+			<Interface>
+				<VariableInfo VariableName="Time0" VariableNameC="Time0" VariableType="DINT" VariableKind="VAR_INPUT" />
+				<VariableInfo VariableName="Time1" VariableNameC="Time1" VariableType="DINT" VariableKind="VAR_INPUT" />
+				<VariableInfo VariableName="Time2" VariableNameC="Time2" VariableType="DINT" VariableKind="VAR_INPUT" />
+				<VariableInfo VariableName="Time3" VariableNameC="Time3" VariableType="DINT" VariableKind="VAR_INPUT" />
+				<VariableInfo VariableName="Time4" VariableNameC="Time4" VariableType="DINT" VariableKind="VAR_INPUT" />
+				<VariableInfo VariableName="Time5" VariableNameC="Time5" VariableType="DINT" VariableKind="VAR_INPUT" />
+				<VariableInfo VariableName="Time6" VariableNameC="Time6" VariableType="DINT" VariableKind="VAR_INPUT" />
+				<VariableInfo VariableName="Time7" VariableNameC="Time7" VariableType="DINT" VariableKind="VAR_INPUT" />
+				<VariableInfo VariableName="Warning0" VariableNameC="Warning0" VariableType="BOOL" VariableKind="VAR_INPUT" />
+				<VariableInfo VariableName="Warning1" VariableNameC="Warning1" VariableType="BOOL" VariableKind="VAR_INPUT" />
+				<VariableInfo VariableName="Warning2" VariableNameC="Warning2" VariableType="BOOL" VariableKind="VAR_INPUT" />
+				<VariableInfo VariableName="Warning3" VariableNameC="Warning3" VariableType="BOOL" VariableKind="VAR_INPUT" />
+				<VariableInfo VariableName="Warning4" VariableNameC="Warning4" VariableType="BOOL" VariableKind="VAR_INPUT" />
+				<VariableInfo VariableName="Warning5" VariableNameC="Warning5" VariableType="BOOL" VariableKind="VAR_INPUT" />
+				<VariableInfo VariableName="Warning6" VariableNameC="Warning6" VariableType="BOOL" VariableKind="VAR_INPUT" />
+				<VariableInfo VariableName="Warning7" VariableNameC="Warning7" VariableType="BOOL" VariableKind="VAR_INPUT" />
+				<VariableInfo VariableName="Color0" VariableNameC="*Color0" VariableType="COLOR" VariableKind="VAR_OUTPUT" />
+				<VariableInfo VariableName="Color1" VariableNameC="*Color1" VariableType="COLOR" VariableKind="VAR_OUTPUT" />
+				<VariableInfo VariableName="Color2" VariableNameC="*Color2" VariableType="COLOR" VariableKind="VAR_OUTPUT" />
+				<VariableInfo VariableName="Color3" VariableNameC="*Color3" VariableType="COLOR" VariableKind="VAR_OUTPUT" />
+				<VariableInfo VariableName="Color4" VariableNameC="*Color4" VariableType="COLOR" VariableKind="VAR_OUTPUT" />
+				<VariableInfo VariableName="Color5" VariableNameC="*Color5" VariableType="COLOR" VariableKind="VAR_OUTPUT" />
+				<VariableInfo VariableName="Color6" VariableNameC="*Color6" VariableType="COLOR" VariableKind="VAR_OUTPUT" />
+				<VariableInfo VariableName="Color7" VariableNameC="*Color7" VariableType="COLOR" VariableKind="VAR_OUTPUT" />
+				<VariableInfo VariableName="Height0" VariableNameC="*Height0" VariableType="DINT" VariableKind="VAR_OUTPUT" />
+				<VariableInfo VariableName="Height1" VariableNameC="*Height1" VariableType="DINT" VariableKind="VAR_OUTPUT" />
+				<VariableInfo VariableName="Height2" VariableNameC="*Height2" VariableType="DINT" VariableKind="VAR_OUTPUT" />
+				<VariableInfo VariableName="Height3" VariableNameC="*Height3" VariableType="DINT" VariableKind="VAR_OUTPUT" />
+				<VariableInfo VariableName="Height4" VariableNameC="*Height4" VariableType="DINT" VariableKind="VAR_OUTPUT" />
+				<VariableInfo VariableName="Height5" VariableNameC="*Height5" VariableType="DINT" VariableKind="VAR_OUTPUT" />
+				<VariableInfo VariableName="Height6" VariableNameC="*Height6" VariableType="DINT" VariableKind="VAR_OUTPUT" />
+				<VariableInfo VariableName="Height7" VariableNameC="*Height7" VariableType="DINT" VariableKind="VAR_OUTPUT" />
+				<VariableInfo VariableName="ServicePOU" VariableNameC="ServicePOU" VariableType="DINT" VariableKind="VAR" />
+			</Interface>
+			<FuncInfo FuncNameC="p1Plc_func_SERVICEPOU" FuncStart="129" CodeStart="163" CodeEnd="214" Language="C">
+				<FuncDef>PLC_DINT p1Plc_func_SERVICEPOU(
+    PLC_BOOL* ENO, 
+    PLC_DINT Time0, 
+    PLC_DINT Time1, 
+    PLC_DINT Time2, 
+    PLC_DINT Time3, 
+    PLC_DINT Time4, 
+    PLC_DINT Time5, 
+    PLC_DINT Time6, 
+    PLC_DINT Time7, 
+    PLC_BOOL Warning0, 
+    PLC_BOOL Warning1, 
+    PLC_BOOL Warning2, 
+    PLC_BOOL Warning3, 
+    PLC_BOOL Warning4, 
+    PLC_BOOL Warning5, 
+    PLC_BOOL Warning6, 
+    PLC_BOOL Warning7, 
+    PLC_UDINT* Color0, 
+    PLC_UDINT* Color1, 
+    PLC_UDINT* Color2, 
+    PLC_UDINT* Color3, 
+    PLC_UDINT* Color4, 
+    PLC_UDINT* Color5, 
+    PLC_UDINT* Color6, 
+    PLC_UDINT* Color7, 
+    PLC_DINT* Height0, 
+    PLC_DINT* Height1, 
+    PLC_DINT* Height2, 
+    PLC_DINT* Height3, 
+    PLC_DINT* Height4, 
+    PLC_DINT* Height5, 
+    PLC_DINT* Height6, 
+    PLC_DINT* Height7);
+</FuncDef>
+				<Code>
+					<CodeLine PouLine="1" CLine="183" LineCount="30" />
+				</Code>
+			</FuncInfo>
+		</POU>
+		<POU PouName="GraphPOU" PouKind="FUNCTION" SourceFileName="GRAPHPLC.XML">
+			<Interface>
+				<VariableInfo VariableName="Update" VariableNameC="Update" VariableType="BOOL" VariableKind="VAR_INPUT" />
+				<VariableInfo VariableName="Divisor" VariableNameC="Divisor" VariableType="DINT" VariableKind="VAR_INPUT" />
+				<VariableInfo VariableName="CurValue" VariableNameC="CurValue" VariableType="DINT" VariableKind="VAR_INPUT" />
+				<VariableInfo VariableName="MaxValue" VariableNameC="MaxValue" VariableType="DINT" VariableKind="VAR_INPUT" />
+				<VariableInfo VariableName="MinValue" VariableNameC="MinValue" VariableType="DINT" VariableKind="VAR_INPUT" />
+				<VariableInfo VariableName="PrevState" VariableNameC="PrevState" VariableType="ARRAY [0..20] OF DINT" VariableKind="VAR_INPUT" />
+				<VariableInfo VariableName="NextState" VariableNameC="NextState" VariableType="ARRAY [0..20] OF DINT" VariableKind="VAR_OUTPUT" />
+				<VariableInfo VariableName="Item0" VariableNameC="*Item0" VariableType="DINT" VariableKind="VAR_OUTPUT" />
+				<VariableInfo VariableName="Item1" VariableNameC="*Item1" VariableType="DINT" VariableKind="VAR_OUTPUT" />
+				<VariableInfo VariableName="Item2" VariableNameC="*Item2" VariableType="DINT" VariableKind="VAR_OUTPUT" />
+				<VariableInfo VariableName="Item3" VariableNameC="*Item3" VariableType="DINT" VariableKind="VAR_OUTPUT" />
+				<VariableInfo VariableName="Item4" VariableNameC="*Item4" VariableType="DINT" VariableKind="VAR_OUTPUT" />
+				<VariableInfo VariableName="Item5" VariableNameC="*Item5" VariableType="DINT" VariableKind="VAR_OUTPUT" />
+				<VariableInfo VariableName="Item6" VariableNameC="*Item6" VariableType="DINT" VariableKind="VAR_OUTPUT" />
+				<VariableInfo VariableName="Item7" VariableNameC="*Item7" VariableType="DINT" VariableKind="VAR_OUTPUT" />
+				<VariableInfo VariableName="Item8" VariableNameC="*Item8" VariableType="DINT" VariableKind="VAR_OUTPUT" />
+				<VariableInfo VariableName="Item9" VariableNameC="*Item9" VariableType="DINT" VariableKind="VAR_OUTPUT" />
+				<VariableInfo VariableName="Item10" VariableNameC="*Item10" VariableType="DINT" VariableKind="VAR_OUTPUT" />
+				<VariableInfo VariableName="Item11" VariableNameC="*Item11" VariableType="DINT" VariableKind="VAR_OUTPUT" />
+				<VariableInfo VariableName="Item12" VariableNameC="*Item12" VariableType="DINT" VariableKind="VAR_OUTPUT" />
+				<VariableInfo VariableName="Item13" VariableNameC="*Item13" VariableType="DINT" VariableKind="VAR_OUTPUT" />
+				<VariableInfo VariableName="Item14" VariableNameC="*Item14" VariableType="DINT" VariableKind="VAR_OUTPUT" />
+				<VariableInfo VariableName="Item15" VariableNameC="*Item15" VariableType="DINT" VariableKind="VAR_OUTPUT" />
+				<VariableInfo VariableName="Item16" VariableNameC="*Item16" VariableType="DINT" VariableKind="VAR_OUTPUT" />
+				<VariableInfo VariableName="Item17" VariableNameC="*Item17" VariableType="DINT" VariableKind="VAR_OUTPUT" />
+				<VariableInfo VariableName="Item18" VariableNameC="*Item18" VariableType="DINT" VariableKind="VAR_OUTPUT" />
+				<VariableInfo VariableName="Item19" VariableNameC="*Item19" VariableType="DINT" VariableKind="VAR_OUTPUT" />
+				<VariableInfo VariableName="Item20" VariableNameC="*Item20" VariableType="DINT" VariableKind="VAR_OUTPUT" />
+				<VariableInfo VariableName="Ver0" VariableNameC="*Ver0" VariableType="DINT" VariableKind="VAR_OUTPUT" />
+				<VariableInfo VariableName="Ver1" VariableNameC="*Ver1" VariableType="DINT" VariableKind="VAR_OUTPUT" />
+				<VariableInfo VariableName="Ver2" VariableNameC="*Ver2" VariableType="DINT" VariableKind="VAR_OUTPUT" />
+				<VariableInfo VariableName="Ver3" VariableNameC="*Ver3" VariableType="DINT" VariableKind="VAR_OUTPUT" />
+				<VariableInfo VariableName="Ver4" VariableNameC="*Ver4" VariableType="DINT" VariableKind="VAR_OUTPUT" />
+				<VariableInfo VariableName="Ver5" VariableNameC="*Ver5" VariableType="DINT" VariableKind="VAR_OUTPUT" />
+				<VariableInfo VariableName="Ver6" VariableNameC="*Ver6" VariableType="DINT" VariableKind="VAR_OUTPUT" />
+				<VariableInfo VariableName="Ver7" VariableNameC="*Ver7" VariableType="DINT" VariableKind="VAR_OUTPUT" />
+				<VariableInfo VariableName="Ver8" VariableNameC="*Ver8" VariableType="DINT" VariableKind="VAR_OUTPUT" />
+				<VariableInfo VariableName="Ver9" VariableNameC="*Ver9" VariableType="DINT" VariableKind="VAR_OUTPUT" />
+				<VariableInfo VariableName="Ver10" VariableNameC="*Ver10" VariableType="DINT" VariableKind="VAR_OUTPUT" />
+				<VariableInfo VariableName="GraphPOU" VariableNameC="GraphPOU" VariableType="DINT" VariableKind="VAR" />
+			</Interface>
+			<FuncInfo FuncNameC="p1Plc_func_GRAPHPOU" FuncStart="216" CodeStart="257" CodeEnd="346" Language="C">
+				<FuncDef>PLC_DINT p1Plc_func_GRAPHPOU(
+    PLC_BOOL* ENO, 
+    PLC_BOOL Update, 
+    PLC_DINT Divisor, 
+    PLC_DINT CurValue, 
+    PLC_DINT MaxValue, 
+    PLC_DINT MinValue, 
+    PLC_DINT* PrevState, 
+    PLC_DINT* NextState, 
+    PLC_DINT* Item0, 
+    PLC_DINT* Item1, 
+    PLC_DINT* Item2, 
+    PLC_DINT* Item3, 
+    PLC_DINT* Item4, 
+    PLC_DINT* Item5, 
+    PLC_DINT* Item6, 
+    PLC_DINT* Item7, 
+    PLC_DINT* Item8, 
+    PLC_DINT* Item9, 
+    PLC_DINT* Item10, 
+    PLC_DINT* Item11, 
+    PLC_DINT* Item12, 
+    PLC_DINT* Item13, 
+    PLC_DINT* Item14, 
+    PLC_DINT* Item15, 
+    PLC_DINT* Item16, 
+    PLC_DINT* Item17, 
+    PLC_DINT* Item18, 
+    PLC_DINT* Item19, 
+    PLC_DINT* Item20, 
+    PLC_DINT* Ver0, 
+    PLC_DINT* Ver1, 
+    PLC_DINT* Ver2, 
+    PLC_DINT* Ver3, 
+    PLC_DINT* Ver4, 
+    PLC_DINT* Ver5, 
+    PLC_DINT* Ver6, 
+    PLC_DINT* Ver7, 
+    PLC_DINT* Ver8, 
+    PLC_DINT* Ver9, 
+    PLC_DINT* Ver10);
+</FuncDef>
+				<Code>
+					<CodeLine PouLine="1" CLine="294" LineCount="51" />
 				</Code>
 			</FuncInfo>
 		</POU>

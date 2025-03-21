@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://www.plcopen.org/xml/tc6_0201">
   <fileHeader companyName="Danfoss" productName="PLUS+1 GUIDE" productVersion="2024.2.4.6047" creationDateTime="2025-03-01T19:00:06"/>
-  <contentHeader name="" modificationDateTime="2025-03-11T20:45:43">
+  <contentHeader name="" modificationDateTime="2025-03-20T19:32:36">
     <coordinateInfo>
       <fbd>
         <scaling x="1" y="1"/>
@@ -119,7 +119,7 @@ int dif = MaxValue - MinValue;
 *Tick5 = MinValue + 5 * dif/7;
 *Tick6 = MinValue + 6 * dif/7;
 *Tick7 = MaxValue;
-*Rotation = 210 * (CurValue - MinValue) / (MaxValue - MinValue) - 105;
+*Rotation = 210 * (CurValue - MinValue) / dif - 105;
 *CurOutput = CurValue;</code>
           </C>
         </body>

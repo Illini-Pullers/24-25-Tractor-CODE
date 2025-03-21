@@ -1,5 +1,7 @@
 ﻿<?xml version="1.0"?><DebugSettings>
-  <Breakpoints/>
+  <Breakpoints>
+    <BreakpointPou POU="GraphPOU" File="GraphPLC" Line="2" Active="true" Condition=""/>
+  </Breakpoints>
   <Watches/>
   <LoopInput>
     <Cols/>
@@ -224,7 +226,6 @@
       <C>ECUInfoPacked.PRev0[x]</C>
       <C>ECUInfoPacked.PRev1[x]</C>
       <C>ECUInfoPacked.SerNr0[x]</C>
-      <C>EngineService#IN</C>
       <C>ID.Node.ClientAddr</C>
       <C>ImageViewer.ImageHeight</C>
       <C>ImageViewer.ImageWidth</C>
@@ -326,6 +327,14 @@
       <C>ScrCpy.Status</C>
       <C>ScrCpy.Width</C>
       <C>Screenshot.Status</C>
+      <C>Service0#IN</C>
+      <C>Service1#IN</C>
+      <C>Service2#IN</C>
+      <C>Service3#IN</C>
+      <C>Service4#IN</C>
+      <C>Service5#IN</C>
+      <C>Service6#IN</C>
+      <C>Service7#IN</C>
       <C>ServiceTool.Connect</C>
       <C>ServiceTool.MasterPassword.Write</C>
       <C>TouchScreen.Gesture.DeltaX</C>
@@ -701,6 +710,13 @@
       <V343>0</V343>
       <V344>0</V344>
       <V345>0</V345>
+      <V346>0</V346>
+      <V347>0</V347>
+      <V348>0</V348>
+      <V349>0</V349>
+      <V350>0</V350>
+      <V351>0</V351>
+      <V352>0</V352>
     </R>
   </InitialValues>
 </DebugSettings>

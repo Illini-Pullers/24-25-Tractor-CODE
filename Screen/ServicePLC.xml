@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://www.plcopen.org/xml/tc6_0201">
   <fileHeader companyName="Danfoss" productName="PLUS+1 GUIDE" productVersion="2024.2.4.6047" creationDateTime="2025-03-08T18:05:05"/>
-  <contentHeader name="" modificationDateTime="2025-03-08T23:23:57">
+  <contentHeader name="" modificationDateTime="2025-03-20T19:35:19">
     <coordinateInfo>
       <fbd>
         <scaling x="1" y="1"/>
@@ -22,7 +22,7 @@
   <types>
     <dataTypes/>
     <pous>
-      <pou name="ServicePLC" pouType="function">
+      <pou name="ServicePOU" pouType="function">
         <interface>
           <returnType>
             <DINT/>
@@ -228,7 +228,7 @@ for(int i = 0; i &lt; 8; i++){
         </body>
         <addData>
           <data name="InterfaceText" handleUnknown="discard">
-            <code>FUNCTION ServicePLC : DINT
+            <code>FUNCTION ServicePOU : DINT
 VAR_INPUT
   Time0 : DINT;
   Time1 : DINT;
