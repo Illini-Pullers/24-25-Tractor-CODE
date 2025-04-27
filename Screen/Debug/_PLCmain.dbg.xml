@@ -97,14 +97,6 @@
 		</POU>
 		<POU PouName="ServicePOU" PouKind="FUNCTION" SourceFileName="SERVICEPLC.XML">
 			<Interface>
-				<VariableInfo VariableName="Time0" VariableNameC="Time0" VariableType="DINT" VariableKind="VAR_INPUT" />
-				<VariableInfo VariableName="Time1" VariableNameC="Time1" VariableType="DINT" VariableKind="VAR_INPUT" />
-				<VariableInfo VariableName="Time2" VariableNameC="Time2" VariableType="DINT" VariableKind="VAR_INPUT" />
-				<VariableInfo VariableName="Time3" VariableNameC="Time3" VariableType="DINT" VariableKind="VAR_INPUT" />
-				<VariableInfo VariableName="Time4" VariableNameC="Time4" VariableType="DINT" VariableKind="VAR_INPUT" />
-				<VariableInfo VariableName="Time5" VariableNameC="Time5" VariableType="DINT" VariableKind="VAR_INPUT" />
-				<VariableInfo VariableName="Time6" VariableNameC="Time6" VariableType="DINT" VariableKind="VAR_INPUT" />
-				<VariableInfo VariableName="Time7" VariableNameC="Time7" VariableType="DINT" VariableKind="VAR_INPUT" />
 				<VariableInfo VariableName="Warning0" VariableNameC="Warning0" VariableType="BOOL" VariableKind="VAR_INPUT" />
 				<VariableInfo VariableName="Warning1" VariableNameC="Warning1" VariableType="BOOL" VariableKind="VAR_INPUT" />
 				<VariableInfo VariableName="Warning2" VariableNameC="Warning2" VariableType="BOOL" VariableKind="VAR_INPUT" />
@@ -121,27 +113,11 @@
 				<VariableInfo VariableName="Color5" VariableNameC="*Color5" VariableType="COLOR" VariableKind="VAR_OUTPUT" />
 				<VariableInfo VariableName="Color6" VariableNameC="*Color6" VariableType="COLOR" VariableKind="VAR_OUTPUT" />
 				<VariableInfo VariableName="Color7" VariableNameC="*Color7" VariableType="COLOR" VariableKind="VAR_OUTPUT" />
-				<VariableInfo VariableName="Height0" VariableNameC="*Height0" VariableType="DINT" VariableKind="VAR_OUTPUT" />
-				<VariableInfo VariableName="Height1" VariableNameC="*Height1" VariableType="DINT" VariableKind="VAR_OUTPUT" />
-				<VariableInfo VariableName="Height2" VariableNameC="*Height2" VariableType="DINT" VariableKind="VAR_OUTPUT" />
-				<VariableInfo VariableName="Height3" VariableNameC="*Height3" VariableType="DINT" VariableKind="VAR_OUTPUT" />
-				<VariableInfo VariableName="Height4" VariableNameC="*Height4" VariableType="DINT" VariableKind="VAR_OUTPUT" />
-				<VariableInfo VariableName="Height5" VariableNameC="*Height5" VariableType="DINT" VariableKind="VAR_OUTPUT" />
-				<VariableInfo VariableName="Height6" VariableNameC="*Height6" VariableType="DINT" VariableKind="VAR_OUTPUT" />
-				<VariableInfo VariableName="Height7" VariableNameC="*Height7" VariableType="DINT" VariableKind="VAR_OUTPUT" />
 				<VariableInfo VariableName="ServicePOU" VariableNameC="ServicePOU" VariableType="DINT" VariableKind="VAR" />
 			</Interface>
-			<FuncInfo FuncNameC="p1Plc_func_SERVICEPOU" FuncStart="129" CodeStart="163" CodeEnd="214" Language="C">
+			<FuncInfo FuncNameC="p1Plc_func_SERVICEPOU" FuncStart="129" CodeStart="147" CodeEnd="176" Language="C">
 				<FuncDef>PLC_DINT p1Plc_func_SERVICEPOU(
     PLC_BOOL* ENO, 
-    PLC_DINT Time0, 
-    PLC_DINT Time1, 
-    PLC_DINT Time2, 
-    PLC_DINT Time3, 
-    PLC_DINT Time4, 
-    PLC_DINT Time5, 
-    PLC_DINT Time6, 
-    PLC_DINT Time7, 
     PLC_BOOL Warning0, 
     PLC_BOOL Warning1, 
     PLC_BOOL Warning2, 
@@ -157,18 +133,10 @@
     PLC_UDINT* Color4, 
     PLC_UDINT* Color5, 
     PLC_UDINT* Color6, 
-    PLC_UDINT* Color7, 
-    PLC_DINT* Height0, 
-    PLC_DINT* Height1, 
-    PLC_DINT* Height2, 
-    PLC_DINT* Height3, 
-    PLC_DINT* Height4, 
-    PLC_DINT* Height5, 
-    PLC_DINT* Height6, 
-    PLC_DINT* Height7);
+    PLC_UDINT* Color7);
 </FuncDef>
 				<Code>
-					<CodeLine PouLine="1" CLine="183" LineCount="30" />
+					<CodeLine PouLine="1" CLine="159" LineCount="16" />
 				</Code>
 			</FuncInfo>
 		</POU>
@@ -215,7 +183,7 @@
 				<VariableInfo VariableName="Ver10" VariableNameC="*Ver10" VariableType="DINT" VariableKind="VAR_OUTPUT" />
 				<VariableInfo VariableName="GraphPOU" VariableNameC="GraphPOU" VariableType="DINT" VariableKind="VAR" />
 			</Interface>
-			<FuncInfo FuncNameC="p1Plc_func_GRAPHPOU" FuncStart="216" CodeStart="257" CodeEnd="346" Language="C">
+			<FuncInfo FuncNameC="p1Plc_func_GRAPHPOU" FuncStart="178" CodeStart="219" CodeEnd="313" Language="C">
 				<FuncDef>PLC_DINT p1Plc_func_GRAPHPOU(
     PLC_BOOL* ENO, 
     PLC_BOOL Update, 
@@ -259,7 +227,7 @@
     PLC_DINT* Ver10);
 </FuncDef>
 				<Code>
-					<CodeLine PouLine="1" CLine="294" LineCount="51" />
+					<CodeLine PouLine="1" CLine="256" LineCount="56" />
 				</Code>
 			</FuncInfo>
 		</POU>

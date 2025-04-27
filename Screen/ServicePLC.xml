@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://www.plcopen.org/xml/tc6_0201">
   <fileHeader companyName="Danfoss" productName="PLUS+1 GUIDE" productVersion="2024.2.4.6047" creationDateTime="2025-03-08T18:05:05"/>
-  <contentHeader name="" modificationDateTime="2025-03-20T19:35:19">
+  <contentHeader name="" modificationDateTime="2025-04-16T12:55:16">
     <coordinateInfo>
       <fbd>
         <scaling x="1" y="1"/>
@@ -28,46 +28,6 @@
             <DINT/>
           </returnType>
           <inputVars>
-            <variable name="Time0">
-              <type>
-                <DINT/>
-              </type>
-            </variable>
-            <variable name="Time1">
-              <type>
-                <DINT/>
-              </type>
-            </variable>
-            <variable name="Time2">
-              <type>
-                <DINT/>
-              </type>
-            </variable>
-            <variable name="Time3">
-              <type>
-                <DINT/>
-              </type>
-            </variable>
-            <variable name="Time4">
-              <type>
-                <DINT/>
-              </type>
-            </variable>
-            <variable name="Time5">
-              <type>
-                <DINT/>
-              </type>
-            </variable>
-            <variable name="Time6">
-              <type>
-                <DINT/>
-              </type>
-            </variable>
-            <variable name="Time7">
-              <type>
-                <DINT/>
-              </type>
-            </variable>
             <variable name="Warning0">
               <type>
                 <BOOL/>
@@ -150,70 +110,16 @@
                 <derived name="COLOR"/>
               </type>
             </variable>
-            <variable name="Height0">
-              <type>
-                <DINT/>
-              </type>
-            </variable>
-            <variable name="Height1">
-              <type>
-                <DINT/>
-              </type>
-            </variable>
-            <variable name="Height2">
-              <type>
-                <DINT/>
-              </type>
-            </variable>
-            <variable name="Height3">
-              <type>
-                <DINT/>
-              </type>
-            </variable>
-            <variable name="Height4">
-              <type>
-                <DINT/>
-              </type>
-            </variable>
-            <variable name="Height5">
-              <type>
-                <DINT/>
-              </type>
-            </variable>
-            <variable name="Height6">
-              <type>
-                <DINT/>
-              </type>
-            </variable>
-            <variable name="Height7">
-              <type>
-                <DINT/>
-              </type>
-            </variable>
           </outputVars>
         </interface>
         <body>
           <C>
             <code xmlns="http://www.w3.org/1999/xhtml">//Write the C Code function body here.
 //You have access to everything defined in any of the available header files listed under the PLC Units node in the Project Manager
-
-int* times[8][2] = 
-  {{&amp;Time0, Height0},
-   {&amp;Time1, Height1},
-   {&amp;Time2, Height2},
-   {&amp;Time3, Height3},
-   {&amp;Time4, Height4},
-   {&amp;Time5, Height5},
-   {&amp;Time6, Height6},
-   {&amp;Time7, Height7}};
-
-//search algortihm based on time
-
 unsigned int* colors[8] = {Color0, Color1, Color2, Color3, Color4, Color5, Color6, Color7};
 int warnings[8]= {Warning0, Warning1, Warning2, Warning3, Warning4, Warning5, Warning6, Warning7};
  
 for(int i = 0; i &lt; 8; i++){
-  *times[i][1] = 75 + 50 * i;
   if(warnings[i] == 1){
     *colors[i] = 0xFF000000;
   }
@@ -230,14 +136,6 @@ for(int i = 0; i &lt; 8; i++){
           <data name="InterfaceText" handleUnknown="discard">
             <code>FUNCTION ServicePOU : DINT
 VAR_INPUT
-  Time0 : DINT;
-  Time1 : DINT;
-  Time2 : DINT;
-  Time3 : DINT;
-  Time4 : DINT;
-  Time5 : DINT;
-  Time6 : DINT;
-  Time7 : DINT;
   Warning0 : BOOL;
   Warning1 : BOOL;
   Warning2 : BOOL;
@@ -256,14 +154,6 @@ VAR_OUTPUT
   Color5 : COLOR;
   Color6 : COLOR;
   Color7 : COLOR;
-  Height0 : DINT;
-  Height1 : DINT;
-  Height2 : DINT;
-  Height3 : DINT;
-  Height4 : DINT;
-  Height5 : DINT;
-  Height6 : DINT;
-  Height7 : DINT;
 END_VAR
 
 </code>

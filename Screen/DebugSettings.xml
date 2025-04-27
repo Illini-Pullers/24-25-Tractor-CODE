@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0"?><DebugSettings>
   <Breakpoints>
-    <BreakpointPou POU="GraphPOU" File="GraphPLC" Line="2" Active="true" Condition=""/>
+    <BreakpointPou POU="GraphPOU" File="GraphPLC" Line="7" Active="true" Condition=""/>
   </Breakpoints>
   <Watches/>
   <LoopInput>
