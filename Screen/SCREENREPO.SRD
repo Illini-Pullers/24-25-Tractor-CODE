@@ -204,37 +204,18 @@
           <Net Name="BattVoltage" Uid="33" DataType="S32"/>
           <Net Name="BarometricP" Uid="34" DataType="S32"/>
           <Net Name="Update" Uid="37" DataType="BOOL"/>
+          <Net Name="FootThrottlePct" Uid="44" DataType="S32"/>
+          <Net Name="Pin12Status" Uid="45" DataType="BOOL"/>
+          <Net Name="Pin11Status" Uid="46" DataType="BOOL"/>
+          <Net Name="Pin10Status" Uid="47" DataType="BOOL"/>
+          <Net Name="KillStatus" Uid="48" DataType="BOOL"/>
         </Input>
         <Output/>
       </Interface>
       <PN>Display.Port</PN>
       <Lay LO="0" AR="true" LAR="false" KA="false"/>
       <F>
-        <Wdg N="DialGaugeWidget_1" SX="0.261249989271164" SY="0.40625" WP="26.125" HP="40.625" W="209" H="195">
-          <La Sc="Def" Zo="0" Order="0" Flex="false" Sec="0">
-            <Pad L="0" R="0" T="0" B="0" A="0" UA="false"/>
-          </La>
-          <LMO>
-            <X/>
-            <Y/>
-            <W/>
-            <H/>
-          </LMO>
-          <En V="True" E=""/>
-          <GUID>C20326AC1_B5B3_400A_83ED_FC62CB7A65DB</GUID>
-          <ID>C0C8C41A8_0476_438D_A0CE_9EE830CFDF57</ID>
-          <O>4</O>
-          <Intf>
-            <Net E="" UidDef="15" UidInst="8" Dir="I" V="0"/>
-            <Net E="" UidDef="16" UidInst="9" Dir="I" V="50"/>
-            <Net E="" UidDef="17" UidInst="10" Dir="I" V="22"/>
-            <Net E="" UidDef="18" UidInst="11" Dir="I" V="Ground Speed"/>
-            <Net E="" UidDef="19" UidInst="12" Dir="I" V="MPH"/>
-            <Net E="" UidDef="24" UidInst="36" Dir="I" V="1"/>
-          </Intf>
-          <IP X="365" EX="" Y="110" EY="" XP="45.625" YP="22.9167"/>
-        </Wdg>
-        <Wdg N="ErrorWidget_1" SX="0.0874999985098839" SY="0.4375" WP="8.75" HP="43.75" W="70" H="210">
+        <Wdg N="ErrorWidget_1" SX="0.106250002980232" SY="0.53125" WP="10.625" HP="53.125" W="85" H="255">
           <La Sc="Def" Zo="0" Order="0" Flex="false" Sec="0">
             <Pad L="0" R="0" T="0" B="0" A="0" UA="false"/>
           </La>
@@ -249,33 +230,11 @@
           <ID>CBE044DED_69F2_40AA_A384_0286F211B14D</ID>
           <O>3</O>
           <Intf>
-            <Net E="" UidDef="1" UidInst="18" Dir="I" V="True"/>
-            <Net E="" UidDef="2" UidInst="19" Dir="I" V="True"/>
-            <Net E="" UidDef="3" UidInst="20" Dir="I" V="True"/>
+            <Net E="46" UidDef="1" UidInst="18" Dir="I" V="True"/>
+            <Net E="45" UidDef="2" UidInst="19" Dir="I" V="True"/>
+            <Net E="47" UidDef="3" UidInst="20" Dir="I" V="True"/>
           </Intf>
-          <IP X="5" EX="" Y="5" EY="" XP="0.625" YP="1.0417"/>
-        </Wdg>
-        <Wdg N="TextGuageWidget_1" SX="0.381249994039536" SY="0.318749994039536" WP="38.125" HP="31.875" W="305" H="153">
-          <La Sc="Def" Zo="0" Order="0" Flex="false" Sec="0">
-            <Pad L="0" R="0" T="0" B="0" A="0" UA="false"/>
-          </La>
-          <LMO>
-            <X/>
-            <Y/>
-            <W/>
-            <H/>
-          </LMO>
-          <En V="True" E=""/>
-          <GUID>C982812B8_2AF2_4C63_8A53_1A1EA8FDA499</GUID>
-          <ID>C595C845D_EA56_4800_9722_2504005B7302</ID>
-          <O>2</O>
-          <Intf>
-            <Net E="" UidDef="8" UidInst="21" Dir="I" V="V"/>
-            <Net E="" UidDef="9" UidInst="22" Dir="I" V="1000"/>
-            <Net E="" UidDef="10" UidInst="23" Dir="I" V="11875"/>
-            <Net E="" UidDef="12" UidInst="24" Dir="I" V="Battery Voltage"/>
-          </Intf>
-          <IP X="250" EX="" Y="320" EY="" XP="31.25" YP="66.6667"/>
+          <IP X="55" EX="" Y="95" EY="" XP="6.875" YP="19.7917"/>
         </Wdg>
         <Wdg N="LinearGaugeWidget_1" SX="0.15625" SY="0.40625" WP="15.625" HP="40.625" W="125" H="195">
           <La Sc="Def" Zo="0" Order="0" Flex="false" Sec="0">
@@ -290,16 +249,37 @@
           <En V="True" E=""/>
           <GUID>C3332B303_8C10_47D4_8422_92CD86466489</GUID>
           <ID>C6FB34C09_32DB_4B99_968B_2AFEFC85D089</ID>
-          <O>1</O>
+          <O>2</O>
           <Intf>
-            <Net E="" UidDef="17" UidInst="43" Dir="I" V="10"/>
+            <Net E="" UidDef="17" UidInst="43" Dir="I" V="1"/>
             <Net E="" UidDef="10" UidInst="38" Dir="I" V="0"/>
-            <Net E="" UidDef="11" UidInst="39" Dir="I" V="1000"/>
-            <Net E="" UidDef="12" UidInst="40" Dir="I" V="652"/>
-            <Net E="" UidDef="13" UidInst="41" Dir="I" V="Fuel Level"/>
+            <Net E="" UidDef="11" UidInst="39" Dir="I" V="100"/>
+            <Net E="44" UidDef="12" UidInst="40" Dir="I" V=""/>
+            <Net E="" UidDef="13" UidInst="41" Dir="I" V="Foot Pedal"/>
             <Net E="" UidDef="14" UidInst="42" Dir="I" V="%"/>
           </Intf>
-          <IP X="200" EX="" Y="110" EY="" XP="25" YP="22.9167"/>
+          <IP X="310" EX="" Y="10" EY="" XP="38.75" YP="2.0833"/>
+        </Wdg>
+        <Wdg N="ErrorWidget_2" SX="0.106250002980232" SY="0.53125" WP="10.625" HP="53.125" W="85" H="255">
+          <La Sc="Def" Zo="0" Order="0" Flex="false" Sec="0">
+            <Pad L="0" R="0" T="0" B="0" A="0" UA="false"/>
+          </La>
+          <LMO>
+            <X/>
+            <Y/>
+            <W/>
+            <H/>
+          </LMO>
+          <En V="True" E=""/>
+          <GUID>CC544CDD6_2CB9_43FB_B3D5_CC90DB3E6BC4</GUID>
+          <ID>CBE044DED_69F2_40AA_A384_0286F211B14D</ID>
+          <O>1</O>
+          <Intf>
+            <Net E="48" UidDef="1" UidInst="49" Dir="I" V="True"/>
+            <Net E="48" UidDef="2" UidInst="50" Dir="I" V="True"/>
+            <Net E="48" UidDef="3" UidInst="51" Dir="I" V="True"/>
+          </Intf>
+          <IP X="550" EX="" Y="110" EY="" XP="68.75" YP="22.9167"/>
         </Wdg>
       </F>
       <PouCalls/>
@@ -2273,7 +2253,7 @@
           <Vis E=""/>
           <ID V="76" E=""/>
           <D>
-            <DV V="'0'" E="61" FC="0"/>
+            <DV V="0" E="61" FC="0"/>
           </D>
         </Txt>
         <Txt N="Hours_6" AP="1" SX="0.137500002980232" SY="0.0416666679084301" W="110" H="20" WP="13.75" HP="4.1667" Type="TDS">
@@ -2669,7 +2649,7 @@
           <Vis E=""/>
           <ID V="76" E=""/>
           <D>
-            <DV V="'0'" E="58" FC="0"/>
+            <DV V="0" E="58" FC="0"/>
           </D>
         </Txt>
         <Txt N="Text_2" AP="1" SX="0.581250011920929" SY="0.0416666679084301" W="465" H="20" WP="58.125" HP="4.1667" Type="TDS">
@@ -2713,7 +2693,7 @@
           <Vis E=""/>
           <ID V="76" E=""/>
           <D>
-            <DV V="'0'" E="55" FC="0"/>
+            <DV V="0" E="55" FC="0"/>
           </D>
         </Txt>
         <Txt N="Text_3" AP="1" SX="0.581250011920929" SY="0.0416666679084301" W="465" H="20" WP="58.125" HP="4.1667" Type="TDS">
@@ -2757,7 +2737,7 @@
           <Vis E=""/>
           <ID V="76" E=""/>
           <D>
-            <DV V="'0'" E="52" FC="0"/>
+            <DV V="0" E="52" FC="0"/>
           </D>
         </Txt>
         <Txt N="Text_4" AP="1" SX="0.581250011920929" SY="0.0416666679084301" W="465" H="20" WP="58.125" HP="4.1667" Type="TDS">
@@ -2801,7 +2781,7 @@
           <Vis E=""/>
           <ID V="76" E=""/>
           <D>
-            <DV V="'0'" E="49" FC="0"/>
+            <DV V="0" E="49" FC="0"/>
           </D>
         </Txt>
         <Txt N="Text_5" AP="1" SX="0.581250011920929" SY="0.0416666679084301" W="465" H="20" WP="58.125" HP="4.1667" Type="TDS">
@@ -2845,7 +2825,7 @@
           <Vis E=""/>
           <ID V="76" E=""/>
           <D>
-            <DV V="'0'" E="46" FC="0"/>
+            <DV V="0" E="46" FC="0"/>
           </D>
         </Txt>
         <Txt N="Text_6" AP="1" SX="0.581250011920929" SY="0.0416666679084301" W="465" H="20" WP="58.125" HP="4.1667" Type="TDS">
@@ -2889,7 +2869,7 @@
           <Vis E=""/>
           <ID V="76" E=""/>
           <D>
-            <DV V="'0'" E="43" FC="0"/>
+            <DV V="0" E="43" FC="0"/>
           </D>
         </Txt>
         <Txt N="Text_7" AP="1" SX="0.581250011920929" SY="0.0416666679084301" W="465" H="20" WP="58.125" HP="4.1667" Type="TDS">
@@ -2933,7 +2913,7 @@
           <Vis E=""/>
           <ID V="76" E=""/>
           <D>
-            <DV V="'0'" E="40" FC="0"/>
+            <DV V="0" E="40" FC="0"/>
           </D>
         </Txt>
         <Txt N="TITLE_1" AP="1" SX="0.606249988079071" SY="0.0520833320915699" W="485" H="25" WP="60.625" HP="5.2083" Type="TDS">
