@@ -18,7 +18,7 @@
       <PLCopenXML FileName="ServicePLC.xml"/>
       <PLCopenXML FileName="GraphPLC.xml"/>
       <DebugSettings FileName="DebugSettings.xml"/>
-      <MediaRepository FileName="appMedia.tar" isEmpty="true"/>
+      <MediaRepository FileName="appMedia.tar"/>
       <Parameters FileName="ProjectParameters.json"/>
     </Application>
     <Output>

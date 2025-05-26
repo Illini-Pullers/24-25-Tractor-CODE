@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://www.plcopen.org/xml/tc6_0201">
   <fileHeader companyName="Danfoss" productName="PLUS+1 GUIDE" productVersion="2024.2.4.6047" creationDateTime="2025-03-05T23:59:56"/>
-  <contentHeader name="" modificationDateTime="2025-03-11T20:30:21">
+  <contentHeader name="" modificationDateTime="2025-05-14T22:12:24">
     <coordinateInfo>
       <fbd>
         <scaling x="1" y="1"/>
@@ -86,7 +86,10 @@ MaxValue /= Divisor;
 MinValue /= Divisor;
 
 
-*ArrowRight = 195 - 150 * (CurValue - MinValue) / (MaxValue - MinValue);
+*ArrowRight = 250 - 150 * (CurValue - MinValue) / (MaxValue - MinValue);
+if(*ArrowRight &gt; 240){
+  *ArrowRight = 240;
+}
 *ArrowTopLeft = *ArrowRight - 5;
 *ArrowBottomLeft = *ArrowRight + 5;
 *TextTop = *ArrowTopLeft - 5;

@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Project>
-  <File FileName="SCREENREPO.SRD" FileSize="207220" Crc="3478879774"/>
-  <File FileName="SCREEN DEMO.P1X" FileSize="1500" Crc="2694345164"/>
-  <File FileName="LINEARGAUGEPLC.XML" FileSize="3378" Crc="2905545358"/>
+  <File FileName="SCREENREPO.SRD" FileSize="228256" Crc="3031832342"/>
+  <File FileName="SCREEN DEMO.P1X" FileSize="1485" Crc="1367880020"/>
+  <File FileName="LINEARGAUGEPLC.XML" FileSize="3430" Crc="1089082561"/>
   <File FileName="GRAPHPLC.XML" FileSize="9179" Crc="2957280626"/>
+  <File FileName="APPMEDIA.TAR" FileSize="11976192" Crc="4257632156"/>
   <File FileName="DIALGUAGEPLC.XML" FileSize="4213" Crc="589353347"/>
   <File FileName="TEXTGUAGEPLC.XML" FileSize="2348" Crc="130679940"/>
   <File FileName="70487200V330.SYS" FileSize="80427043" Crc="2884087083"/>
@@ -19,5 +20,5 @@
   <File FileName="LIGHTBLUE.SVG" FileSize="190" Crc="1313760686"/>
   <File FileName="003_02_FULLGAUGE_NEEDLE_DAY.SVG" FileSize="2701" Crc="1686713968"/>
   <File FileName="001_8_SERVICEHOURS_WARNING_DAY.SVG" FileSize="265779" Crc="539921886"/>
-  <File FileName="DM700B.SCS" FileSize="448179" Crc="3053103109"/>
+  <File FileName="DM700B.SCS" FileSize="439480" Crc="736158788"/>
 </Project>
