@@ -17,6 +17,7 @@
       <PLCopenXML FileName="LinearGaugePLC.xml"/>
       <PLCopenXML FileName="ServicePLC.xml"/>
       <PLCopenXML FileName="GraphPLC.xml"/>
+      <PLCopenXML FileName="DiagPLC.xml"/>
       <DebugSettings FileName="DebugSettings.xml"/>
       <MediaRepository FileName="appMedia.tar"/>
       <Parameters FileName="ProjectParameters.json"/>

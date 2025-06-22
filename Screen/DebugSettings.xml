@@ -1,6 +1,14 @@
 ﻿<?xml version="1.0"?><DebugSettings>
   <Breakpoints>
+    <Breakpoint Name="IF_RETYPE" Active="true" ComponentGUID="{01A17B17-DDEE-0336-60EC-29CB1B086CC4}" File="DM700B" Page="TOP!Application!CAN_Messages_1" Condition=""/>
     <BreakpointPou POU="GraphPOU" File="GraphPLC" Line="7" Active="true" Condition=""/>
+    <BreakpointPou POU="LinearGaugePOU" File="LinearGaugePLC" Line="3" Active="true" Condition=""/>
+    <Breakpoint Name="LC_COMPARE-NE" Active="true" ComponentGUID="{01A17BCD-E0F6-dd5e-6814-2E04D667E45E}" File="DM700B" Page="TOP!Application!CAN_Messages_1" Condition=""/>
+    <Breakpoint Name="IF_RETYPE" Active="true" ComponentGUID="{00ADD3EB-2C99-5d28-0BDD-7C5DC2FDD3B5}" File="DM700B" Page="TOP!Application!RPICommands" Condition=""/>
+    <Breakpoint Name="IF_RETYPE" Active="true" ComponentGUID="{01A17B31-DE5C-c6f3-CFA9-97D3C8F1A191}" File="DM700B" Page="TOP!Application!CAN_Messages_1" Condition=""/>
+    <Breakpoint Name="IF_RETYPE" Active="true" ComponentGUID="{054EEA19-2BDA-2bd2-4C88-F5CCAED04FA1}" File="DM700B" Page="TOP!Application!CAN_Messages_2" Condition=""/>
+    <Breakpoint Name="IF_RETYPE" Active="true" ComponentGUID="{01A17B24-DE25-a515-97CA-60CFF27C862B}" File="DM700B" Page="TOP!Application!CAN_Messages_1" Condition=""/>
+    <Breakpoint Name="LC_EQUATE" Active="true" ComponentGUID="{054EE908-274D-6496-BF4C-6D7616421B3A}" File="DM700B" Page="TOP!Application" Condition=""/>
   </Breakpoints>
   <Watches/>
   <LoopInput>

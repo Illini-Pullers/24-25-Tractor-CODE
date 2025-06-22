@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Project>
-  <File FileName="SCREENREPO.SRD" FileSize="228256" Crc="3031832342"/>
-  <File FileName="SCREEN DEMO.P1X" FileSize="1485" Crc="1367880020"/>
+  <File FileName="SCREENREPO.SRD" FileSize="274202" Crc="3410553884"/>
+  <File FileName="SOLID_WHITE.SVG" FileSize="99" Crc="2958906654"/>
+  <File FileName="SCREEN DEMO.P1X" FileSize="1529" Crc="3621430500"/>
   <File FileName="LINEARGAUGEPLC.XML" FileSize="3430" Crc="1089082561"/>
   <File FileName="GRAPHPLC.XML" FileSize="9179" Crc="2957280626"/>
   <File FileName="APPMEDIA.TAR" FileSize="11976192" Crc="4257632156"/>
@@ -20,5 +21,6 @@
   <File FileName="LIGHTBLUE.SVG" FileSize="190" Crc="1313760686"/>
   <File FileName="003_02_FULLGAUGE_NEEDLE_DAY.SVG" FileSize="2701" Crc="1686713968"/>
   <File FileName="001_8_SERVICEHOURS_WARNING_DAY.SVG" FileSize="265779" Crc="539921886"/>
-  <File FileName="DM700B.SCS" FileSize="439480" Crc="736158788"/>
+  <File FileName="DM700B.SCS" FileSize="473096" Crc="1100754609"/>
+  <File FileName="DIAGPLC.XML" FileSize="2934" Crc="597775674"/>
 </Project>

@@ -10,7 +10,7 @@
 				<VariableInfo VariableName="Decimal" VariableNameC="*Decimal" VariableType="DINT" VariableKind="VAR_OUTPUT" />
 				<VariableInfo VariableName="TextGuagePOU" VariableNameC="TextGuagePOU" VariableType="DINT" VariableKind="VAR" />
 			</Interface>
-			<FuncInfo FuncNameC="p1Plc_func_TEXTGUAGEPOU" FuncStart="25" CodeStart="31" CodeEnd="42" Language="C">
+			<FuncInfo FuncNameC="p1Plc_func_TEXTGUAGEPOU" FuncStart="28" CodeStart="34" CodeEnd="45" Language="C">
 				<FuncDef>PLC_DINT p1Plc_func_TEXTGUAGEPOU(
     PLC_BOOL* ENO, 
     PLC_DINT Value, 
@@ -19,7 +19,7 @@
     PLC_DINT* Decimal);
 </FuncDef>
 				<Code>
-					<CodeLine PouLine="1" CLine="37" LineCount="4" />
+					<CodeLine PouLine="1" CLine="40" LineCount="4" />
 				</Code>
 			</FuncInfo>
 		</POU>
@@ -41,7 +41,7 @@
 				<VariableInfo VariableName="CurOutput" VariableNameC="*CurOutput" VariableType="DINT" VariableKind="VAR_OUTPUT" />
 				<VariableInfo VariableName="DialGuagePOU" VariableNameC="DialGuagePOU" VariableType="DINT" VariableKind="VAR" />
 			</Interface>
-			<FuncInfo FuncNameC="p1Plc_func_DIALGUAGEPOU" FuncStart="44" CodeStart="60" CodeEnd="92" Language="C">
+			<FuncInfo FuncNameC="p1Plc_func_DIALGUAGEPOU" FuncStart="47" CodeStart="63" CodeEnd="95" Language="C">
 				<FuncDef>PLC_DINT p1Plc_func_DIALGUAGEPOU(
     PLC_BOOL* ENO, 
     PLC_DINT CurValue, 
@@ -60,7 +60,7 @@
     PLC_DINT* CurOutput);
 </FuncDef>
 				<Code>
-					<CodeLine PouLine="1" CLine="74" LineCount="17" />
+					<CodeLine PouLine="1" CLine="77" LineCount="17" />
 				</Code>
 			</FuncInfo>
 		</POU>
@@ -77,7 +77,7 @@
 				<VariableInfo VariableName="CurOutput" VariableNameC="*CurOutput" VariableType="DINT" VariableKind="VAR_OUTPUT" />
 				<VariableInfo VariableName="LinearGaugePOU" VariableNameC="LinearGaugePOU" VariableType="DINT" VariableKind="VAR" />
 			</Interface>
-			<FuncInfo FuncNameC="p1Plc_func_LINEARGAUGEPOU" FuncStart="94" CodeStart="105" CodeEnd="127" Language="C">
+			<FuncInfo FuncNameC="p1Plc_func_LINEARGAUGEPOU" FuncStart="97" CodeStart="108" CodeEnd="133" Language="C">
 				<FuncDef>PLC_DINT p1Plc_func_LINEARGAUGEPOU(
     PLC_BOOL* ENO, 
     PLC_DINT CurValue, 
@@ -91,7 +91,7 @@
     PLC_DINT* CurOutput);
 </FuncDef>
 				<Code>
-					<CodeLine PouLine="1" CLine="114" LineCount="12" />
+					<CodeLine PouLine="1" CLine="117" LineCount="15" />
 				</Code>
 			</FuncInfo>
 		</POU>
@@ -115,7 +115,7 @@
 				<VariableInfo VariableName="Color7" VariableNameC="*Color7" VariableType="COLOR" VariableKind="VAR_OUTPUT" />
 				<VariableInfo VariableName="ServicePOU" VariableNameC="ServicePOU" VariableType="DINT" VariableKind="VAR" />
 			</Interface>
-			<FuncInfo FuncNameC="p1Plc_func_SERVICEPOU" FuncStart="129" CodeStart="147" CodeEnd="176" Language="C">
+			<FuncInfo FuncNameC="p1Plc_func_SERVICEPOU" FuncStart="135" CodeStart="153" CodeEnd="182" Language="C">
 				<FuncDef>PLC_DINT p1Plc_func_SERVICEPOU(
     PLC_BOOL* ENO, 
     PLC_BOOL Warning0, 
@@ -136,7 +136,7 @@
     PLC_UDINT* Color7);
 </FuncDef>
 				<Code>
-					<CodeLine PouLine="1" CLine="159" LineCount="16" />
+					<CodeLine PouLine="1" CLine="165" LineCount="16" />
 				</Code>
 			</FuncInfo>
 		</POU>
@@ -183,7 +183,7 @@
 				<VariableInfo VariableName="Ver10" VariableNameC="*Ver10" VariableType="DINT" VariableKind="VAR_OUTPUT" />
 				<VariableInfo VariableName="GraphPOU" VariableNameC="GraphPOU" VariableType="DINT" VariableKind="VAR" />
 			</Interface>
-			<FuncInfo FuncNameC="p1Plc_func_GRAPHPOU" FuncStart="178" CodeStart="219" CodeEnd="313" Language="C">
+			<FuncInfo FuncNameC="p1Plc_func_GRAPHPOU" FuncStart="184" CodeStart="225" CodeEnd="319" Language="C">
 				<FuncDef>PLC_DINT p1Plc_func_GRAPHPOU(
     PLC_BOOL* ENO, 
     PLC_BOOL Update, 
@@ -227,7 +227,42 @@
     PLC_DINT* Ver10);
 </FuncDef>
 				<Code>
-					<CodeLine PouLine="1" CLine="256" LineCount="56" />
+					<CodeLine PouLine="1" CLine="262" LineCount="56" />
+				</Code>
+			</FuncInfo>
+		</POU>
+		<POU PouName="DiagPOU" PouKind="FUNCTION" SourceFileName="DIAGPLC.XML">
+			<Interface>
+				<VariableInfo VariableName="DiagPOU" VariableNameC="DiagPOU" VariableType="DINT" VariableKind="VAR" />
+			</Interface>
+			<FuncInfo FuncNameC="p1Plc_func_DIAGPOU" FuncStart="326" CodeStart="327" CodeEnd="334" Language="C">
+				<FuncDef>PLC_DINT p1Plc_func_DIAGPOU(PLC_BOOL* ENO);
+</FuncDef>
+				<Code>
+					<CodeLine PouLine="1" CLine="331" LineCount="2" />
+				</Code>
+			</FuncInfo>
+		</POU>
+		<POU PouName="d" PouKind="FUNCTION" SourceFileName="DIAGPLC.XML">
+			<Interface>
+				<VariableInfo VariableName="Switch" VariableNameC="local_SWITCH" VariableType="BOOL" VariableKind="VAR_INPUT" />
+				<VariableInfo VariableName="High" VariableNameC="local_HIGH" VariableType="string" VariableKind="VAR_INPUT" />
+				<VariableInfo VariableName="Low" VariableNameC="local_LOW" VariableType="string" VariableKind="VAR_INPUT" />
+				<VariableInfo VariableName="Result" VariableNameC="local_RESULT" VariableType="string" VariableKind="VAR_OUTPUT" />
+				<VariableInfo VariableName="d" VariableNameC="local_D" VariableType="DINT" VariableKind="VAR" />
+			</Interface>
+			<FuncInfo FuncNameC="p1Plc_func_D" FuncStart="336" CodeStart="342" CodeEnd="354" Language="ST">
+				<FuncDef>PLC_DINT p1Plc_func_D(
+    PLC_BOOL* local_ENO, 
+    PLC_BOOL local_SWITCH, 
+    PLC_STRING_REF local_HIGH, 
+    PLC_STRING_REF local_LOW, 
+    PLC_STRING_REF local_RESULT);
+</FuncDef>
+				<Code>
+					<CodeLine PouLine="1" CLine="347" />
+					<CodeLine PouLine="2" CLine="348" />
+					<CodeLine PouLine="4" CLine="351" />
 				</Code>
 			</FuncInfo>
 		</POU>
