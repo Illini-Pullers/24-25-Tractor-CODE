@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="15.925"
+   height="206.42323"
+   id="svg3300"
+   version="1.1"
+   inkscape:version="0.48.4 r9939"
+   sodipodi:docname="New document 2">
+  <defs
+     id="defs3302" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.35"
+     inkscape:cx="-188.46607"
+     inkscape:cy="343.21162"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:window-width="463"
+     inkscape:window-height="401"
+     inkscape:window-x="100"
+     inkscape:window-y="100"
+     inkscape:window-maximized="0" />
+  <metadata
+     id="metadata3305">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-563.46607,-669.15057)">
+    <g
+       transform="translate(271.28307,601.20257)"
+       id="needle_1_">
+      <path
+         d="m 300.023,67.948 -7.84,16.123 v 70.771 c 0.791,-0.049 1.593,-0.073 2.394,-0.102 v -0.133 -69.516 -0.139 l 5.489,-11.88 5.688,11.88 -0.042,69.73 v 0.137 c 0.808,0.045 1.593,0.122 2.396,0.179 V 84.071 l -8.085,-16.123 z"
+         id="path140"
+         inkscape:connector-curvature="0"
+         style="fill:#22211e" />
+      <path
+         d="m 300.066,73.072 -5.489,12.019 v 69.517 c 1.494,-0.06 2.989,-0.117 4.501,-0.117 2.228,0 4.438,0.071 6.635,0.192 V 85.091 l -5.647,-12.019 z"
+         id="path142"
+         inkscape:connector-curvature="0"
+         style="fill:#ea2327" />
+      <polygon
+         points="305.713,154.683 305.755,84.952 300.066,73.072 294.577,84.952 294.577,85.091 300.066,73.072 305.713,85.091 "
+         id="polygon144"
+         style="opacity:0.4;fill:#ea2327" />
+    </g>
+  </g>
+</svg>

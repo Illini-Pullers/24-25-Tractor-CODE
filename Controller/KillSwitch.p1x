@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<Project ID="{DF37697A-B3E0-4673-8D4A-7789F007CF98}" FileName="KillSwitch.p1x">
+  <FileFormat>008B</FileFormat>
+  <GUIVersion>2024.2.4.6047</GUIVersion>
+  <ProgrammableHW PartNumber="11130954" Description="MC050-110/112-0_lg ver:70091045v190 (SYS:70091042v190)" Comment="MC050_110_lg" HwdName="70091045" HwdVersion="1.90.0">
+    <SystemFile FileName="70091042v190.SYS" Parameters="W1:DISABLE">
+      <APIDocument FileName="70091042.PDF"/>
+    </SystemFile>
+    <Application Name="KillSwitch">
+      <PID Description="KillSwitch"/>
+      <MainModule ModuleName="MAINTASK" FileName="MC50_110_lg_T_MC50_112T.scs"/>
+      <Parameters FileName="ProjectParameters.json"/>
+    </Application>
+    <Output>
+      <Hexfile FileName="KillSwitch.lhx"/>
+      <OutputTargetPartNumber></OutputTargetPartNumber>
+      <OutputTargetSerialNumber></OutputTargetSerialNumber>
+    </Output>
+    <TargetPartNumber></TargetPartNumber>
+  </ProgrammableHW>
+</Project>

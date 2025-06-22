@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Project>
+  <File FileName="SCREENREPO.SRD" FileSize="274202" Crc="3410553884"/>
+  <File FileName="SOLID_WHITE.SVG" FileSize="99" Crc="2958906654"/>
+  <File FileName="SCREEN DEMO.P1X" FileSize="1529" Crc="3621430500"/>
+  <File FileName="LINEARGAUGEPLC.XML" FileSize="3430" Crc="1089082561"/>
+  <File FileName="GRAPHPLC.XML" FileSize="9179" Crc="2957280626"/>
+  <File FileName="APPMEDIA.TAR" FileSize="11976192" Crc="4257632156"/>
+  <File FileName="DIALGUAGEPLC.XML" FileSize="4213" Crc="589353347"/>
+  <File FileName="TEXTGUAGEPLC.XML" FileSize="2348" Crc="130679940"/>
+  <File FileName="70487200V330.SYS" FileSize="80427043" Crc="2884087083"/>
+  <File FileName="001_7_OIL_WARNING_DAY.SVG" FileSize="256255" Crc="1608927301"/>
+  <File FileName="GUAGENOTEXT.SVG" FileSize="1052698" Crc="1605598021"/>
+  <File FileName="PROJECTPARAMETERS.JSON" FileSize="2297" Crc="1349947549"/>
+  <File FileName="SERVICEPLC.XML" FileSize="4609" Crc="1951028396"/>
+  <File FileName="GUIDE EXTENSIONS.XML" FileSize="-1" Crc="0"/>
+  <File FileName="TOUCHVERSION.SVG" FileSize="2232" Crc="23945582"/>
+  <File FileName="X-SYMBOL-SVGREPO-COM.SVG" FileSize="1067" Crc="3279664468"/>
+  <File FileName="70487200V330.PDF" FileSize="657927" Crc="3090789078"/>
+  <File FileName="009_23_ENGINEFAILUREMALFUNCTION_WARNING_DAY.SVG" FileSize="254371" Crc="4292911309"/>
+  <File FileName="LIGHTBLUE.SVG" FileSize="190" Crc="1313760686"/>
+  <File FileName="003_02_FULLGAUGE_NEEDLE_DAY.SVG" FileSize="2701" Crc="1686713968"/>
+  <File FileName="001_8_SERVICEHOURS_WARNING_DAY.SVG" FileSize="265779" Crc="539921886"/>
+  <File FileName="DM700B.SCS" FileSize="473096" Crc="1100754609"/>
+  <File FileName="DIAGPLC.XML" FileSize="2934" Crc="597775674"/>
+</Project>

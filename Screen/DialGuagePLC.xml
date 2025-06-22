@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://www.plcopen.org/xml/tc6_0201">
+  <fileHeader companyName="Danfoss" productName="PLUS+1 GUIDE" productVersion="2024.2.4.6047" creationDateTime="2025-03-01T19:00:06"/>
+  <contentHeader name="" modificationDateTime="2025-03-20T19:32:36">
+    <coordinateInfo>
+      <fbd>
+        <scaling x="1" y="1"/>
+      </fbd>
+      <ld>
+        <scaling x="1" y="1"/>
+      </ld>
+      <sfc>
+        <scaling x="1" y="1"/>
+      </sfc>
+    </coordinateInfo>
+    <addData>
+      <data name="FileFormat" handleUnknown="discard">
+        <FileFormat>001F</FileFormat>
+      </data>
+    </addData>
+  </contentHeader>
+  <types>
+    <dataTypes/>
+    <pous>
+      <pou name="DialGuagePOU" pouType="function">
+        <interface>
+          <returnType>
+            <DINT/>
+          </returnType>
+          <inputVars>
+            <variable name="CurValue">
+              <type>
+                <DINT/>
+              </type>
+            </variable>
+            <variable name="MaxValue">
+              <type>
+                <DINT/>
+              </type>
+            </variable>
+            <variable name="MinValue">
+              <type>
+                <DINT/>
+              </type>
+            </variable>
+            <variable name="Divisor">
+              <type>
+                <DINT/>
+              </type>
+            </variable>
+          </inputVars>
+          <outputVars>
+            <variable name="Tick0">
+              <type>
+                <DINT/>
+              </type>
+            </variable>
+            <variable name="Tick1">
+              <type>
+                <DINT/>
+              </type>
+            </variable>
+            <variable name="Tick2">
+              <type>
+                <DINT/>
+              </type>
+            </variable>
+            <variable name="Tick3">
+              <type>
+                <DINT/>
+              </type>
+            </variable>
+            <variable name="Tick4">
+              <type>
+                <DINT/>
+              </type>
+            </variable>
+            <variable name="Tick5">
+              <type>
+                <DINT/>
+              </type>
+            </variable>
+            <variable name="Tick6">
+              <type>
+                <DINT/>
+              </type>
+            </variable>
+            <variable name="Tick7">
+              <type>
+                <DINT/>
+              </type>
+            </variable>
+            <variable name="Rotation">
+              <type>
+                <DINT/>
+              </type>
+            </variable>
+            <variable name="CurOutput">
+              <type>
+                <DINT/>
+              </type>
+            </variable>
+          </outputVars>
+        </interface>
+        <body>
+          <C>
+            <code xmlns="http://www.w3.org/1999/xhtml">//Write the C Code function body here.
+//You have access to everything defined in any of the available header files listed under the PLC Units node in the Project Manager
+CurValue /= Divisor;
+MaxValue /= Divisor;
+MinValue /= Divisor;
+
+int dif = MaxValue - MinValue;
+*Tick0 = MinValue;
+*Tick1 = MinValue + dif/7;
+*Tick2 = MinValue + 2 * dif/7;
+*Tick3 = MinValue + 3 * dif/7;
+*Tick4 = MinValue + 4 * dif/7;
+*Tick5 = MinValue + 5 * dif/7;
+*Tick6 = MinValue + 6 * dif/7;
+*Tick7 = MaxValue;
+*Rotation = 210 * (CurValue - MinValue) / dif - 105;
+*CurOutput = CurValue;</code>
+          </C>
+        </body>
+        <addData>
+          <data name="InterfaceText" handleUnknown="discard">
+            <code>FUNCTION DialGuagePOU : DINT
+VAR_INPUT
+  CurValue : DINT;
+  MaxValue : DINT;
+  MinValue : DINT;
+  Divisor : DINT;
+END_VAR
+VAR_OUTPUT
+  Tick0 : DINT;
+  Tick1 : DINT;
+  Tick2 : DINT;
+  Tick3 : DINT;
+  Tick4 : DINT;
+  Tick5 : DINT;
+  Tick6 : DINT;
+  Tick7 : DINT;
+  Rotation : DINT;
+  CurOutput : DINT;
+END_VAR
+
+</code>
+          </data>
+          <data name="notYetVerified" handleUnknown="discard">False</data>
+        </addData>
+      </pou>
+    </pous>
+  </types>
+  <instances>
+    <configurations/>
+  </instances>
+</project>
